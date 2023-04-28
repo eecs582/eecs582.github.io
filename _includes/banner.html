@@ -1,0 +1,55 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <p class="navbar-text pull-right" style="font-size:18px;color:white;padding-right:10px;">Fall 2023</p>
+      <h3 style="color:#fff"><span style="font-weight:bold;">EECS 582</span>: Advanced Operating Systems</h3>
+      <ul class="nav navbar-nav">
+        {% for item in site.navigation %}
+          {%- if page.url contains item.url -%}
+            {%- assign class = 'active' -%}
+          {%- elsif page.url == '/' and item.url == '/index.html' -%}
+            {%- assign class = 'active' -%}
+          {%- else -%}
+            {%- assign class = nil -%}
+          {%- endif -%}
+          {%- if item.dropdown -%}
+            {% if class %}
+              {%- assign class = class | append: ' dropdown' -%}
+            {% else %}
+              {%- assign class = 'dropdown' -%}
+            {% endif %}
+          {%- endif -%}
+          {%- if item.url contains 'http://' or item.url contains 'https://' -%}
+          {%- assign aurl = item.url -%}
+          {%- else -%}
+          {%- assign aurl = item.url | relative_url -%}
+          {%- endif -%}
+        <li class="{{ class }}">
+          {% if item.dropdown -%}
+          <a href="{{ aurl }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ item.title }} <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {%- for dp in item.dropdown %}
+              {% if dp.title -%}
+            <li><a href="{{ dp.url | relative_url }}">{{ dp.title }}</a></li>
+              {%- else -%}
+            <li role="separator" class="divider"></li>
+              {%- endif -%}
+            {%- endfor %}
+          </ul>
+          {%- else -%}
+          <a class="nav-link" href="{{ aurl }}">{{ item.title }}</a>
+          {%- endif %}
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

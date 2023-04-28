@@ -1,0 +1,30 @@
+title: "EECS 582: Advanced Operating Systems, Fall 2023"
+email: ryanph@umich.edu
+description: > # this means to ignore newlines until "baseurl:"
+  Advanced Operating System course, Fall 2023 at University of Michigan.
+  Instructor Prof. Ryan Huang.
+meta_desc: umich eecs 582, fall 2023 
+# baseurl: "/teaching/sp18/cs718" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ryanphuang
+github_username:  ryanphuang
+
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+navigation:
+  - title: Home
+    url: /index.html
+  - title: Syllabus
+    url: /syllabus.html
+  - title: Reviews
+    url: /reviews.html
+  - title: Questions
+    url: /questions.html
+  - title: Project
+    url: /project.html
+  - title: Piazza
+    url: https://piazza.com/jhu/spring2020/cs718/home

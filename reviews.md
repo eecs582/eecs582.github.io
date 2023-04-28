@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+## Paper Summary
+
+An important component of this class is the reading and discussions 
+of systems research papers. To help you with this and to ensure
+we have a productive discussion in class, you are required to 
+write a concise summary for the required papers <b>before</b> 
+each class and submit the review.
+
+We have provided a [summary template](eecs582_review_summary.md)<sup>\*</sup> 
+to help you write the review. You do not have to follow the outline. But your 
+review must summarize the key points of the paper and your thoughts. 
+
+We may include a question some paper in the assignment column of the schedule 
+page. In that case, you have to answer the questions in your review summary. 
+
+If there are two or more required papers listed in one lecture, you are
+required to write a review for one of them (typically the first listed paper
+will be discussed extensively, so we suggest you to write review for that
+paper). You are encouraged to briefly compared and contrast that paper with the
+others in your review. But note, this choice only applies to the review---you
+must still **read** all the required papers. 
+
+You are also welcome to include in your summary the questions that you would like to be 
+discussed in class. 
+
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    <span class="glyphicon glyphicon-warning-sign"></span>&nbsp;&nbsp;<strong>Warning</strong>
+  </div>
+  <div class="panel-body">
+    <p>
+    Your reviews should *not* copy-paste large chunk of the paper's descriptions.
+    They must come from your own interpretation and thinking. We encourage you to 
+    form a discussion/reading group to more effectively read the papers. But
+    you should write the reviews independently.
+    </p>
+
+    <p>
+    Copying reviews found on the Internet or from others is also disallowed. That
+    will constitute a violation of the academic integrity policies and result in 
+    serious consequences.
+    </p>
+  </div>
+</div>
