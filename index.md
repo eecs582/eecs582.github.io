@@ -29,7 +29,7 @@ synchronization, communication, file systems, cloud systems,
 reliability, formal verification, security, and 
 history and experience of systems.
 
-**Prerequisites**: 601.318/418/618 (Principles of Operating Systems).
+**Prerequisites**: EECS 482 (Introduction to Operating Systems) or equivalent.
 
 <hr>
 

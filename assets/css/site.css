@@ -13,6 +13,9 @@
 .bs-docs-navbar-masthead {
 	top: 62px;
 }
+.navbar {
+  font-size: 18px;
+}
 .navbar-masthead {
 	min-height: 44px;
   margin-bottom: 18px;
@@ -68,8 +71,7 @@
   background-color: #e0e0bb;
 }
 body {
-  position: relative;
-  padding-top: 114px;
+  padding-top: 130px;
   padding-bottom: 40px;
 }
 

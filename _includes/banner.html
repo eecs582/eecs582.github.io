@@ -1,55 +1,54 @@
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <p class="navbar-text pull-right" style="font-size:18px;color:white;padding-right:10px;">Fall 2023</p>
-      <h3 style="color:#fff"><span style="font-weight:bold;">EECS 582</span>: Advanced Operating Systems</h3>
-      <ul class="nav navbar-nav">
-        {% for item in site.navigation %}
+      <div class="collapse navbar-collapse flex-column" id="navbarMain">
+        <div class="navbar-nav me-auto">
+          <h4 class="navbar-text pb-0" style="color:#e0fa07;padding-left: var(--bs-navbar-nav-link-padding-x);"><span style="font-weight:bold;">EECS 582</span>: Advanced Operating Systems</h4>
+          <h5 class="navbar-text ps-4 pb-0 ps-2" style="color:#e6C134">Fall 2023</h5>
+        </div>
+        <ul class="navbar-nav me-auto">
+          {% for item in site.navigation %}
           {%- if page.url contains item.url -%}
-            {%- assign class = 'active' -%}
+          {%- assign class = 'active' -%}
           {%- elsif page.url == '/' and item.url == '/index.html' -%}
-            {%- assign class = 'active' -%}
+          {%- assign class = 'active' -%}
           {%- else -%}
-            {%- assign class = nil -%}
+          {%- assign class = nil -%}
           {%- endif -%}
           {%- if item.dropdown -%}
-            {% if class %}
-              {%- assign class = class | append: ' dropdown' -%}
-            {% else %}
-              {%- assign class = 'dropdown' -%}
-            {% endif %}
+          {% if class %}
+          {%- assign class = class | append: ' dropdown' -%}
+          {% else %}
+          {%- assign class = 'dropdown' -%}
+          {% endif %}
           {%- endif -%}
           {%- if item.url contains 'http://' or item.url contains 'https://' -%}
           {%- assign aurl = item.url -%}
           {%- else -%}
           {%- assign aurl = item.url | relative_url -%}
           {%- endif -%}
-        <li class="{{ class }}">
-          {% if item.dropdown -%}
-          <a href="{{ aurl }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ item.title }} <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            {%- for dp in item.dropdown %}
+          <li class="{{ class }}">
+            {% if item.dropdown -%}
+            <a href="{{ aurl }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ item.title }} <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              {%- for dp in item.dropdown %}
               {% if dp.title -%}
-            <li><a href="{{ dp.url | relative_url }}">{{ dp.title }}</a></li>
+              <li><a href="{{ dp.url | relative_url }}">{{ dp.title }}</a></li>
               {%- else -%}
-            <li role="separator" class="divider"></li>
+              <li role="separator" class="divider"></li>
               {%- endif -%}
-            {%- endfor %}
-          </ul>
-          {%- else -%}
-          <a class="nav-link" href="{{ aurl }}">{{ item.title }}</a>
-          {%- endif %}
-        </li>
-        {%- endfor %}
-      </ul>
+              {%- endfor %}
+            </ul>
+            {%- else -%}
+            <a class="nav-link" href="{{ aurl }}">{{ item.title }}</a>
+            {%- endif %}
+          </li>
+          {%- endfor %}
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
