@@ -46,7 +46,7 @@ history and experience of systems.
 
 ## Meetings
 
-| **Lecture**               | Tuesday/Thursday 3:00pm-4:30pm <br> DOW 3150|
+| **Lecture**               | Tuesday/Thursday 3:00pm-4:30pm <br> IOE 1610|
 {: .table .table-bordered .table-hover}
 
 ## Readings
