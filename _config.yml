@@ -18,8 +18,8 @@ exclude:
 navigation:
   - title: Home
     url: /index.html
-  - title: Syllabus
-    url: /syllabus.html
+  - title: Schedule
+    url: /schedule.html
   - title: Reviews
     url: /reviews.html
   - title: Questions

@@ -4,7 +4,8 @@
   --bs-list-group-active-border-color: #93c0f1;
 }
 .navbar-nav .nav-item:hover .nav-link {
-    background-color: black;
+   color: black;
+   background-color: #f3fed6;
 }
 .banner-head {
   position: fixed;
@@ -19,7 +20,7 @@
   background-color: #1b6ec1;
 }
 .banner-bg {
-  background-color: #ffffff;
+  background-color: #00274c;
 }
 .navbar-title-main {
   font-weight: bold;
@@ -28,7 +29,7 @@
 }
 .navbar-title-sub {
   font-weight: bold;
-  color: #ffe3d1;
+  color: #ffcb05;
   padding-top:0.7rem;
 }
 .bs-docs-navbar-masthead {
