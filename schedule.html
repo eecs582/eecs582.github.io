@@ -1,0 +1,485 @@
+---
+layout: schedule
+---
+
+<h2>Schedule</h2>
+
+<p>
+<span class="badge bg-info">Note</span> this schedule is subject to change. Please check this page frequently.
+</p>
+
+<p>
+<span class="badge bg-danger">Important</span> the required readings must be completed <b>before</b> the class. Please submit your reviews by <span class="text-danger">12pm</span> on the day of class.
+</p>
+
+<table class="table table-bordered syllabus-table-striped table-hover" id="schedule-table">
+  <thead>
+    <tr class="info">
+      <th style="width: 3%">Week</th>
+      <th style="width: 7%">Date</th>
+      <th style="width: 10%">Topic</th>
+      <th style="width: 60%">Readings</span></th>
+      <th style="width: 10%">Lead</th>
+      <th style="width: 10%">Assignments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W1</td>
+      <td>Tue 08/29</td>
+      <td>Course Intro</td>
+      <td>
+        <ol>
+          <li><a href="https://www.dreamsongs.com/RiseOfWorseIsBetter.html">Rise of Worse Is Better</a>, Gabriel, "Lisp: Good News, Bad News, How to Win Big", 1989</li>
+          <li><a href="https://www.usenix.org/legacy/publications/library/proceedings/dsl97/good_paper.html">How (and How Not) to Write a Good Systems Paper</a>, Levin and Redell, ACM SIGOPS OSR, 1983</li>
+          <li><a href="http://cseweb.ucsd.edu/~wgg/CSE210/howtoread.html">How to Read an Engineering Research Paper</a>, Griswold</li>
+        </ol>
+        <div><b>Optional:</b></div>
+        <ul>
+          <li><a href="https://minnie.tuhs.org/pipermail/tuhs/2017-May/011552.html">Example of Worse-Is-Better in Linux vs Unix</a>, Ts'o, TUHS mailing list, 2017</li>
+          <li><a href="readings/paper-reading.pdf">How to Read a Paper</a>, Keshav</li>
+        </ul>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 08/31</td>
+      <td>Historical Perspective</td>
+      <td>
+        <ol>
+          <li><a href="readings/the-dijkstra.pdf">The Structure of the 'THE'-Multiprogramming System</a>, Dijkstra, CACM, 1968</li>
+          <li><a href="readings/nucleus.pdf">The Nucleus of a Multiprogramming System</a>, Hansen, CACM, 1970</li>
+        </ol>
+      </td>
+      <td></td>
+      <td><a href="questions.html#week1-lec2">Question</a></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W2</td>
+      <td>Tue 09/05</td>
+      <td>Time-Sharing</td>
+      <td>
+        <ol>
+          <li><a href="https://multicians.org/fjcc3.html">Structure of the Multics Supervisor</a>, Vyssotsky, Corbató, and Graham, Fall Joint Computer Conference, 1965</li>
+          <li><a href="readings/plan9.pdf">Plan 9 From Bell Labs</a>, Pike, Presotto, Dorward, Flandrena, Thompson, Trickey, and Winterbottom, USENIX Computing Systems, 1995</li>
+        </ol>
+        <div><b>Optional:</b></div>
+        <ul>
+          <li><a href="readings/unix.pdf">The UNIX Time-Sharing System</a>, Ritchie and Thompson, CACM, 1974</li>
+          <li><a href="readings/unix-evolution.pdf">The Evolution of the Unix Time-sharing System</a>, Ritchie, Bell Labs Technical Journal, 1984</li>
+        </ul>
+      </td>
+      <td></td>
+      <td><a href="questions.html#week2-lec1">Question</a></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 09/07</td>
+      <td>OS Structure</td>
+      <td>
+        <ol>
+          <li><a href="readings/mach-usenix86.pdf">Mach: A New Kernel Foundation For UNIX Development</a>, Accetta, Baron, Bolosky, Golub, Rashid, and Young, USENIX, 1986</li>
+          <li><a href="readings/ukernel-construction.pdf">On μ-Kernel Construction</a>, Liedtke, SOSP, 1995</li>
+        </ol>
+      </td>
+      <td></td>
+      <td><a href="questions.html#week3-lec2">Question</a></td>
+    </tr>
+    <tr>
+      <td rowspan="3" class="syllabus-week">W3</td>
+      <td>Tue 09/12</td>
+      <td>OS Structure</td>
+      <td>
+        <ol>
+          <li><a href="readings/l4-performance.pdf">The Performance of μ-Kernel-Based Systems</a>, Härtig, Hohmuth, Liedtke, Schönberg, and Wolter, SOSP, 1997</li>
+        </ol>
+        <div><b>Optional:</b></div>
+        <ul>
+          <li><a href="readings/microkernel-ipc.pdf">Improving IPC by Kernel Design</a>, Liedtke, SOSP, 1993</li>
+          <li><a href="readings/l3-20years.pdf">From L3 to seL4 What Have We Learnt in 20 Years of L4 Microkernels?</a>, Elphinstone and Heiser, SOSP, 2013</li>
+        </ul>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 09/14</td>
+      <td>OS Structure</td>
+      <td>
+        <ol>
+          <li><a href="readings/exokernel.pdf">Exokernel: An Operating System Architecture for Application-Level Resource Management</a>, Engler, Kaashoek, and O'Toole, SOSP, 1995</li>
+        </ol>
+        <div><b>Optional:</b></div>
+        <ul>
+          <li><a href="readings/exokernel-app.pdf">Application Performance and Flexibility on Exokernel Systems</a>, Kaashoek, Engler, Ganger, Briceño, Hunt, Mazières, Pinckney, Grimm, Jannotti, and Mackenzie, SOSP, 1997</li>
+        </ul>
+      </td>
+      <td></td>
+      <td><a href="questions.html#week4-lec1">Question</a></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Fri 09/15</td>
+      <td></td>
+      <td>
+        <ol>
+        </ol>
+      </td>
+      <td></td>
+      <td><span class="text-danger">Project proposal due</span></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W4</td>
+      <td>Tue 09/19</td>
+      <td>OS Structure</td>
+      <td>
+        <ol>
+          <li><a href="readings/drawbridge.pdf">Rethinking the Library OS from the Top Down</a>, Porter, Boyd-Wickizer, Howell, Olinsky, and Hunt, ASPLOS, 2011</li>
+        </ol>
+      </td>
+      <td></td>
+      <td><a href="questions.html#week4-lec2">Question</a></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Tue 09/26</td>
+      <td>Virtual Machine</td>
+      <td>
+        <ol>
+          <li><a href="readings/disco.pdf">Disco: Running Commodity Operating Systems on Scalable Multiprocessors</a>, Bugnion, Devine, and Rosenblum, SOSP, 1997</li>
+        </ol>
+        <div><b>Optional:</b></div>
+        <ul>
+          <li><a href="readings/vm370.pdf">The Origin of the VM/370 Time-Sharing System</a>, Creasy, IBM Journal of Research and Development, 1981</li>
+        </ul>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W5</td>
+      <td>Tue 09/26</td>
+      <td>Virtual Machine</td>
+      <td>
+        <ol>
+          <li><a href="readings/xen.pdf">Xen and the Art of Virtualization</a>, Barham, Dragovic, Fraser, Hand, Harris, Ho, Neugebauer, Pratt, and Warfield, SOSP, 2003</li>
+          <li><a href="readings/vmm-hotos05.pdf">Are Virtual Machine Monitors Microkernels Done Right?</a>, Hand, Warfield, Fraser, Kotsovinos, and Magenheimer, HotOS, 2005</li>
+          <li><a href="readings/vmm-osr06.pdf">Are Virtual Machine Monitors Microkernels Done Right?</a>, Heiser, Uhlig, and LeVasseur, ACM SIGOPS OSR, 2006</li>
+        </ol>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 09/28</td>
+      <td>Lightweight Virtualization</td>
+      <td>
+        <ol>
+          <li><a href="readings/dune.pdf">Dune: Safe User-level Access to Privileged CPU Features</a>, Belay, Bittau, Mashtizadeh, Terei, Mazieres, and Kozyrakis, OSDI, 2012</li>
+          <li><a href="readings/firecracker.pdf">Firecracker: Lightweight Virtualization for Serverless Applications</a>, Brooker, Florescu, Popa, Neugebauer, Agache, Iordache, Liguori, and Piwonka, NSDI, 2020</li>
+        </ol>
+        <div><b>Optional:</b></div>
+        <ul>
+          <li><a href="readings/container.pdf">Container-based Operating System Virtualization: A Scalable, High-performance Alternative to Hypervisors</a>, Soltesz, Pötzl, Fiuczynski, and Peterson, EuroSys, 2007</li>
+          <li><a href="http://cnp.neclab.eu/projects/lightvm/lightvm.pdf">My VM is Lighter (and Safer) than your Container</a>, Manco, Lupu, Schmidt, Mendes, Kuenzer, Sati, Yasukata, Raiciu, and Huici, SOSP, 2017</li>
+        </ul>
+      </td>
+      <td></td>
+      <td><a href="#">Question</a></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W6</td>
+      <td>Tue 10/03</td>
+      <td>Virtual Memory</td>
+      <td>
+        <ol>
+          <li><a href="readings/vms.pdf">Virtual Memory Management in VAX/VMS</a>, Levy and Lipman, IEEE Computer, 1982</li>
+          <li><a href="readings/mach-vm.pdf">Machine-Independent Virtual Memory Management for Paged Uniprocessor and Multiprocessor Architectures</a>, Rashid, Tevanian, Young, Golub, Baronn, Black, Bolosky, and Chew, ASPLOS, 1987</li>
+        </ol>
+      </td>
+      <td></td>
+      <td><a href="questions.html#week5-lec2">Question</a></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 10/05</td>
+      <td>Scheduling</td>
+      <td>
+        <ol>
+          <li><a href="readings/scheduler-activation.pdf">Scheduler Activations: Effective Kernel Support for the User-level Management of Parallelism</a>, Anderson, Bershad, Lazowska, and Levy, SOSP, 1991</li>
+          <li><a href="readings/lottery-scheduling.pdf">Lottery Scheduling: Flexible Proportional-Share Resource Management</a>, Waldspurger and Weihl, OSDI, 1994</li>
+        </ol>
+        <div><b>Optional:</b></div>
+        <ul>
+          <li><a href="readings/lottery-scheduling-impl.pdf">Implementing Lottery Scheduling: Matching the Specializations in Traditional Schedulers</a>, Petrou, Milford, and Gibson, USENIX ATC, 1999</li>
+          <li><a href="readings/stride-scheduling.pdf">Stride Scheduling: Deterministic Proportional-Share Resource Management</a>, Waldspurger and Weihl, MIT Technical Report, 1995</li>
+        </ul>
+      </td>
+      <td></td>
+      <td><a href="questions.html#week6-lec1">Question</a></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W7</td>
+      <td>Tue 10/10</td>
+      <td>File System</td>
+      <td>
+        <ol>
+          <li><a href="readings/lfs.pdf">The Design and Implementation of a Log-Structured File System</a>, Rosenblum and Ousterhout, SOSP, 1991</li>
+        </ol>
+        <div><b>Optional:</b></div>
+        <ul>
+          <li><a href="readings/ffs.pdf">A Fast File System for Unix</a>, McKusick, Joy, Leffler, and Fabry, ACM TOCS, 1984</li>
+        </ul>
+      </td>
+      <td></td>
+      <td><a href="questions.html#week7-lec1">Question</a></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 10/12</td>
+      <td>File System</td>
+      <td>
+        <ol>
+          <li><a href="readings/soft-updates.pdf">Soft Updates: A Solution to the Metadata Update Problem in File Systems</a>, Ganger, K.McKusick, Soules, and Patt., ACM TOCS, 2000</li>
+        </ol>
+        <div><b>Optional:</b></div>
+        <ul>
+          <li><a href="readings/rio.pdf">The Rio File Cache: Surviving Operating System Crashes</a>, Chen, Ng, Chandra, Aycock, Rajamni, and Lowell, ASPLOS, 1996</li>
+          <li><a href="readings/rio-vista.pdf">Free Transactions with Rio Vista</a>, Lowell and Chen, SOSP, 1997</li>
+        </ul>
+      </td>
+      <td></td>
+      <td><a href="questions.html#week7-lec2">Question</a></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W8</td>
+      <td class="success">Tue 10/17</td>
+      <td class="success">Fall Break</td>
+      <td class="success"></td>
+      <td class="success"></td>
+      <td class="success"></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 10/19</td>
+      <td>Multi-core & Scalability</td>
+      <td>
+        <ol>
+          <li><a href="readings/linux-scalability.pdf">An Analysis of Linux Scalability to Many Cores</a>, Boyd-Wickizer, Clements, Mao, Pesterev, Kaashoek, Morris, and Zeldovich, OSDI, 2010</li>
+          <li><a href="readings/commutativity.pdf">The Scalable Commutativity Rule: Designing Scalable Software for Multicore Processors</a>, Clements, Kaashoek, Zeldovich, Morris, and Kohler, SOSP, 2013</li>
+        </ol>
+      </td>
+      <td></td>
+      <td><a href="questions.html#">Question</a></td>
+    </tr>
+    <tr>
+      <td rowspan="3" class="syllabus-week">W9</td>
+      <td class="success">Tue 10/24</td>
+      <td class="success">Project hack day</td>
+      <td class="success"></td>
+      <td class="success"></td>
+      <td class="success"></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 10/26</td>
+      <td>Multi-core & Scalability</td>
+      <td>
+        <ol>
+          <li><a href="readings/multikernel.pdf">The Multikernel: A New OS Architecture for Scalable Multicore Systems</a>, Baumann, Barham, Dagand, Harris, Isaacs, Peter, Roscoe, Schüpbach, and Singhania, SOSP, 2009</li>
+          <li><a href="readings/corey.pdf">Corey: An Operating System for Many Cores</a>, Boyd-Wickizer, Chen, Chen, Mao, Kaashoek, Morris, Pesterev, Stein, Wu, Dai, Zhang, and Zhang, OSDI, 2008</li>
+        </ol>
+      </td>
+      <td></td>
+      <td><a href="questions.html#week9-lec2">Question</a></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Sun 10/29</td>
+      <td></td>
+      <td>
+        <ol>
+        </ol>
+      </td>
+      <td></td>
+      <td><span class="text-danger">Project checkpoint due</span></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W10</td>
+      <td>Tue 10/31</td>
+      <td></td>
+      <td>
+        Buffer
+<ol>
+        </ol>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 11/02</td>
+      <td>Distribution</td>
+      <td>
+        <ol>
+          <li><a href="readings/v.pdf">The Distributed V Kernel and its Performance for Diskless Workstations</a>, Cheriton and Zwaenepoel, SOSP, 1983</li>
+          <li><a href="readings/sprite.pdf">The Sprite Network Operating System</a>, Ousterhout, Cerenson, Douglis, Nelson, and Welch, IEEE Computer, 1988</li>
+        </ol>
+        <div><b>Optional:</b></div>
+        <ul>
+          <li><a href="https://web.stanford.edu/~ouster/cgi-bin/spriteRetrospective.php">A Brief Retrospective on the Sprite Network Operating System</a>, Ousterhout</li>
+        </ul>
+      </td>
+      <td></td>
+      <td><a href="questions.html#week10-lec2">Question</a></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W11</td>
+      <td>Tue 11/07</td>
+      <td>Language Support</td>
+      <td>
+        <ol>
+          <li><a href="readings/singularity-language.pdf">Language Support for Fast and Reliable Message-based Communication in Singularity OS</a>, Fähndrich, Aiken, Hawblitzel, Hodson, Hunt, Larus, and Levi, EuroSys, 2006</li>
+          <li><a href="https://www.usenix.org/system/files/osdi20-narayanan_vikram.pdf">RedLeaf: Isolation and Communication in a Safe Operating System</a>, Narayanan, Huang, Detweiler, Appel, Li, Zellweger, and Burtsev, OSDI, 2020</li>
+        </ol>
+        <div><b>Optional:</b></div>
+        <ul>
+          <li><a href="https://www.usenix.org/system/files/osdi20-narayanan_vikram.pdf">Theseus: an Experiment in Operating System Structure and State Management</a>, Boos, Liyanage, Ijaz, and Zhong, OSDI, 2020</li>
+          <li><a href="readings/singularity.pdf">Singularity: Rethinking the Software Stack</a>, Hunt and Larus, ACM SIGOPS OSR, 2007</li>
+        </ul>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 11/09</td>
+      <td>Reliability</td>
+      <td>
+        <ol>
+          <li><a href="readings/deviant.pdf">Bugs as Deviant Behavior: A General Approach to Inferring Errors in Systems Code</a>, Engler, Chen, Hallem, Chou, and Chelf, SOSP, 2001</li>
+          <li><a href="readings/nooks.pdf">Improving the Reliability of Commodity Operating Systems</a>, Swift, Bershad, and Levy, SOSP, 2003</li>
+        </ol>
+        <div><b>Optional:</b></div>
+        <ul>
+          <li><a href="readings/bugs-realworld.pdf">A Few Billion Lines of Code Later: Using Static Analysis to Find Bugs in the Real World</a>, Bessey, Block, Chelf, Chou, Fulton, Hallem, Henri-Gros, Kamsky, McPeak, and Engler, CACM, 2010</li>
+        </ul>
+      </td>
+      <td></td>
+      <td><a href="questions.html#week11-lec1">Question</a></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W12</td>
+      <td>Tue 11/14</td>
+      <td>Reliability</td>
+      <td>
+        <ol>
+          <li><a href="https://homes.cs.washington.edu/~tom/pubs/eraser.pdf">Eraser: a dynamic data race detector for multithreaded programs</a>, Savage, Burrows, Nelson, Sobalvarro, and Anderson, SOSP, 1997</li>
+          <li><a href="https://www.usenix.org/legacy/event/osdi08/tech/full_papers/cadar/cadar.pdf">KLEE: Unassisted and Automatic Generation of High-Coverage Tests for Complex Systems Programs</a>, Cadar, Dunbar, and Engler, OSDI, 2008</li>
+        </ol>
+      </td>
+      <td></td>
+      <td><a href="#">Question</a></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 11/16</td>
+      <td>Formal Verification</td>
+      <td>
+        <ol>
+          <li><a href="readings/seL4.pdf">seL4: Formal Verification of an OS Kernel</a>, Klein, Elphinstone, Heiser, Andronick, Cock, Derrin, Elkaduwe, Engelhardt, Kolanski, Norrish, Sewell, Tuch, and Winwood, SOSP, 2009</li>
+          <li><a href="readings/fscq.pdf">Using Crash Hoare Logic for Certifying the FSCQ File System</a>, Chen, Ziegler, Chajed, Chlipala, Kaashoek, and Zeldovich, SOSP, 2015</li>
+        </ol>
+      </td>
+      <td></td>
+      <td><a href="#">Question</a></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W13</td>
+      <td>Tue 11/21</td>
+      <td>Formal Verification</td>
+      <td>
+        <ol>
+          <li><a href="readings/yggdrasil.pdf">Push-Button Verification of File Systems via Crash Refinement</a>, Sigurbjarnarson, Bornholt, Torlak, and Wang, OSDI, 2016</li>
+        </ol>
+      </td>
+      <td></td>
+      <td><a href="#">Question</a></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 11/23</td>
+      <td>Security</td>
+      <td>
+        <ol>
+          <li><a href="readings/scone.pdf">SCONE: Secure Linux Containers with Intel SGX</a>, Arnautov, Trach, Gregor, Knauth, Martin, Priebe, Lind, Muthukumaran, O'Keeffe, Stillwell, Goltzsche, Eyers, Kapitza, Pietzuch, and Fetzer, OSDI, 2016</li>
+          <li><a href="readings/haven.pdf">Shielding Applications from an Untrusted Cloud with Haven</a>, Baumann, Peinado, and Hunt, OSDI, 2014</li>
+        </ol>
+        <div><b>Optional:</b></div>
+        <ul>
+          <li><a href="readings/trust.pdf">Reflections on Trusting Trust</a>, Thompson, CACM, 1984</li>
+        </ul>
+      </td>
+      <td></td>
+      <td><a href="#">Question</a></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W14</td>
+      <td>Tue 11/28</td>
+      <td>Data Center</td>
+      <td>
+        <ol>
+          <li><a href="readings/arrakis.pdf">Arrakis: The Operating System is the Control Plane</a>, Peter, Li, Zhang, Ports, Woos, Krishnamurthy, Anderson, and Roscoe, OSDI, 2014</li>
+          <li><a href="readings/ix.pdf">IX: A Protected Dataplane Operating System for High Throughput and Low Latency</a>, Belay, Prekas, Klimovic, Grossman, Kozyrakis, and Bugnion, OSDI, 2014</li>
+        </ol>
+      </td>
+      <td></td>
+      <td><a href="#">Question</a></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 11/30</td>
+      <td>Kernel-bypass</td>
+      <td>
+        <ol>
+          <li><a href="https://www.usenix.org/system/files/nsdi19-ousterhout.pdf">Shenango: Achieving High CPU Efficiency for Latency-sensitive Datacenter Workloads</a>, Ousterhout, Fried, Behrens, Belay, and Balakrishnan, NSDI, 2019</li>
+          <li><a href="https://www.usenix.org/system/files/nsdi19-kaffes.pdf">Shinjuku: Preemptive Scheduling for μsecond-scale Tail Latency</a>, Kaffes, Chong, Humphries, Belay, Mazières, and Kozyrakis, NSDI, 2019</li>
+        </ol>
+        <div><b>Optional:</b></div>
+        <ul>
+          <li><a href="https://research.google/pubs/pub48630.pdf">Snap: a Microkernel Approach to Host Networking</a>, Marty, Kruijf, Adriaens, Alfeld, Bauer, Contavalli, Dalton, Dukkipati, Evans, Gribble, Kidd, Kononov, Kumar, Mauer, Musick, Olson, Rubow, Ryan, Springborn, Turner, Valancius, Wang, and Vahdat, SOSP, 2019</li>
+          <li><a href="https://irenezhang.net/papers/demikernel-sosp21.pdf">The Demikernel Datapath OS Architecture for Microsecond-scale Datacenter Systems</a>, Zhang, Raybuck, Patel, Olynyk, Nelson, Leija, Martinez, Liu, Simpson, Jayakar, Penna, Demoulin, Choudhury, and Badam, SOSP, 2021</li>
+        </ul>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W15</td>
+      <td>Tue 12/05</td>
+      <td>Project Presentations</td>
+      <td>
+        In-class presentations
+<ol>
+        </ol>
+      </td>
+      <td></td>
+      <td><span class="text-danger">Project report due</span></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td></td>
+      <td></td>
+      <td>
+        <ol>
+        </ol>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
