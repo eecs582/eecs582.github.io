@@ -10,7 +10,7 @@ we have a productive discussion in class, you are required to
 write a concise summary for the required papers <b>before</b> 
 each class and submit the review.
 
-We have provided a [summary template](eecs582_review_summary.md)<sup>\*</sup> 
+We have provided a [summary template](eecs582_review_summary.md) 
 to help you write the review. You do not have to follow the outline. But your 
 review must summarize the key points of the paper and your thoughts. 
 
@@ -27,11 +27,11 @@ must still **read** all the required papers.
 You are also welcome to include in your summary the questions that you would like to be 
 discussed in class. 
 
-<div class="panel panel-danger">
-  <div class="panel-heading">
+<div class="card border-danger">
+  <div class="card-header bg-danger text-white">
     <span class="glyphicon glyphicon-warning-sign"></span>&nbsp;&nbsp;<strong>Warning</strong>
   </div>
-  <div class="panel-body">
+  <div class="card-body">
     <p>
     Your reviews should *not* copy-paste large chunk of the paper's descriptions.
     They must come from your own interpretation and thinking. We encourage you to 
