@@ -52,6 +52,7 @@ data centers, and history and experience of systems.
 ## Meetings
 
 | **Lecture**               | Tuesday/Thursday 3:00pm-4:30pm IOE 1610|
+| **Discussion**            | Friday 2:30pm-3:30pm Beyster 1670|
 {: .table .table-bordered .table-hover}
 
 ## Readings
@@ -70,33 +71,51 @@ group to discuss papers together before the class period, and we encourage
 the practice. The reading load will be heavy. So be sure to allocate enough
 time for it.
 
-* [Preliminary Reading List and Schedule](syllabus.html)
+* [Preliminary Reading List and Schedule](schedule.html)
 
-A helpful guide written by Bill Griswold on how to read and critique a research 
-paper is linked [here](http://cseweb.ucsd.edu/~wgg/CSE210/howtoread.html).
+## Policies
 
-## Reviews
-You are required to submit a brief review for each lecture's required reading. 
-The review must be turned in by <span class="text-danger">12pm</span> on the 
-day of each lecture. Please read further [instructions](reviews.html) on the 
-paper reviews.
+<span class="badge bg-info fs-6"><b>Paper Reviews</b></span>: You are required to submit a brief review for each lecture's required reading. 
+The review must be turned in by <span class="text-danger">at least 12 hours</span> before 
+class for each lecture. Please read further [instructions](reviews.html) on the paper reviews.
 
-## Class Participation
-The structure of this course is unusual in that there are NO lectures or presentations 
-during the class period. Instead, we will discuss research papers that we will 
-have all read before each class period. Because of this format, class participation 
-is vital to the success of the course. If you expect to just sit silently in the
-class and learn, you will get little out of this course. 
+<span class="badge bg-info fs-6"><b>Participation</b></span>: The structure of this course is unusual in that there are NO lectures during
+the class period. Instead, we will discuss research papers that we will have
+all read before each class period. Because of this format, class participation
+is vital to the success of the course. If you only sit silently in
+the class, you will get little out of this course. 
 
-I will lead the discussions for most of the lectures. I will ask direct 
-questions about the paper and expect you to be able to answer. Note that your answers 
-to these questions will be part of your overall grade. If you cannot do the reading 
-for a particular class, *please let me know*{: .text-danger}. You are allowed 
-**three** absences but you must still turn in the reviews before the next class. 
+In the lecture, I will ask direct questions about the paper and expect you to
+be able to answer. Note that your answers to these questions will be part of
+your overall grade.
 
-Some of the later lectures will be presented by students. One student will be
-leading the discussion while the others participate. We will send the 
-presentation schedule sign-up over email.
+<span class="badge bg-info fs-6"><b>Presentation</b></span>: 
+A subset of the lectures will be presented by students. The presentation should
+be about 20 minutes followed by discussions among the entire class led by the
+presenter. Each student will present *at least once* in the semester. We may
+assign two students to present one paper when the number of students exceeds
+the number of papers to be presented. The presentation will be graded based on
+the clarity, completeness, depth, and discussion.
+
+<span class="badge bg-info fs-6"><b>Attendance</b></span>: Three absences of classes are allowed for good reasons (e.g., conference presentation, 
+interview). But reviews of the papers must be turned in.
+
+<span class="badge bg-info fs-6"><b>Discussion</b></span>: You are strongly encouraged to discuss the papers with other students in the class -- 
+  you may have insights that others do not, and vice versa. Often students form reading groups, 
+  which I heartily encourage. Note that group discussion, however, is not an effective 
+  substitute for actually reading the paper.
+
+<span class="badge bg-info fs-6"><b>Project</b></span>: A major component of
+this course is a semester-long, research-oriented course project. You will 
+work in a team of 2-3 students on the project. This [page](project.html) contains
+further details on the requirements for the course project.
+
+<span class="badge bg-info fs-6"><b>Academic Integrity</b></span>: All students are required to 
+  know and adhere to the College of Engineering [Honor Code](https://ecas.engin.umich.edu/wp-content/uploads/sites/19/2023/02/College-of-Engineering-Honor-Code-UPDATED.pdf) and 
+  university policies. They apply to all course requirements, including the
+  paper reviews, proposals, course project code and documentation. <span
+  class="text-danger">Violations of the policies will result
+  in serious consequences</span>.
 
 ## Grading
 
@@ -121,18 +140,3 @@ presentation schedule sign-up over email.
   </tbody>
 </table>
 
-## Policies
-
-* Reviews, if any, must be turned in before class.
-* Three absences of classes are allowed for good reasons (e.g., conference presentation, 
-interview). But reviews of the papers must be turned in.
-* You are strongly encouraged to discuss the papers with other students in the class -- 
-  you may have insights that others do not, and vice versa. Often students form reading groups, 
-  which I heartily encourage. Note that group discussion, however, is not an effective 
-  substitute for actually reading the paper.
-* The course project is to be completed as a team. You can discuss project materials 
-  with others in the course, but your code must have been authored exclusively by 
-  members of your team. You **may not**{: .text-danger} copy code from another team 
-  or make your code available to others.
-* All students are required to know and adhere to the College of Engineering [Honor Code](https://ecas.engin.umich.edu/wp-content/uploads/sites/19/2023/02/College-of-Engineering-Honor-Code-UPDATED.pdf) and 
-  university policies. Failure to do so will result in serious consequences outlined in the policy.
