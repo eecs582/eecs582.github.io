@@ -4,12 +4,12 @@ layout: home
 
 ## Course Overview
 
-Operating systems are a critical and complex piece of software that does the 
-heavy lifting of managing computing devices for other software. It is also
-one of the few kind of software that has been extensively engineered, 
-studied, refined, debated, and even overhauled for over decades. While one
-might consider operating systems as a mature software already, its evolution is far
-from complete with exciting new ideas that keep being proposed.
+Operating systems are a critical and complex piece of software that does the
+heavy lifting of managing computing devices for other software. It is also one
+of the few kind of software that has been extensively engineered, studied,
+refined, debated, and even overhauled for over decades. While one might
+consider operating systems as mature software, its evolution is far from
+complete.
 
 This course exposes students to the operating systems as a research field and
 study operating systems, and more broadly computer systems in general, from a design 
@@ -23,11 +23,10 @@ techniques, the objectives of the course also include helping students learn:
 * How to compare and contrast different approaches to understand their trade-offs.
 * How to synthesize research themes and topics across multiple papers.
 
-This course involves readings on classic and new papers. Topics include 
-OS structure and extension techniques, virtualization, 
-synchronization, communication, file systems, cloud systems, 
-reliability, formal verification, security, and 
-history and experience of systems.
+This course involves readings on classic and new papers. Topics include OS
+structure and extension techniques, virtualization, synchronization,
+communication, file systems, reliability, formal verification,
+data centers, and history and experience of systems.
 
 **Prerequisites**: EECS 482 (Introduction to Operating Systems) or equivalent.
 
@@ -41,12 +40,18 @@ history and experience of systems.
 	<dd><b>Email: </b><a href="mailto:ryanph@umich.edu">ryanph@umich.edu</a></dd>
 	<dd><b>Address: </b>BBB 4611</dd>
 	<dd><b>Office Hours: </b>By appointment</dd>
+	<dt><h5>GSI</h5></dt>
+	<dd>TBA</dd>
+	<dd><b>Email: </b>TBA</dd>
+	<dd><b>Office Hours: </b>TBA</dd>
   <br>
+	<dt><h4>Staff list</h4></dt>
+	<dd>TBA (<b>preferred email channel for the course staff</b>)</dd>
 </dl>
 
 ## Meetings
 
-| **Lecture**               | Tuesday/Thursday 3:00pm-4:30pm <br> IOE 1610|
+| **Lecture**               | Tuesday/Thursday 3:00pm-4:30pm IOE 1610|
 {: .table .table-bordered .table-hover}
 
 ## Readings
@@ -94,10 +99,27 @@ leading the discussion while the others participate. We will send the
 presentation schedule sign-up over email.
 
 ## Grading
-* Class participation: 20%
-* Reviews: 20%
-* Quizzes: 10%
-* Project: 50%
+
+<table class="table table-bordered table-hover border-primary">
+  <tbody>
+    <tr>
+      <th scope="row">Reviews</th>
+      <td>20%</td> 
+    </tr>
+    <tr>
+      <th scope="row">Paper Presentation</th>
+      <td>15%</td> 
+    </tr>
+    <tr>
+      <th scope="row">Class Participation</th>
+      <td>15%</td> 
+    </tr>
+    <tr>
+      <th scope="row">Project</th>
+      <td>50%</td> 
+    </tr>
+  </tbody>
+</table>
 
 ## Policies
 

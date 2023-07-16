@@ -28,10 +28,9 @@ words, even if the project may not yield a real publication, it should at least
 have some intellectual depth and research flavor that readers can learn something.
 
 ### Topics
-I will provide some suggested topics. But you are encouraged to come up with your 
-own. You can also propose project that involves your current research with my 
-permission. I will meet with you several times during the semester to help you 
-refine the project.
+I will provide some suggested topics, but you are encouraged to come up with
+your own. I will meet with you several times during the semester to help you
+refine the project scope.
 
 ### Deliverable #1: Proposal
 In the proposal, briefly describe the following elements:
@@ -76,5 +75,4 @@ the cool ideas and results to other students. A live demo of the system
 you developed would be a nice element of the presentation.
 
 ### Deliverable #5: Source Code
-You will be required to turn in your source code and any documentation so that
-we can inspect it.
+You will be required to turn in your source code and any documentation for grading.
