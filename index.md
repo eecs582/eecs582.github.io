@@ -60,7 +60,7 @@ This course does not have a required textbook. However, it is useful to
 use an undergraduate operating systems textbook as a reference. 
 
 The major material of the course comes from seminal, noteworthy, or representative 
-papers from the literature. Each lecture will have one or two assigned papers 
+papers from the literature. Each class will have one or two assigned papers 
 to read. You **MUST**{: .text-danger} read the required papers **before**{: .text-danger} 
 the class, and be prepared to discuss them. In-class questions or quizzes will 
 confirm you do the reading.
@@ -73,11 +73,11 @@ time for it.
 
 * [Preliminary Reading List and Schedule](schedule.html)
 
-## Policies
+## Structure and Policies
 
-<span class="badge bg-info fs-6"><b>Paper Reviews</b></span>: You are required to submit a brief review for each lecture's required reading. 
+<span class="badge bg-info fs-6"><b>Paper Reviews</b></span>: You are required to submit a brief review for the required reading in each class. 
 The review must be turned in by <span class="text-danger">at least 12 hours</span> before 
-class for each lecture. Please read further [instructions](reviews.html) on the paper reviews.
+the class. Please read further [instructions](reviews.html) on the paper reviews.
 
 <span class="badge bg-info fs-6"><b>Participation</b></span>: The structure of this course is unusual in that there are NO lectures during
 the class period. Instead, we will discuss research papers that we will have
@@ -85,12 +85,12 @@ all read before each class period. Because of this format, class participation
 is vital to the success of the course. If you only sit silently in
 the class, you will get little out of this course. 
 
-In the lecture, I will ask direct questions about the paper and expect you to
+In each class, I will ask direct questions about the paper and expect you to
 be able to answer. Note that your answers to these questions will be part of
 your overall grade.
 
 <span class="badge bg-info fs-6"><b>Presentation</b></span>: 
-A subset of the lectures will be presented by students. The presentation should
+A subset of the papers will be presented by students. The presentation should
 be about 20 minutes followed by discussions among the entire class led by the
 presenter. Each student will present *at least once* in the semester. We may
 assign two students to present one paper when the number of students exceeds

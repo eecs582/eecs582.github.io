@@ -18,11 +18,11 @@ We may include a question some paper in the assignment column of the schedule
 page. In that case, you have to answer the questions in your review summary. 
 
 If there are two or more required papers listed in one lecture, you are
-required to write a review for one of them (typically the first listed paper
-will be discussed extensively, so we suggest you to write review for that
-paper). You are encouraged to briefly compared and contrast that paper with the
+required to write a review for at least *one paper*. Typically the first listed
+paper will be discussed extensively, so we suggest you to write review for that
+paper. You are encouraged to briefly compared and contrast that paper with the
 others in your review. But note, this choice only applies to the review---you
-must still **read** all the required papers. 
+must still **read all** the required papers. 
 
 You are also welcome to include in your summary the questions that you would like to be 
 discussed in class. 
