@@ -1,4 +1,7 @@
-**NOTE**: Your reviews do not have to follow this format. But you must summarize the key points of the paper and your thoughts. Your review also needs to answer the paper-specific questions, if any, listed in the assignment. Be brief and articulate in your review.
+**NOTE**: Your reviews do not have to follow this format. But you must
+summarize the key points of the paper and your thoughts. Your review also needs
+to answer the paper-specific questions, if any, listed in the assignment. Be
+brief and articulate in your review.
 
 =====================================================
 
@@ -7,23 +10,22 @@
 [your name] & [date]
 
 ### Motivation & goal
-  - What kind of reliability problem this work addresses? 
-  - Why is this problem important?
-  - What is the end goal of this work?
+  - What problem is this work addressing? 
+  - Why the problem is important?
+  - What goals does this work aim to achieve?
 
 ### Related work
   - What are the state-of-the-art solutions addressing this problem?
-  - Why are they inadequate?
+  - Why they are inadequate?
 
 ### Idea & insight
-  - What is the new idea the paper proposes?
+  - What is the key idea of this work?
   - What is the insight, if any, behind this idea?
   - Why *might* this idea be better than prior work?
 
 ### Solution
-  - Roughly speaking, how does the solution work? Its input, output, basic workflow, etc.
+  - Roughly speaking, how does the solution work?
   - What are the key techniques and algorithms used in the solution?
-  - On what platform is the solution implemented?
 
 ### Assumption & limitations
   - What assumptions do the proposed solution make?
@@ -32,7 +34,7 @@
 
 ### Effectiveness 
   - What experiments, analyses are conducted to evaluate the solution?
-  - Do these results and analyses back up the authors' claim?
+  - Do these results and analyses back up the paper's claims?
   - Are there any missing aspects in the evaluation?
 
 ### Comparison 
@@ -52,10 +54,18 @@
   - Are there any confusing parts of the paper that are not addressed?
   - If you were the authors, is there anything you would do differently?
 
+### Historical Papers Only
+  - What historical context (e.g., hardware trend) was the work in?
+  - What things you were taking for granted but now understand how they came to be?
+  - Is the paper still relevant for today?
+    - If so, in what way?
+    - If not, what has changed?
+
 ### Conclusion
   - What conclusion do you draw from this work?
   - What are the main take-away messages?
   - Can you relate to the findings/solutions/results from your own experience?
+  - How may this work influence the way we build systems in the future?
 
-### Q: paper specific question
+* Q: paper specific question
   - A:
