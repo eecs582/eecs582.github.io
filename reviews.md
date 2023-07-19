@@ -29,7 +29,7 @@ discussed in class.
 
 <div class="card border-danger">
   <div class="card-header bg-danger text-white">
-    <span class="glyphicon glyphicon-warning-sign"></span>&nbsp;&nbsp;<strong>Warning</strong>
+    <span class="bi bi-exclamation-triangle-fill"></span>&nbsp;&nbsp;<strong>Warning</strong>
   </div>
   <div class="card-body">
     <p>
