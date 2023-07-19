@@ -52,8 +52,9 @@ with your own!
   <div class="card-body">
   <ul>
     <li>When reading the papers in this course, try to identify the (sub-)problems are
-    related but unsolved, the limitations of the propose solution, and whether the
-    insights or techniques are applicable in a different problem domain. That could</li>
+    related but unsolved, limitations of the proposed solution, a possible better 
+    way to address the problem, whether the paper's insights or techniques 
+    are applicable in a different problem domain. Thinking along those lines can give you inspirations about potential project topics.</li>
     <li>Besides reading papers, your own experiences can also be a source to
     brainstorm about the project topics. For example, you encountered annoying
     performance issues in system software and were frustrated that the existing

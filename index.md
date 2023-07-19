@@ -82,8 +82,8 @@ the class. Please read further [instructions](reviews.html) on the paper reviews
 <span class="badge bg-info fs-6"><b>Participation</b></span>: The structure of this course is unusual in that there are NO lectures during
 the class period. Instead, we will discuss research papers that we will have
 all read before each class period. Because of this format, class participation
-is vital to the success of the course. If you only sit silently in
-the class, you will get little out of this course. 
+is vital to the success of the course. If you only remain silent in
+the class, you will get little out of this course.
 
 In each class, I will ask direct questions about the paper and expect you to
 be able to answer. Note that your answers to these questions will be part of
