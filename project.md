@@ -12,8 +12,8 @@ or systems in general. The project should identify a clear problem, motivate
 why that problem is important and why existing solutions are insufficient,
 propose an idea to address the problem, implement a prototype, and demonstrate
 the idea's efficacy through experiments and comparisons with existing
-solutions. In the end, you will write up a project report about your work, just
-like the research paper you read in the class.
+solutions. In the end, you will write up a project report about your work,
+just like the research papers you read in the class.
 
 Please use the [USENIX conference paper
 template](https://www.usenix.org/conferences/author-resources/paper-templates)
@@ -117,7 +117,7 @@ your solutions' superiority over state-of-the-art solution. Lastly, include a
 related work section to compare and contrast with your solution.
 
 There are no hard restrictions on the page limit on the final report, **because papers 
-do not need to be long to be good**. But your final report must comprehensively 
+do not need to be long to be good!** But your final report must comprehensively 
 cover all the points mentioned above. The rule of thumbs is that when it does so, 
 the report is around 6 to 10 pages.
 
