@@ -2,6 +2,10 @@
 layout: home
 ---
 
+<button type="button" class="btn btn-primary btn-lg">Large button</button>
+<button type="button" class="btn btn-primary">Default button</button>
+<button type="button" class="btn btn-primary btn-sm">Small button</button>
+
 ## Course Overview
 
 Operating systems are a critical and complex piece of software that does the
