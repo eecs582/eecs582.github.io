@@ -22,8 +22,6 @@ navigation:
     url: /schedule.html
   - title: Reviews
     url: /reviews.html
-  - title: Questions
-    url: /questions.html
   - title: Project
     url: /project.html
   - title: Piazza
