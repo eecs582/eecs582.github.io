@@ -36,8 +36,8 @@ that the readers can learn from. For (2), the resulting software artifact
 should be usable. 
 
 A survey of existing literature will *not* be suitable for the course project.
-Measurement studies of systems or system techniques are only allowed as a
-course project topic *with instructor's approval*. In that case, you must still
+Measurement studies of systems or system techniques are allowed 
+*with instructor's approval*. In that case, you must still
 build a measurement tool as part of the project.
 
 ### Topics and Tips
