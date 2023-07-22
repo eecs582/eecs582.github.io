@@ -2,10 +2,6 @@
 layout: home
 ---
 
-<button type="button" class="btn btn-primary btn-lg">Large button</button>
-<button type="button" class="btn btn-primary">Default button</button>
-<button type="button" class="btn btn-primary btn-sm">Small button</button>
-
 ## Course Overview
 
 Operating systems are a critical and complex piece of software that does the
@@ -55,9 +51,22 @@ data centers, and history and experience of systems.
 
 ## Meetings
 
-| **Lecture**               | Tuesday/Thursday 3:00pm-4:30pm IOE 1610|
-| **Discussion**            | Friday 2:30pm-3:30pm Beyster 1670|
-{: .table .table-bordered .table-hover}
+<p>
+<div class="border-table">
+<table class="table table-hover">
+  <tbody>
+    <tr scope="row">
+      <td><strong>Lecture</strong></td>
+      <td>Tuesday/Thursday 3:00pm-4:30pm IOE 1610</td>
+    </tr>
+    <tr scope="row">
+      <td><strong>Discussion</strong></td>
+      <td>Friday 2:30pm-3:30pm Beyster 1670</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</p>
 
 ## Readings
 This course does not have a required textbook. However, it is useful to 

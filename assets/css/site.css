@@ -14,13 +14,15 @@ html {
 .border-table {
   position: relative;
   border: 1px solid #f7f7f9;
-  border-radius: var(--st-table-border-radius);
   box-shadow: 0 1px 4px rgba(0,0,0,.4);
 }
-.border-table>*>thead th:first-child {
+.round-corner-table {
+  border-radius: var(--st-table-border-radius);
+}
+.round-corner-table>*>thead th:first-child {
   border-top-left-radius: var(--st-table-border-radius);
 }
-.border-table>*>thead th:last-child {
+.round-corner-table>*>thead th:last-child {
   border-top-right-radius: var(--st-table-border-radius);
 }
 .banner-head {
@@ -119,6 +121,7 @@ a {
 */
 .table {
   font-size: 16px;
+  margin-bottom: 0rem;
 }
 th {
   font-weight: bold;
