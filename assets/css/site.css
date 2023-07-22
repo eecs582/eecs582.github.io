@@ -273,8 +273,11 @@ details > summary:before {
     left: 0.6rem;
     color: #448aff;
     font-size: 1rem;
-    content: "\F4C9";
     font-family: 'bootstrap-icons';
+    content: "\F4C9";
+}
+.details-reading > summary:before {
+    content: "\F193";
 }
 details > summary:after {
     position: absolute;
