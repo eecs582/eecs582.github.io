@@ -92,7 +92,7 @@ have taken the undergraduate operating systems course. Thus, it will *not*
 cover background knowledge such as how virtual memory works. Most papers we will 
 read also make such an assumption. If you did not take an undergraduate OS 
 course, it will be quite challenging to complete this course. If your undergraduate 
-OS knowledge is rusty, review past lectures ([example](https://www.cs.jhu.edu/~huang/cs318/fall22/schedule.html)) to
+OS knowledge is rusty, review past lectures ([example](https://web.eecs.umich.edu/~ryanph/jhu/cs318/fall22/schedule.html)) to
 help better comprehend the papers.
 
 ## Structure and Policies
