@@ -235,6 +235,11 @@ th {
 .table-fit {
   width: 1px;
 }
+.grading-table {
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+}
 /*
 .table-bordered {
   border:1px solid gray

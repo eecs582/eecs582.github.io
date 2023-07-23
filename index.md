@@ -6,8 +6,8 @@ layout: home
 
 Operating systems are a critical and complex piece of software that does the
 heavy lifting of managing computing devices for other software. It is also one
-of the few kind of software that has been extensively engineered, studied,
-refined, debated, and even overhauled for over decades. While one might
+of the few types of software that has been extensively engineered, studied,
+refined, debated, and even overhauled for decades. While one might
 consider operating systems as mature software, its evolution is far from
 complete.
 
@@ -28,7 +28,8 @@ structure and extension techniques, virtualization, synchronization,
 communication, file systems, reliability, formal verification,
 data centers, and history and experience of systems.
 
-**Prerequisites**: EECS 482 (Introduction to Operating Systems) or equivalent.
+<span class="badge bg-info md-badge">Prerequisite</span>: EECS 482 (Introduction 
+to Operating Systems)* or equivalent.
 
 <hr>
 
@@ -70,21 +71,29 @@ data centers, and history and experience of systems.
 
 ## Readings
 This course does not have a required textbook. However, it is useful to 
-use an undergraduate operating systems textbook as a reference. 
+use an operating systems textbook as a reference. 
 
 The major material of the course comes from seminal, noteworthy, or representative 
-papers from the literature. Each class will have one or two assigned papers 
+papers from the literature. Each class will have one or two **required** papers 
 to read. You **MUST**{: .text-danger} read the required papers **before**{: .text-danger} 
 the class, and be prepared to discuss them. In-class questions or quizzes will 
 confirm you do the reading.
 
-For some topics, we will also list recommended papers. You are encouraged, 
+For some topics, we will list additional recommended papers. You are encouraged, 
 but not required, to read those. Students often find it useful to form a reading 
 group to discuss papers together before the class period, and we encourage 
 the practice. The reading load will be heavy. So be sure to allocate enough
 time for it.
 
-* [Preliminary Reading List and Schedule](schedule.html)
+* [Reading List and Schedule](schedule.html)
+
+<span class="badge bg-info md-badge">Note</span>: this course assumes that you
+have taken the undergraduate operating systems course. Thus, it will *not*
+cover background knowledge such as how virtual memory works. Most papers we will 
+read also make such an assumption. If you did not take an undergraduate OS 
+course, it will be quite challenging to complete this course. If your undergraduate 
+OS knowledge is rusty, review past lectures ([example](https://www.cs.jhu.edu/~huang/cs318/fall22/schedule.html)) to
+help better comprehend the papers.
 
 ## Structure and Policies
 
@@ -132,24 +141,27 @@ further details on the requirements for the course project.
 
 ## Grading
 
-<table class="table table-bordered table-hover border-primary">
-  <tbody>
-    <tr>
-      <th scope="row">Reviews</th>
-      <td>20%</td> 
-    </tr>
-    <tr>
-      <th scope="row">Paper Presentation</th>
-      <td>15%</td> 
-    </tr>
-    <tr>
-      <th scope="row">Class Participation</th>
-      <td>15%</td> 
-    </tr>
-    <tr>
-      <th scope="row">Project</th>
-      <td>50%</td> 
-    </tr>
-  </tbody>
-</table>
-
+<div class="container">
+  <div class="row">
+  <div class="col-8" style="padding-left:0px">
+    <ul class="list-group border-table grading-table">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <b>Reviews</b>
+        <span class="badge bg-primary rounded-pill">20%</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <b>Paper Presentation</b>
+        <span class="badge bg-primary rounded-pill">15%</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <b>Class Participation</b>
+        <span class="badge bg-primary rounded-pill">15%</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <b>Project</b>
+        <span class="badge bg-primary rounded-pill">50%</span>
+      </li>
+    </ul>
+  </div>
+  </div>
+</div>
