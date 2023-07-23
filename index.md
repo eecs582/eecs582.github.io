@@ -96,6 +96,35 @@ course, it will be quite challenging to complete this course. If your undergradu
 OS knowledge is rusty, review past lectures ([example](https://web.eecs.umich.edu/~ryanph/jhu/cs318/fall22/schedule.html)) to
 help better comprehend the papers.
 
+## Grading
+
+<div class="container">
+  <div class="row">
+  <div class="col-8" style="padding-left:0px">
+    <ul class="list-group border-table grading-table">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <b>Reviews</b>
+        <span class="badge bg-primary rounded-pill">20%</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <b>Paper Presentation</b>
+        <span class="badge bg-primary rounded-pill">15%</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <b>Class Participation</b>
+        <span class="badge bg-primary rounded-pill">15%</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <b>Project</b>
+        <span class="badge bg-primary rounded-pill">50%</span>
+      </li>
+    </ul>
+  </div>
+  </div>
+</div>
+
+<p></p>
+
 ## Structure and Policies
 
 <span class="badge bg-info fs-6"><b>Paper Reviews</b></span>: You are required to submit a brief review for the required reading in each class. 
@@ -139,33 +168,6 @@ further details on the requirements for the course project.
   paper reviews, proposals, course project code and documentation. <span
   class="text-danger">Violations of the policies will result
   in serious consequences</span>.
-
-## Grading
-
-<div class="container">
-  <div class="row">
-  <div class="col-8" style="padding-left:0px">
-    <ul class="list-group border-table grading-table">
-      <li class="list-group-item d-flex justify-content-between align-items-center">
-        <b>Reviews</b>
-        <span class="badge bg-primary rounded-pill">20%</span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-center">
-        <b>Paper Presentation</b>
-        <span class="badge bg-primary rounded-pill">15%</span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-center">
-        <b>Class Participation</b>
-        <span class="badge bg-primary rounded-pill">15%</span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-center">
-        <b>Project</b>
-        <span class="badge bg-primary rounded-pill">50%</span>
-      </li>
-    </ul>
-  </div>
-  </div>
-</div>
 
 ## Acknowledgment
 
