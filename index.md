@@ -70,8 +70,9 @@ to Operating Systems)* or equivalent.
 </p>
 
 ## Readings
-This course does not have a required textbook. However, it is useful to 
-use an operating systems textbook as a reference. 
+This course does not have a required textbook. However, we recommend you to
+use an undergraduate operating systems textbook as a reference, e.g., 
+[Operating Systems: Three Easy Pieces](http://www.ostep.org). 
 
 The major material of the course comes from seminal, noteworthy, or representative 
 papers from the literature. Each class will have one or two **required** papers 
@@ -165,3 +166,10 @@ further details on the requirements for the course project.
   </div>
   </div>
 </div>
+
+## Acknowledgment
+
+The course syllabus and materials are influenced by the advanced OS course at
+UCSD (CSE 221). We are particularly indebted to Geoff Voelker for sharing his
+lecture notes.
+
