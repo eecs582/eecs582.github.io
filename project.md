@@ -129,5 +129,5 @@ developed would be a nice element of the presentation. We might host a poster
 session in Tishman Hall if conditions allow.
 
 ### Deliverable #6: Source Code
-You will be required to turn in your source code along with instructions (documentation) and
+You will be required to turn in your source code along with a detailed README and
 scripts for grading. The software artifact should be runnable by the TA and instructor.
