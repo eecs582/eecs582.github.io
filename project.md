@@ -21,7 +21,8 @@ to format your project proposal and report.
 
 ### Expectations
 
-The best outcome for a project well done is that it will be suitable for
+The best outcome for a project is inventing the next Unix (seminal, high-impact work)! 
+A more realistic great outcome is that the project will be suitable for
 publication at a major systems conference (*OSDI, SOSP, EuroSys, NSDI, ASPLOS,
 USENIX ATC*). Indeed, some papers in top systems conference are a result of 
 a course project (e.g., [Infiniswap](https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/gu) was 
