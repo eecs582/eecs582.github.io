@@ -1,6 +1,6 @@
 **NOTE**: Your reviews do not have to follow this format. But you must
-summarize the key points of the paper and your thoughts. Your review also needs
-to answer the paper-specific questions, if any, listed in the assignment. Be
+summarize the key points of the paper and your thoughts. Your review also 
+must answer the paper-specific questions, if any, listed on the schedule. Be
 brief and articulate in your review.
 
 =====================================================
@@ -54,7 +54,7 @@ brief and articulate in your review.
   - Are there any confusing parts of the paper that are not addressed?
   - If you were the authors, is there anything you would do differently?
 
-### Historical Papers Only
+### Historical papers only
   - What historical context (e.g., hardware trend) was the work in?
   - What things you were taking for granted but now understand how they came to be?
   - Is the paper still relevant for today?
@@ -67,5 +67,6 @@ brief and articulate in your review.
   - Can you relate to the findings/solutions/results from your own experience?
   - How may this work influence the way we build systems in the future?
 
-* Q: paper specific question
+### Assigned paper questions
+* Q: XXX
   - A:
