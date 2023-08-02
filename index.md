@@ -131,9 +131,9 @@ help better comprehend the papers.
 The review must be turned in by <span class="text-danger">at least 12 hours</span> before 
 the class. Please read further [instructions](reviews.html) on the paper reviews.
 
-<span class="badge bg-info fs-6"><b>Participation</b></span>: The structure of this course is unusual in that there are NO lectures during
-the class period. Instead, we will discuss research papers that we will have
-all read before each class period. Because of this format, class participation
+<span class="badge bg-info fs-6"><b>Participation</b></span>: The structure of this course is unusual in that there are NO lectures. 
+Instead, we will discuss research papers that we will have
+*all read before* each class period. Because of this format, class participation
 is vital to the success of the course. If you only remain silent in
 the class, you will get little out of this course.
 
@@ -143,14 +143,14 @@ your overall grade.
 
 <span class="badge bg-info fs-6"><b>Presentation</b></span>: 
 A subset of the papers will be presented by students. The presentation should
-be about 20 minutes followed by discussions among the entire class led by the
-presenter. Each student will present *at least once* in the semester. We may
-assign two students to present one paper when the number of students exceeds
-the number of papers to be presented. The presentation will be graded based on
-the clarity, completeness, depth, and discussion.
+be followed by discussions among the entire class led by the presenter. Each
+student will present *at least once* in the semester. We may assign two
+students to present one paper when the number of students exceeds the number of
+papers to be presented. The presentation will be graded based on the clarity,
+completeness, depth, and discussion.
 
 <span class="badge bg-info fs-6"><b>Attendance</b></span>: Three absences of classes are allowed for good reasons (e.g., conference presentation, 
-interview). But reviews of the papers must be turned in.
+interview). However, reviews of the papers must still be turned in.
 
 <span class="badge bg-info fs-6"><b>Discussion</b></span>: You are strongly encouraged to discuss the papers with other students in the class -- 
   you may have insights that others do not, and vice versa. Often students form reading groups, 
