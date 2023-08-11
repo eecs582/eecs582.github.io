@@ -40,7 +40,7 @@ to Operating Systems)* or equivalent.
 	<dd><strong><a href="https://web.eecs.umich.edu/~ryanph">Ryan Huang</a></strong></dd>
 	<dd><b>Email: </b><a href="mailto:ryanph@umich.edu">ryanph@umich.edu</a></dd>
 	<dd><b>Address: </b>BBB 4611</dd>
-	<dd><b>Office Hours: </b>By appointment</dd>
+	<dd><b>Office Hours: </b>Tuesdays 1:30pm-2:30pm; By appointment</dd>
 	<dt><h5>GSI</h5></dt>
 	<dd>TBA</dd>
 	<dd><b>Email: </b>TBA</dd>
