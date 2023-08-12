@@ -45,9 +45,6 @@ to Operating Systems)* or equivalent.
 	<dd>TBA</dd>
 	<dd><b>Email: </b>TBA</dd>
 	<dd><b>Office Hours: </b>TBA</dd>
-  <br>
-	<dt><h4>Staff list</h4></dt>
-	<dd>TBA (<b>preferred email channel for the course staff</b>)</dd>
 </dl>
 
 ## Meetings
