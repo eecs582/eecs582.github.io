@@ -65,10 +65,8 @@ with your own!
     <li>Form the project team as soon as possible and start the project early. Systems 
     projects take time, even for a course project. If you start late, it is likely
     that you will not be able to finish the project in time.</li>
-    <li>While we encourage you to be ambitious, make sure the project 
-    is manageable, such that you have something to present at the end of the semester. 
-    It is useful to define multiple sub-goals, distinguish the basis and stretch goals, 
-    identify potential risks, and create back-up plans.
+    <li>While you are encouraged to be ambitious, make sure the project 
+    is manageable, such that you have something to present at the end.
     </li>
   </ul>
 </div>
@@ -117,8 +115,8 @@ observations and implications, conclude whether or how the results demonstrate
 your solutions' superiority over state-of-the-art solution. Lastly, include a
 related work section to compare and contrast with your solution.
 
-There are no hard restrictions on the page limit on the final report, **because papers 
-do not need to be long to be good!** But your final report must comprehensively 
+There are no hard restrictions on the page limit on the final report, *because papers 
+do not need to be long to be good!* But your final report must comprehensively 
 cover all the points mentioned above. The rule of thumbs is that when it does so, 
 the report is around 6 to 10 pages.
 
