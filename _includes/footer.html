@@ -1,6 +1,11 @@
 <footer class="site-footer">
+{%- if page.last_modified_at -%}
+{%- assign page_update_time = page.last_modified_at -%}
+{%- else -%}
+{%- assign page_update_time = site.time -%}
+{%- endif -%}
   <hr>
   <div class="wrapper">
-    Ryan Huang | Last updated {{ site.time }}.
+    Ryan Huang | Last updated {{ page_update_time }}.
   </div>
 </footer>
