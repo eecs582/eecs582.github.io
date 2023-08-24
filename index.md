@@ -44,6 +44,7 @@ to Operating Systems)* or equivalent.
 	<dt><h5>GSI</h5></dt>
 	<dd>Jonah Rosenblum</dd>
 	<dd><b>Email: </b><a href="mailto:jonaher@umich.edu">jonaher@umich.edu</a></dd>
+	<dd><b>Address: </b>BBB 4844</dd>
 	<dd><b>Office Hours: </b>Wednesdays 11am-12pm; Thursdays 2pm-3pm</dd>
 </dl>
 
