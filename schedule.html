@@ -5,7 +5,7 @@ layout: schedule
 <h2>Schedule</h2>
 
 <p>
-  <span class="badge bg-info md-badge">Note</span> this schedule is subject to change. Please check this page frequently.
+  <span class="badge bg-info md-badge">Note</span> this schedule is <span class="text-danger">subject to change</span>. Please check this page frequently.
 </p>
 
 <p>
@@ -32,29 +32,15 @@ layout: schedule
       <td>
         <ol>
           <li><a href="https://www.dreamsongs.com/RiseOfWorseIsBetter.html">Rise of Worse Is Better</a>, Gabriel, "Lisp: Good News, Bad News, How to Win Big", 1989</li>
-          <li><a href="readings/end2end.pdf">End-to-End Arguments in System Design</a>, Saltzer, Reed, and Clark, ACM TOCS, 1984</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
           <ul>
-          <li><a href="readings/design-hints.pdf">Hints for Computer System Design</a>, Lampson, SOSP, 1983</li>
           <li><a href="https://minnie.tuhs.org/pipermail/tuhs/2017-May/011552.html">Example of Worse-Is-Better in Linux vs Unix</a>, Ts'o, TUHS mailing list, 2017</li>
           <li><a href="https://www.usenix.org/legacy/publications/library/proceedings/dsl97/good_paper.html">How (and How Not) to Write a Good Systems Paper</a>, Levin and Redell, ACM SIGOPS OSR, 1983</li>
           <li><a href="http://cseweb.ucsd.edu/~wgg/CSE210/howtoread.html">How to Read an Engineering Research Paper</a>, Griswold</li>
           <li><a href="readings/paper-reading.pdf">How to Read a Paper</a>, Keshav</li>
           </ul>
-        </details>
-        <details>
-          <summary>Questions</summary>
-          <p>
-          <strong>End-to-end argument</strong>
-          <ul>
-            <li>Q1: Does the end-to-end argument suggest that we should not spend efforts making
-  functions in the low levels of a system like communication more reliable?</li>
-            <li>Q2: Give an example that you can think of or have encountered where the 
-  end-to-end argument applies.</li>
-          </ul>
-          </p>
         </details>
       </td>
       <td></td>
@@ -165,6 +151,7 @@ layout: schedule
       <td>
         <ol>
           <li><a href="readings/exokernel.pdf">Exokernel: An Operating System Architecture for Application-Level Resource Management</a>, Engler, Kaashoek, and O'Toole, SOSP, 1995</li>
+          <li><a href="readings/drawbridge.pdf">Rethinking the Library OS from the Top Down</a>, Porter, Boyd-Wickizer, Howell, Olinsky, and Hunt, ASPLOS, 2011</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
@@ -178,6 +165,12 @@ layout: schedule
           <strong>Exokernel</strong>
           <ul>
             <li>Q: Compare and contrast an exokernel with a microkernel.</li>
+          </ul>
+          </p>
+          <p>
+          <strong>Drawbridge</strong>
+          <ul>
+            <li>Q: How does Drawbridge differ with Exokernel in terms of their motivation and approaches?</li>
           </ul>
           </p>
         </details>
@@ -199,19 +192,16 @@ layout: schedule
     <tr>
       <td rowspan="3" class="syllabus-week">W4</td>
       <td>Tue 09/19</td>
-      <td>OS Structure</td>
+      <td>Virtual Machine</td>
       <td>
         <ol>
-          <li><a href="readings/drawbridge.pdf">Rethinking the Library OS from the Top Down</a>, Porter, Boyd-Wickizer, Howell, Olinsky, and Hunt, ASPLOS, 2011</li>
+          <li><a href="readings/disco.pdf">Disco: Running Commodity Operating Systems on Scalable Multiprocessors</a>, Bugnion, Devine, and Rosenblum, SOSP, 1997</li>
         </ol>
-        <details>
-          <summary>Questions</summary>
-          <p>
-          <strong>Drawbridge</strong>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
           <ul>
-            <li>Q: How does Drawbridge differ with Exokernel in terms of their motivation and approaches?</li>
+          <li><a href="readings/vm370.pdf">The Origin of the VM/370 Time-Sharing System</a>, Creasy, IBM Journal of Research and Development, 1981</li>
           </ul>
-          </p>
         </details>
       </td>
       <td></td>
@@ -242,24 +232,6 @@ layout: schedule
       <td>Virtual Machine</td>
       <td>
         <ol>
-          <li><a href="readings/disco.pdf">Disco: Running Commodity Operating Systems on Scalable Multiprocessors</a>, Bugnion, Devine, and Rosenblum, SOSP, 1997</li>
-        </ol>
-        <details open class="details-reading">
-          <summary>Additional Reading</summary>
-          <ul>
-          <li><a href="readings/vm370.pdf">The Origin of the VM/370 Time-Sharing System</a>, Creasy, IBM Journal of Research and Development, 1981</li>
-          </ul>
-        </details>
-      </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td style="display:none"></td>
-      <td>Thu 09/28</td>
-      <td>Virtual Machine</td>
-      <td>
-        <ol>
           <li><a href="readings/xen.pdf">Xen and the Art of Virtualization</a>, Barham, Dragovic, Fraser, Hand, Harris, Ho, Neugebauer, Pratt, and Warfield, SOSP, 2003</li>
           <li><a href="readings/vmm-hotos05.pdf">Are Virtual Machine Monitors Microkernels Done Right?</a>, Hand, Warfield, Fraser, Kotsovinos, and Magenheimer, HotOS, 2005</li>
           <li><a href="readings/vmm-osr06.pdf">Are Virtual Machine Monitors Microkernels Done Right?</a>, Heiser, Uhlig, and LeVasseur, ACM SIGOPS OSR, 2006</li>
@@ -284,8 +256,8 @@ layout: schedule
       <td></td>
     </tr>
     <tr>
-      <td rowspan="2" class="syllabus-week">W6</td>
-      <td>Tue 10/03</td>
+      <td style="display:none"></td>
+      <td>Thu 09/28</td>
       <td>Lightweight Virtualization</td>
       <td>
         <ol>
@@ -305,8 +277,8 @@ layout: schedule
       <td></td>
     </tr>
     <tr>
-      <td style="display:none"></td>
-      <td>Thu 10/05</td>
+      <td rowspan="2" class="syllabus-week">W6</td>
+      <td>Tue 10/03</td>
       <td>Virtual Memory</td>
       <td>
         <ol>
@@ -333,8 +305,8 @@ layout: schedule
       <td></td>
     </tr>
     <tr>
-      <td rowspan="2" class="syllabus-week">W7</td>
-      <td>Tue 10/10</td>
+      <td style="display:none"></td>
+      <td>Thu 10/05</td>
       <td>Scheduling</td>
       <td>
         <ol>
@@ -368,8 +340,8 @@ layout: schedule
       <td></td>
     </tr>
     <tr>
-      <td style="display:none"></td>
-      <td>Thu 10/12</td>
+      <td rowspan="2" class="syllabus-week">W7</td>
+      <td>Tue 10/10</td>
       <td>File System</td>
       <td>
         <ol>
@@ -400,26 +372,18 @@ layout: schedule
       <td></td>
     </tr>
     <tr>
-      <td rowspan="2" class="syllabus-week">W8</td>
-      <td class="success">Tue 10/17</td>
-      <td class="success">Fall Break</td>
-      <td class="success"></td>
-      <td class="success"></td>
-      <td class="success"></td>
-    </tr>
-    <tr>
       <td style="display:none"></td>
-      <td>Thu 10/19</td>
+      <td>Thu 10/12</td>
       <td>File System</td>
       <td>
         <ol>
           <li><a href="readings/soft-updates.pdf">Soft Updates: A Solution to the Metadata Update Problem in File Systems</a>, Ganger, K.McKusick, Soules, and Patt., ACM TOCS, 2000</li>
+          <li><a href="readings/extsync.pdf">Rethink the sync</a>, Nightingale, Veeraraghavan, Chen, and Flinn, OSDI, 2006</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
           <ul>
           <li><a href="readings/rio.pdf">The Rio File Cache: Surviving Operating System Crashes</a>, Chen, Ng, Chandra, Aycock, Rajamni, and Lowell, ASPLOS, 1996</li>
-          <li><a href="readings/extsync.pdf">Rethink the sync</a>, Nightingale, Veeraraghavan, Chen, and Flinn, OSDI, 2006</li>
           </ul>
         </details>
         <details>
@@ -436,16 +400,16 @@ layout: schedule
       <td></td>
     </tr>
     <tr>
-      <td rowspan="2" class="syllabus-week">W9</td>
-      <td class="success">Tue 10/24</td>
-      <td class="success">Project hack day</td>
+      <td rowspan="2" class="syllabus-week">W8</td>
+      <td class="success">Tue 10/17</td>
+      <td class="success">Fall Break</td>
       <td class="success"></td>
       <td class="success"></td>
       <td class="success"></td>
     </tr>
     <tr>
       <td style="display:none"></td>
-      <td>Thu 10/26</td>
+      <td>Thu 10/19</td>
       <td>Distribution</td>
       <td>
         <ol>
@@ -478,8 +442,16 @@ layout: schedule
       <td><span class="text-danger">Checkpoint #1 report due</span></td>
     </tr>
     <tr>
-      <td rowspan="2" class="syllabus-week">W10</td>
-      <td>Tue 10/31</td>
+      <td rowspan="2" class="syllabus-week">W9</td>
+      <td class="success">Tue 10/24</td>
+      <td class="success">Project hack day</td>
+      <td class="success"></td>
+      <td class="success"></td>
+      <td class="success"></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 10/26</td>
       <td>Multi-core & Scalability</td>
       <td>
         <ol>
@@ -507,8 +479,8 @@ layout: schedule
       <td></td>
     </tr>
     <tr>
-      <td style="display:none"></td>
-      <td>Thu 11/02</td>
+      <td rowspan="2" class="syllabus-week">W10</td>
+      <td>Tue 10/31</td>
       <td>Language Support</td>
       <td>
         <ol>
@@ -536,8 +508,8 @@ layout: schedule
       <td></td>
     </tr>
     <tr>
-      <td rowspan="2" class="syllabus-week">W11</td>
-      <td>Tue 11/07</td>
+      <td style="display:none"></td>
+      <td>Thu 11/02</td>
       <td>Reliability</td>
       <td>
         <ol>
@@ -565,8 +537,8 @@ does this method compare with other methods you know of for detecting systems bu
       <td></td>
     </tr>
     <tr>
-      <td style="display:none"></td>
-      <td>Thu 11/09</td>
+      <td rowspan="2" class="syllabus-week">W11</td>
+      <td>Tue 11/07</td>
       <td>Reliability</td>
       <td>
         <ol>
@@ -578,8 +550,8 @@ does this method compare with other methods you know of for detecting systems bu
       <td></td>
     </tr>
     <tr>
-      <td rowspan="2" class="syllabus-week">W12</td>
-      <td>Tue 11/14</td>
+      <td style="display:none"></td>
+      <td>Thu 11/09</td>
       <td>Formal Verification</td>
       <td>
         <ol>
@@ -597,8 +569,8 @@ does this method compare with other methods you know of for detecting systems bu
       <td></td>
     </tr>
     <tr>
-      <td style="display:none"></td>
-      <td>Thu 11/16</td>
+      <td rowspan="2" class="syllabus-week">W12</td>
+      <td>Tue 11/14</td>
       <td>Security</td>
       <td>
         <ol>
@@ -611,6 +583,19 @@ does this method compare with other methods you know of for detecting systems bu
           <li><a href="readings/trust.pdf">Reflections on Trusting Trust</a>, Thompson, CACM, 1984</li>
           </ul>
         </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 11/16</td>
+      <td>Data Center</td>
+      <td>
+        <ol>
+          <li><a href="readings/arrakis.pdf">Arrakis: The Operating System is the Control Plane</a>, Peter, Li, Zhang, Ports, Woos, Krishnamurthy, Anderson, and Roscoe, OSDI, 2014</li>
+          <li><a href="readings/ix.pdf">IX: A Protected Dataplane Operating System for High Throughput and Low Latency</a>, Belay, Prekas, Klimovic, Grossman, Kozyrakis, and Bugnion, OSDI, 2014</li>
+        </ol>
       </td>
       <td></td>
       <td></td>
@@ -634,19 +619,6 @@ does this method compare with other methods you know of for detecting systems bu
     <tr>
       <td rowspan="2" class="syllabus-week">W14</td>
       <td>Tue 11/28</td>
-      <td>Data Center</td>
-      <td>
-        <ol>
-          <li><a href="readings/arrakis.pdf">Arrakis: The Operating System is the Control Plane</a>, Peter, Li, Zhang, Ports, Woos, Krishnamurthy, Anderson, and Roscoe, OSDI, 2014</li>
-          <li><a href="readings/ix.pdf">IX: A Protected Dataplane Operating System for High Throughput and Low Latency</a>, Belay, Prekas, Klimovic, Grossman, Kozyrakis, and Bugnion, OSDI, 2014</li>
-        </ol>
-      </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td style="display:none"></td>
-      <td>Thu 11/30</td>
       <td>Kernel-bypass</td>
       <td>
         <ol>
@@ -659,6 +631,32 @@ does this method compare with other methods you know of for detecting systems bu
           <li><a href="https://research.google/pubs/pub48630.pdf">Snap: a Microkernel Approach to Host Networking</a>, Marty, Kruijf, Adriaens, Alfeld, Bauer, Contavalli, Dalton, Dukkipati, Evans, Gribble, Kidd, Kononov, Kumar, Mauer, Musick, Olson, Rubow, Ryan, Springborn, Turner, Valancius, Wang, and Vahdat, SOSP, 2019</li>
           <li><a href="https://irenezhang.net/papers/demikernel-sosp21.pdf">The Demikernel Datapath OS Architecture for Microsecond-scale Datacenter Systems</a>, Zhang, Raybuck, Patel, Olynyk, Nelson, Leija, Martinez, Liu, Simpson, Jayakar, Penna, Demoulin, Choudhury, and Badam, SOSP, 2021</li>
           </ul>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 11/30</td>
+      <td>Design Principles</td>
+      <td>
+        <ol>
+          <li><a href="readings/end2end.pdf">End-to-End Arguments in System Design</a>, Saltzer, Reed, and Clark, ACM TOCS, 1984</li>
+          <li><a href="readings/design-hints.pdf">Hints for Computer System Design</a>, Lampson, SOSP, 1983</li>
+          <li><a href="readings/emperor.pdf">The Emperor's Old Clothes</a>, Hoare, CACM, 1981</li>
+        </ol>
+        <details>
+          <summary>Questions</summary>
+          <p>
+          <strong>End-to-end argument</strong>
+          <ul>
+            <li>Q1: Does the end-to-end argument suggest that we should not spend efforts making
+  functions in the low levels of a system like communication more reliable?</li>
+            <li>Q2: Give an example that you can think of or have encountered where the 
+  end-to-end argument applies.</li>
+          </ul>
+          </p>
         </details>
       </td>
       <td></td>
