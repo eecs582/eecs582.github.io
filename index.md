@@ -147,7 +147,8 @@ students to present one paper when the number of students exceeds the number of
 papers to be presented. The presentation will be graded based on the clarity,
 completeness, depth, and discussion.
 
-<span class="badge bg-info fs-6"><b>Attendance</b></span>: Three absences of classes are allowed for good reasons (e.g., conference presentation, 
+<span class="badge bg-info fs-6"><b>Attendance</b></span>: *Three* absences of
+classes are allowed for good reasons (e.g., conference presentation,
 interview). However, reviews of the papers must still be turned in.
 
 <span class="badge bg-info fs-6"><b>Discussion</b></span>: You are strongly encouraged to discuss the papers with other students in the class -- 
@@ -159,6 +160,22 @@ interview). However, reviews of the papers must still be turned in.
 this course is a semester-long, research-oriented course project. You will 
 work in a team of 2-3 students on the project. This [page](project.html) contains
 further details on the requirements for the course project.
+
+<span class="badge bg-info fs-6"><b>Missing and Late Submission</b></span>: 
+You can miss *three paper reviews* without penalty. A 30% deduction will be applied 
+for each missing review beyond the three limit. In other words, missing a total of 
+seven paper reviews leads to a 0 for the review grade. 
+
+Missing submission of other assignments (proposal, etc.) will receive 0 grade for that assignment.
+Late submission of any assignment (paper review, proposal, etc.) receives a late penalty 
+as follows:
+<ul>
+<li>within 12 hour, 10%</li>
+<li>1 day, 20%</li>
+<li>2 days, 40%</li>
+<li>3 days, 80%</li>
+<li>4 days, no credit</li>
+</ul>
 
 <span class="badge bg-info fs-6"><b>Academic Integrity</b></span>: All students are required to 
   know and adhere to the College of Engineering [Honor Code](https://ecas.engin.umich.edu/wp-content/uploads/sites/19/2023/02/College-of-Engineering-Honor-Code-UPDATED.pdf) and 
