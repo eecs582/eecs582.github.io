@@ -1,5 +1,256 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>U-M EECS 582: Advanced Operating Systems</title>
-<meta http-equiv="refresh" content="0; URL=https://web.eecs.umich.edu/~ryanph/eecs582/fall23">
-<link rel="canonical" href="https://web.eecs.umich.edu/~ryanph/eecs582/fall23">
+<html lang="en-us">
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="description" content="">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>EECS 582: Advanced Operating Systems, Fall 2023</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap-icons.css">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="EECS 582: Advanced Operating Systems, Fall 2023" href="/feed.xml">
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark banner-bg fixed-top">
+  <div class="container">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-column" id="navbarMain">
+        <div class="navbar-nav me-auto">
+          <h3 class="navbar-text navbar-title-main pb-0">EECS 582: Advanced Operating Systems</h3>
+          <h4 class="navbar-text navbar-title-sub ps-4 pb-0">Fall 2023</h4>
+        </div>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="/index.html">Home</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="/schedule.html">Schedule</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="/reviews.html">Reviews</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="/project.html">Project</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="https://piazza.com/umich/fall2023/eecs582">Piazza</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <div class="container">
+    <div class="row">
+      <div class="col-md-8 body-content">
+        <h2 id="course-overview">Course Overview</h2>
+
+<p>Operating systems are a critical and complex piece of software that does the
+heavy lifting of managing computing devices for other software. It is also one
+of the few types of software that has been extensively engineered, studied,
+refined, debated, and even overhauled for decades. While one might
+consider operating systems as mature software, its evolution is far from
+complete.</p>
+
+<p>This course exposes students to the operating systems as a research field and
+study operating systems, and more broadly computer systems in general, from a design 
+point of view. We will examine different systems in both important historical 
+context and recent research developments. In addition to teaching various system 
+techniques, the objectives of the course also include helping students learn:</p>
+
+<ul>
+  <li>How to read a research paper in an objective manner.</li>
+  <li>How to write a critical analysis of the research described in a paper.</li>
+  <li>How to articulate ideas and insights into a research paper.</li>
+  <li>How to compare and contrast different approaches to understand their trade-offs.</li>
+  <li>How to synthesize research themes and topics across multiple papers.</li>
+</ul>
+
+<p>This course involves readings on classic and new papers. Topics include OS
+structure and extension techniques, virtualization, synchronization,
+communication, file systems, reliability, formal verification,
+data centers, and history and experience of systems.</p>
+
+<p><span class="badge bg-info md-badge">Prerequisite</span>: EECS 482 (Introduction 
+to Operating Systems)* or equivalent.</p>
+
+<hr />
+
+<h2 id="staff">Staff</h2>
+
+<dl class="staff">
+	<dt><h4>Instructor</h4></dt>
+	<dd><strong><a href="https://web.eecs.umich.edu/~ryanph">Ryan Huang</a></strong></dd>
+	<dd><b>Email: </b><a href="mailto:ryanph@umich.edu">ryanph@umich.edu</a></dd>
+	<dd><b>Address: </b>BBB 4611</dd>
+	<dd><b>Office Hours: </b>Tuesdays 9:00am-10:00am; By appointment</dd>
+	<dt><h5>GSI</h5></dt>
+	<dd>Jonah Rosenblum</dd>
+	<dd><b>Email: </b><a href="mailto:jonaher@umich.edu">jonaher@umich.edu</a></dd>
+	<dd><b>Address: </b>BBB 4844</dd>
+	<dd><b>Office Hours: </b>Wednesdays 11am-12pm; Thursdays 2pm-3pm</dd>
+</dl>
+
+<h2 id="meetings">Meetings</h2>
+
+<p>
+<div class="border-table">
+<table class="table table-hover">
+  <tbody>
+    <tr scope="row">
+      <td><strong>Lecture</strong></td>
+      <td>Tuesday/Thursday 3:00pm-4:30pm IOE 1610</td>
+    </tr>
+    <tr scope="row">
+      <td><strong>Discussion</strong></td>
+      <td>Friday 2:30pm-3:30pm Beyster 1670</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</p>
+
+<h2 id="readings">Readings</h2>
+<p>This course does not have a required textbook. However, we recommend you to
+use an undergraduate operating systems textbook as a reference, e.g., 
+<a href="http://www.ostep.org">Operating Systems: Three Easy Pieces</a>.</p>
+
+<p>The major material of the course comes from seminal, noteworthy, or representative 
+papers from the literature. Each class will have one or two <strong>required</strong> papers 
+to read. You <strong class="text-danger">MUST</strong> read the required papers <strong class="text-danger">before</strong> 
+the class, and be prepared to discuss them. In-class questions or quizzes will 
+confirm you do the reading.</p>
+
+<p>For some topics, we will list additional recommended papers. You are encouraged, 
+but not required, to read those. Students often find it useful to form a reading 
+group to discuss papers together before the class period, and we encourage 
+the practice. The reading load will be heavy. So be sure to allocate enough
+time for it.</p>
+
+<ul>
+  <li><a href="schedule.html">Reading List and Schedule</a></li>
+</ul>
+
+<p><span class="badge bg-info md-badge">Note</span>: this course assumes that you
+have taken the undergraduate operating systems course. Thus, it will <em>not</em>
+cover background knowledge such as how virtual memory works. Most papers we will 
+read also make such an assumption. If you did not take an undergraduate OS 
+course, it will be quite challenging to complete this course. If your undergraduate 
+OS knowledge is rusty, review past lectures (<a href="https://web.eecs.umich.edu/~ryanph/jhu/cs318/fall22/schedule.html">example</a>) to
+help better comprehend the papers.</p>
+
+<h2 id="grading">Grading</h2>
+
+<div class="container">
+  <div class="row">
+  <div class="col-8" style="padding-left:0px">
+    <ul class="list-group border-table grading-table">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <b>Reviews</b>
+        <span class="badge bg-primary rounded-pill">20%</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <b>Paper Presentation</b>
+        <span class="badge bg-primary rounded-pill">15%</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <b>Class Participation</b>
+        <span class="badge bg-primary rounded-pill">15%</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <b>Project</b>
+        <span class="badge bg-primary rounded-pill">50%</span>
+      </li>
+    </ul>
+  </div>
+  </div>
+</div>
+
+<p></p>
+
+<h2 id="structure-and-policies">Structure and Policies</h2>
+
+<p><span class="badge bg-info fs-6"><b>Paper Reviews</b></span>: You are required to submit a brief review for the required reading in each class. 
+The review must be turned in by <span class="text-danger">at least 12 hours</span> before 
+the class. Please read further <a href="reviews.html">instructions</a> on the paper reviews.</p>
+
+<p><span class="badge bg-info fs-6"><b>Participation</b></span>: The structure of this course is unusual in that there are NO lectures. 
+Instead, we will discuss research papers that we will have
+<em>all read before</em> each class period. Because of this format, class participation
+is vital to the success of the course. If you only remain silent in
+the class, you will get little out of this course.</p>
+
+<p>In each class, I will ask direct questions about the paper and expect you to
+be able to answer. Note that your answers to these questions will be part of
+your overall grade.</p>
+
+<p><span class="badge bg-info fs-6"><b>Presentation</b></span>: 
+A subset of the papers will be presented by students. The presentation should
+be followed by discussions among the entire class led by the presenter. Each
+student will present <em>at least once</em> in the semester. We may assign two
+students to present one paper when the number of students exceeds the number of
+papers to be presented. The presentation will be graded based on the clarity,
+completeness, depth, and discussion.</p>
+
+<p><span class="badge bg-info fs-6"><b>Attendance</b></span>: Three absences of classes are allowed for good reasons (e.g., conference presentation, 
+interview). However, reviews of the papers must still be turned in.</p>
+
+<p><span class="badge bg-info fs-6"><b>Discussion</b></span>: You are strongly encouraged to discuss the papers with other students in the class – 
+  you may have insights that others do not, and vice versa. Often students form reading groups, 
+  which I heartily encourage. Note that group discussion, however, is not an effective 
+  substitute for actually reading the paper.</p>
+
+<p><span class="badge bg-info fs-6"><b>Project</b></span>: A major component of
+this course is a semester-long, research-oriented course project. You will 
+work in a team of 2-3 students on the project. This <a href="project.html">page</a> contains
+further details on the requirements for the course project.</p>
+
+<p><span class="badge bg-info fs-6"><b>Academic Integrity</b></span>: All students are required to 
+  know and adhere to the College of Engineering <a href="https://ecas.engin.umich.edu/wp-content/uploads/sites/19/2023/02/College-of-Engineering-Honor-Code-UPDATED.pdf">Honor Code</a> and 
+  university policies. They apply to all course requirements, including the
+  paper reviews, proposals, course project code and documentation. <span class="text-danger">Violations of the policies will result
+  in serious consequences</span>.</p>
+
+<h2 id="acknowledgment">Acknowledgment</h2>
+
+<p>The course syllabus and materials are influenced by the advanced OS course at
+UCSD (CSE 221). We are particularly indebted to Geoff Voelker for sharing his
+lecture notes.</p>
+
+
+        <footer class="site-footer"><hr>
+  <div class="wrapper">
+    Ryan Huang | Last updated 2023-08-24 15:39:28 -0400.
+  </div>
+</footer>
+
+      </div>
+      <div class="col-md-4 body-content">
+        <div class="card news-card">
+  <h3 class="card-header">Latest Announcements</h3>
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">07/16: Course syllabus updated</li>
+      <li class="list-group-item">07/15: Course website is up</li>
+    </ul>
+  </div>
+</div>
+
+      </div>
+    </div>
+    </div>
+    <script src="/assets/js/jquery-1.12.3.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

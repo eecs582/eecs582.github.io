@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="description" content="">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>EECS 582: Advanced Operating Systems, Fall 2023</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap-icons.css">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="EECS 582: Advanced Operating Systems, Fall 2023" href="/feed.xml">
+</head>
+
+  <body> 
+    <nav class="navbar navbar-expand-lg navbar-dark banner-bg fixed-top">
+  <div class="container">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-column" id="navbarMain">
+        <div class="navbar-nav me-auto">
+          <h3 class="navbar-text navbar-title-main pb-0">EECS 582: Advanced Operating Systems</h3>
+          <h4 class="navbar-text navbar-title-sub ps-4 pb-0">Fall 2023</h4>
+        </div>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="/index.html">Home</a>
+          </li><li class="nav-item">
+            <a class="nav-link active" href="/schedule.html">Schedule</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="/reviews.html">Reviews</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="/project.html">Project</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="https://piazza.com/umich/fall2023/eecs582">Piazza</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 body-content">
+          <h2>Schedule</h2>
+
+<p>
+  <span class="badge bg-info md-badge">Note</span> this schedule is <span class="text-danger">subject to change</span>. Please check this page frequently.
+</p>
+
+<p>
+  <span class="badge bg-danger md-badge">Important</span> the required readings must be completed before the class. Paper reviews should be submitted <b><span class="text-danger">at least 12 hours before</span></b> the class.
+</p>
+
+<div class="border-table round-corner-table">
+<table class="table table-hover" id="schedule-table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col" style="width: 2%">Week</th>
+      <th scope="col" style="width: 8%">Date</th>
+      <th scope="col" style="width: 10%">Topic</th>
+      <th scope="col" style="width: 60%">Readings</span></th>
+      <th scope="col" style="width: 10%">Lead</th>
+      <th scope="col" style="width: 10%">Assignments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W1</td>
+      <td>Tue 08/29</td>
+      <td>Course Intro</td>
+      <td>
+        <ol>
+          <li><a href="https://www.dreamsongs.com/RiseOfWorseIsBetter.html">Rise of Worse Is Better</a>, Gabriel, "Lisp: Good News, Bad News, How to Win Big", 1989</li>
+        </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
+          <ul>
+          <li><a href="https://www.tuhs.org/pipermail/tuhs/2017-May/011552.html">Example of Worse-Is-Better in Linux vs Unix</a>, Ts'o, TUHS mailing list, 2017</li>
+          <li><a href="https://dreamsongs.com/Files/worse-is-worse.pdf">Worse is Better is Worse</a>, Bourbaki[Gabriel], 2000</li>
+          <li><a href="https://www.usenix.org/legacy/publications/library/proceedings/dsl97/good_paper.html">How (and How Not) to Write a Good Systems Paper</a>, Levin and Redell, ACM SIGOPS OSR, 1983</li>
+          <li><a href="http://cseweb.ucsd.edu/~wgg/CSE210/howtoread.html">How to Read an Engineering Research Paper</a>, Griswold</li>
+          <li><a href="readings/paper-reading.pdf">How to Read a Paper</a>, Keshav</li>
+          </ul>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 08/31</td>
+      <td>Historical Perspective</td>
+      <td>
+        <ol>
+          <li><a href="readings/the-dijkstra.pdf">The Structure of the 'THE'-Multiprogramming System</a>, Dijkstra, SOSP, 1967</li>
+          <li><a href="readings/nucleus.pdf">The Nucleus of a Multiprogramming System</a>, Hansen, CACM, 1970</li>
+        </ol>
+        <details>
+          <summary>Questions</summary>
+          <p>
+          <strong>THE</strong>
+          <ul>
+            <li>Q: Dijkstra explicitly states their goals for the THE operating system. How do these goals compare to, say, Microsoft's goals for the Windows operating system? Why do we no longer build operating systems with the same goals as THE?</li>
+          </ul>
+          </p>
+          <p>
+          <strong>Nucleus</strong>
+          <ul>
+            <li>Q: How does synchronization in the RC 4000 system compare with synchronization in the THE system?</li>
+          </ul>
+          </p>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W2</td>
+      <td>Tue 09/05</td>
+      <td>Time-Sharing</td>
+      <td>
+        <ol>
+          <li><a href="https://multicians.org/fjcc3.html">Structure of the Multics Supervisor</a>, Vyssotsky, Corbató, and Graham, Fall Joint Computer Conference, 1965</li>
+          <li><a href="https://dl.acm.org/doi/10.1145/361011.361061">The UNIX Time-Sharing System</a>, Ritchie and Thompson, CACM, 1974</li>
+        </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
+          <ul>
+          <li><a href="https://dl.acm.org/doi/10.1145/355602.361306">The Multics virtual memory: concepts and design</a>, Bensoussan, Clingen, and Daley, CACM, 1972</li>
+          <li><a href="https://dl.acm.org/doi/10.1145/361011.361067">Protection and the control of information sharing in Multics</a>, Saltzer, CACM, 1974</li>
+          <li><a href="readings/unix-evolution.pdf">The Evolution of the Unix Time-sharing System</a>, Ritchie, Bell Labs Technical Journal, 1984</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Questions</summary>
+          <p>
+          <strong>UNIX</strong>
+          <ul>
+            <li>Q: What aspects of Unix as described in the 1974 paper do not survive today, or have been considerably changed?</li>
+          </ul>
+          </p>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 09/07</td>
+      <td>OS Structure</td>
+      <td>
+        <ol>
+          <li><a href="readings/plan9.pdf">Plan 9 From Bell Labs</a>, Pike, Presotto, Dorward, Flandrena, Thompson, Trickey, and Winterbottom, USENIX Computing Systems, 1995</li>
+          <li><a href="readings/mach-usenix86.pdf">Mach: A New Kernel Foundation For UNIX Development</a>, Accetta, Baron, Bolosky, Golub, Rashid, Tevanian, and Young, USENIX, 1986</li>
+        </ol>
+        <details>
+          <summary>Questions</summary>
+          <p>
+          <strong>Plan 9</strong>
+          <ul>
+            <li>Q: What does it mean, "9P is really the core of the system; it is fair to say that the Plan 9 kernel is primarily a 9P multiplexer"?</li>
+          </ul>
+          </p>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3" class="syllabus-week">W3</td>
+      <td>Tue 09/12</td>
+      <td>OS Structure</td>
+      <td>
+        <ol>
+          <li><a href="readings/ukernel-construction.pdf">On μ-Kernel Construction</a>, Liedtke, SOSP, 1995</li>
+          <li><a href="readings/l4-performance.pdf">The Performance of μ-Kernel-Based Systems</a>, Härtig, Hohmuth, Liedtke, Schönberg, and Wolter, SOSP, 1997</li>
+        </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
+          <ul>
+          <li><a href="readings/microkernel-ipc.pdf">Improving IPC by Kernel Design</a>, Liedtke, SOSP, 1993</li>
+          <li><a href="readings/l3-20years.pdf">From L3 to seL4 What Have We Learnt in 20 Years of L4 Microkernels?</a>, Elphinstone and Heiser, SOSP, 2013</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Questions</summary>
+          <p>
+          <strong>L4</strong>
+          <ul>
+            <li>Q: Compare and contrast the L4 microkernel with the RC4000 Nucleus in terms of their goals to provide a basis on which higher level OS functionality can be implemented.</li>
+          </ul>
+          </p>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 09/14</td>
+      <td>OS Structure</td>
+      <td>
+        <ol>
+          <li><a href="readings/exokernel.pdf">Exokernel: An Operating System Architecture for Application-Level Resource Management</a>, Engler, Kaashoek, and O'Toole, SOSP, 1995</li>
+          <li><a href="readings/drawbridge.pdf">Rethinking the Library OS from the Top Down</a>, Porter, Boyd-Wickizer, Howell, Olinsky, and Hunt, ASPLOS, 2011</li>
+        </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
+          <ul>
+          <li><a href="readings/exokernel-app.pdf">Application Performance and Flexibility on Exokernel Systems</a>, Kaashoek, Engler, Ganger, Briceño, Hunt, Mazières, Pinckney, Grimm, Jannotti, and Mackenzie, SOSP, 1997</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Questions</summary>
+          <p>
+          <strong>Exokernel</strong>
+          <ul>
+            <li>Q: Compare and contrast an exokernel with a microkernel.</li>
+          </ul>
+          </p>
+          <p>
+          <strong>Drawbridge</strong>
+          <ul>
+            <li>Q: How does Drawbridge differ with Exokernel in terms of their motivation and approaches?</li>
+          </ul>
+          </p>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Fri 09/15</td>
+      <td></td>
+      <td>
+        <ol>
+        </ol>
+      </td>
+      <td></td>
+      <td><span class="text-danger">Draft proposal due</span></td>
+    </tr>
+    <tr>
+      <td rowspan="3" class="syllabus-week">W4</td>
+      <td>Tue 09/19</td>
+      <td>Virtual Machine</td>
+      <td>
+        <ol>
+          <li><a href="readings/vm370.pdf">The Origin of the VM/370 Time-Sharing System</a>, Creasy, IBM Journal of Research and Development, 1981</li>
+          <li><a href="readings/disco.pdf">Disco: Running Commodity Operating Systems on Scalable Multiprocessors</a>, Bugnion, Devine, and Rosenblum, SOSP, 1997</li>
+        </ol>
+        <details>
+          <summary>Questions</summary>
+          <p>
+          <strong>VM/370</strong>
+          <ul>
+            <li>Q: What was VM/370's motivation for virtualizing the hardware?</li>
+          </ul>
+          </p>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td class="success">Thu 09/21</td>
+      <td class="success">Project hack day</td>
+      <td class="success"></td>
+      <td class="success"></td>
+      <td class="success"></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Fri 09/22</td>
+      <td></td>
+      <td>
+        <ol>
+        </ol>
+      </td>
+      <td></td>
+      <td><span class="text-danger">Finalized proposal due</span></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W5</td>
+      <td>Tue 09/26</td>
+      <td>Virtual Machine</td>
+      <td>
+        <ol>
+          <li><a href="readings/xen.pdf">Xen and the Art of Virtualization</a>, Barham, Dragovic, Fraser, Hand, Harris, Ho, Neugebauer, Pratt, and Warfield, SOSP, 2003</li>
+          <li><a href="readings/vmm-hotos05.pdf">Are Virtual Machine Monitors Microkernels Done Right?</a>, Hand, Warfield, Fraser, Kotsovinos, and Magenheimer, HotOS, 2005</li>
+          <li><a href="readings/vmm-osr06.pdf">Are Virtual Machine Monitors Microkernels Done Right?</a>, Heiser, Uhlig, and LeVasseur, ACM SIGOPS OSR, 2006</li>
+        </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
+          <ul>
+          <li><a href="readings/virtualization-comparison.pdf">A Comparison of Software and Hardware Techniques for x86 Virtualization</a>, Adams and Agesen, ASPLOS, 2006</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Questions</summary>
+          <p>
+          <strong>Xen</strong>
+          <ul>
+            <li>Q: Microkernels and virtual machine monitors are two different ways to support the execution of multiple operating systems on modern hardware. How does the microkernel approach in L4 compare and constrast with the VMM approach in Xen?</li>
+          </ul>
+          </p>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 09/28</td>
+      <td>Lightweight Virtualization</td>
+      <td>
+        <ol>
+          <li><a href="readings/dune.pdf">Dune: Safe User-level Access to Privileged CPU Features</a>, Belay, Bittau, Mashtizadeh, Terei, Mazieres, and Kozyrakis, OSDI, 2012</li>
+          <li><a href="readings/firecracker.pdf">Firecracker: Lightweight Virtualization for Serverless Applications</a>, Brooker, Florescu, Popa, Neugebauer, Agache, Iordache, Liguori, and Piwonka, NSDI, 2020</li>
+        </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
+          <ul>
+          <li><a href="readings/container.pdf">Container-based Operating System Virtualization: A Scalable, High-performance Alternative to Hypervisors</a>, Soltesz, Pötzl, Fiuczynski, Bavier, and Peterson, EuroSys, 2007</li>
+          <li><a href="http://cnp.neclab.eu/projects/lightvm/lightvm.pdf">My VM is Lighter (and Safer) than your Container</a>, Manco, Lupu, Schmidt, Mendes, Kuenzer, Sati, Yasukata, Raiciu, and Huici, SOSP, 2017</li>
+          <li><a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2019/EECS-2019-3.pdf">Cloud Programming Simplified: A Berkeley View on Serverless Computing</a>, Jonas, Schleier-Smith, Sreekanti, Tsai, Khandelwal, Pu, Shankar, Carreira, Krauth, Yadwadkar, Gonzalez, Popa, Stoica, and Patterson, Technical Report No. UCB/EECS-2019-3, 2019</li>
+          </ul>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W6</td>
+      <td>Tue 10/03</td>
+      <td>Virtual Memory</td>
+      <td>
+        <ol>
+          <li><a href="readings/vms.pdf">Virtual Memory Management in VAX/VMS</a>, Levy and Lipman, IEEE Computer, 1982</li>
+          <li><a href="readings/mach-vm.pdf">Machine-Independent Virtual Memory Management for Paged Uniprocessor and Multiprocessor Architectures</a>, Rashid, Tevanian, Young, Golub, Baronn, Black, Bolosky, and Chew, ASPLOS, 1987</li>
+        </ol>
+        <details>
+          <summary>Questions</summary>
+          <p>
+          <strong>VAX/VMS</strong>
+          <ul>
+            <li>Q: The paper states, "VAX/VMS, then, is a collection of procedures that exist in the address space of each process." Explain in your own words what this statement means.</li>
+          </ul>
+          </p>
+          <p>
+          <strong>Mach VM</strong>
+          <ul>
+            <li>Q: Why does Mach support copy-on-write, and how does it implement it?</li>
+          </ul>
+          </p>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 10/05</td>
+      <td>Scheduling</td>
+      <td>
+        <ol>
+          <li><a href="readings/scheduler-activation.pdf">Scheduler Activations: Effective Kernel Support for the User-level Management of Parallelism</a>, Anderson, Bershad, Lazowska, and Levy, SOSP, 1991</li>
+          <li><a href="readings/lottery-scheduling.pdf">Lottery Scheduling: Flexible Proportional-Share Resource Management</a>, Waldspurger and Weihl, OSDI, 1994</li>
+        </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
+          <ul>
+          <li><a href="readings/lottery-scheduling-impl.pdf">Implementing Lottery Scheduling: Matching the Specializations in Traditional Schedulers</a>, Petrou, Milford, and Gibson, USENIX ATC, 1999</li>
+          <li><a href="readings/stride-scheduling.pdf">Stride Scheduling: Deterministic Proportional-Share Resource Management</a>, Waldspurger and Weihl, MIT Technical Report, 1995</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Questions</summary>
+          <p>
+          <strong>Scheduler Activations</strong>
+          <ul>
+            <li>Q: The goal of scheduler activations is to have the benefits of both user and kernel threads without their limitations. What are the limitations of user and kernel threads, and what are the benefits that scheduler activations provide?</li>
+          </ul>
+          </p>
+          <p>
+          <strong>Lottery Scheduling</strong>
+          <ul>
+            <li>Q: At a high level, as a mechanism how does lottery scheduling provide modular resource management? Why can't the Unix scheduler provide a similar kind of management?</li>
+          </ul>
+          </p>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W7</td>
+      <td>Tue 10/10</td>
+      <td>File System</td>
+      <td>
+        <ol>
+          <li><a href="readings/lfs.pdf">The Design and Implementation of a Log-Structured File System</a>, Rosenblum and Ousterhout, SOSP, 1991</li>
+          <li><a href="https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf">The Google File System</a>, Ghemawat, Gobioff, and Leung, SOSP, 2003</li>
+        </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
+          <ul>
+          <li><a href="readings/seltzer-lfs.pdf">An Implementation of a Log-Structured File System for UNIX</a>, Seltzer, Bostic, McKusick, and Staelin, USENIX, 1993</li>
+          <li><a href="https://web.archive.org/web/20020719065833/http://www.eecs.harvard.edu/~margo/usenix.195/ouster_critique1.html">Ousterhout's critique of Seltzer's 1993 paper</a>, Ousterhout</li>
+          <li><a href="https://www.seltzer.com/assets/publications/ouster_critique1_rebuttal.html">Seltzer's response to Ousterhout's critique</a>, Seltzer</li>
+          <li><a href="readings/ffs.pdf">A Fast File System for Unix</a>, McKusick, Joy, Leffler, and Fabry, ACM TOCS, 1984</li>
+          <li><a href="https://dl.acm.org/doi/10.1145/1594204.1594206">GFS: Evolution on Fast-forward</a>, McKusick and Quinlan, ACM Queue, 2009</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Questions</summary>
+          <p>
+          <strong>LFS</strong>
+          <ul>
+            <li>Q: When we want to read a block in LFS on disk, how do we figure out where it is?</li>
+          </ul>
+          </p>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 10/12</td>
+      <td>File System</td>
+      <td>
+        <ol>
+          <li><a href="readings/soft-updates.pdf">Soft Updates: A Solution to the Metadata Update Problem in File Systems</a>, Ganger, K.McKusick, Soules, and Patt., ACM TOCS, 2000</li>
+          <li><a href="readings/extsync.pdf">Rethink the sync</a>, Nightingale, Veeraraghavan, Chen, and Flinn, OSDI, 2006</li>
+        </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
+          <ul>
+          <li><a href="readings/rio.pdf">The Rio File Cache: Surviving Operating System Crashes</a>, Chen, Ng, Chandra, Aycock, Rajamni, and Lowell, ASPLOS, 1996</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Questions</summary>
+          <p>
+          <strong>Soft Updates</strong>
+          <ul>
+            <li>Q: What are the advantages and disadvantages of soft updates compared to write-ahead logging?</li>
+          </ul>
+          </p>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W8</td>
+      <td class="success">Tue 10/17</td>
+      <td class="success">Fall Break</td>
+      <td class="success"></td>
+      <td class="success"></td>
+      <td class="success"></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 10/19</td>
+      <td>Distribution</td>
+      <td>
+        <ol>
+          <li><a href="readings/v.pdf">The Distributed V Kernel and its Performance for Diskless Workstations</a>, Cheriton and Zwaenepoel, SOSP, 1983</li>
+          <li><a href="readings/sprite.pdf">The Sprite Network Operating System</a>, Ousterhout, Cerenson, Douglis, Nelson, and Welch, IEEE Computer, 1988</li>
+        </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
+          <ul>
+          <li><a href="https://web.stanford.edu/~ouster/cgi-bin/spriteRetrospective.php">A Brief Retrospective on the Sprite Network Operating System</a>, Ousterhout</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Questions</summary>
+          <p>
+          <strong>V kernel</strong>
+          <ul>
+            <li>Q: What is the argument for diskless workstations, and do you agree/disagree with the argument?</li>
+          </ul>
+          </p>
+          <p>
+          <strong>Sprite</strong>
+          <ul>
+            <li>Q: How do the caching policies in Sprite differ from those in the V Kernel?</li>
+          </ul>
+          </p>
+        </details>
+      </td>
+      <td></td>
+      <td><span class="text-danger">Checkpoint #1 report due</span></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W9</td>
+      <td class="success">Tue 10/24</td>
+      <td class="success">Project hack day</td>
+      <td class="success"></td>
+      <td class="success"></td>
+      <td class="success"></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 10/26</td>
+      <td>Distribution</td>
+      <td>
+        <ol>
+          <li><a href="https://dl.acm.org/doi/10.1145/224057.224072">Implementing global memory management in a workstation cluster</a>, Feeley, Morgan, Pighin, Karlin, Levy, and Thekkath, SOSP, 1995</li>
+          <li><a href="https://www.usenix.org/system/files/osdi18-shan.pdf">LegoOS: A Disseminated, Distributed OS for Hardware Resource Disaggregation</a>, Shan, Huang, Chen, and Zhang, OSDI, 2018</li>
+        </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
+          <ul>
+          <li><a href="https://www.usenix.org/system/files/conference/nsdi17/nsdi17-gu.pdf">Efficient Memory Disaggregation with Infiniswap</a>, Gu, Lee, Zhang, Chowdhury, and Shin, NSDI, 2017</li>
+          <li><a href="https://dl.acm.org/doi/10.5555/3488766.3488784">AIFM: high-performance, application-integrated far memory</a>, Ruan, Schwarzkopf, Aguilera, and Belay, OSDI, 2020</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Questions</summary>
+          <p>
+          <strong>GMS</strong>
+          <ul>
+            <li>Q: How does the implementation of the GMS page replacement algorithm approximate the ideal algorithm?</li>
+          </ul>
+          </p>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W10</td>
+      <td>Tue 10/31</td>
+      <td>Multi-core & Scalability</td>
+      <td>
+        <ol>
+          <li><a href="readings/multikernel.pdf">The Multikernel: A New OS Architecture for Scalable Multicore Systems</a>, Baumann, Barham, Dagand, Harris, Isaacs, Peter, Roscoe, Schüpbach, and Singhania, SOSP, 2009</li>
+          <li><a href="readings/commutativity.pdf">The Scalable Commutativity Rule: Designing Scalable Software for Multicore Processors</a>, Clements, Kaashoek, Zeldovich, Morris, and Kohler, SOSP, 2013</li>
+        </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
+          <ul>
+          <li><a href="readings/linux-scalability.pdf">An Analysis of Linux Scalability to Many Cores</a>, Boyd-Wickizer, Clements, Mao, Pesterev, Kaashoek, Morris, and Zeldovich, OSDI, 2010</li>
+          <li><a href="readings/corey.pdf">Corey: An Operating System for Many Cores</a>, Boyd-Wickizer, Chen, Chen, Mao, Kaashoek, Morris, Pesterev, Stein, Wu, Dai, Zhang, and Zhang, OSDI, 2008</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Questions</summary>
+          <p>
+          <strong>Barrelfish</strong>
+          <ul>
+            <li>Q: Briefly compare and contrast multikernel with microkernel.</li>
+          </ul>
+          </p>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 11/02</td>
+      <td>Language Support</td>
+      <td>
+        <ol>
+          <li><a href="readings/singularity-language.pdf">Language Support for Fast and Reliable Message-based Communication in Singularity OS</a>, Fähndrich, Aiken, Hawblitzel, Hodson, Hunt, Larus, and Levi, EuroSys, 2006</li>
+          <li><a href="https://www.usenix.org/system/files/osdi20-narayanan_vikram.pdf">RedLeaf: Isolation and Communication in a Safe Operating System</a>, Narayanan, Huang, Detweiler, Appel, Li, Zellweger, and Burtsev, OSDI, 2020</li>
+        </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
+          <ul>
+          <li><a href="https://www.usenix.org/system/files/osdi20-boos.pdf">Theseus: an Experiment in Operating System Structure and State Management</a>, Boos, Liyanage, Ijaz, and Zhong, OSDI, 2020</li>
+          <li><a href="readings/singularity.pdf">Singularity: Rethinking the Software Stack</a>, Hunt and Larus, ACM SIGOPS OSR, 2007</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Questions</summary>
+          <p>
+          <strong>Singularity</strong>
+          <ul>
+            <li>Q: How does the language-based approach that Singularity takes compare and contrast with Pilot?</li>
+          </ul>
+          </p>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W11</td>
+      <td>Tue 11/07</td>
+      <td>Reliability</td>
+      <td>
+        <ol>
+          <li><a href="readings/deviant.pdf">Bugs as Deviant Behavior: A General Approach to Inferring Errors in Systems Code</a>, Engler, Chen, Hallem, Chou, and Chelf, SOSP, 2001</li>
+          <li><a href="readings/nooks.pdf">Improving the Reliability of Commodity Operating Systems</a>, Swift, Bershad, and Levy, SOSP, 2003</li>
+        </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
+          <ul>
+          <li><a href="readings/bugs-realworld.pdf">A Few Billion Lines of Code Later: Using Static Analysis to Find Bugs in the Real World</a>, Bessey, Block, Chelf, Chou, Fulton, Hallem, Henri-Gros, Kamsky, McPeak, and Engler, CACM, 2010</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Questions</summary>
+          <p>
+          <strong>Bugs beliefs</strong>
+          <ul>
+            <li>Q: What are some potential disadvantages with the proposed method, and how 
+does this method compare with other methods you know of for detecting systems bugs?</li>
+          </ul>
+          </p>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 11/09</td>
+      <td>Formal Verification</td>
+      <td>
+        <ol>
+          <li><a href="readings/seL4.pdf">seL4: Formal Verification of an OS Kernel</a>, Klein, Elphinstone, Heiser, Andronick, Cock, Derrin, Elkaduwe, Engelhardt, Kolanski, Norrish, Sewell, Tuch, and Winwood, SOSP, 2009</li>
+          <li><a href="readings/fscq.pdf">Using Crash Hoare Logic for Certifying the FSCQ File System</a>, Chen, Ziegler, Chajed, Chlipala, Kaashoek, and Zeldovich, SOSP, 2015</li>
+        </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
+          <ul>
+          <li><a href="readings/yggdrasil.pdf">Push-Button Verification of File Systems via Crash Refinement</a>, Sigurbjarnarson, Bornholt, Torlak, and Wang, OSDI, 2016</li>
+          </ul>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W12</td>
+      <td>Tue 11/14</td>
+      <td>Security</td>
+      <td>
+        <ol>
+          <li><a href="readings/scone.pdf">SCONE: Secure Linux Containers with Intel SGX</a>, Arnautov, Trach, Gregor, Knauth, Martin, Priebe, Lind, Muthukumaran, O'Keeffe, Stillwell, Goltzsche, Eyers, Kapitza, Pietzuch, and Fetzer, OSDI, 2016</li>
+          <li><a href="readings/haven.pdf">Shielding Applications from an Untrusted Cloud with Haven</a>, Baumann, Peinado, and Hunt, OSDI, 2014</li>
+        </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
+          <ul>
+          <li><a href="readings/trust.pdf">Reflections on Trusting Trust</a>, Thompson, CACM, 1984</li>
+          </ul>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 11/16</td>
+      <td>Data Center</td>
+      <td>
+        <ol>
+          <li><a href="readings/arrakis.pdf">Arrakis: The Operating System is the Control Plane</a>, Peter, Li, Zhang, Ports, Woos, Krishnamurthy, Anderson, and Roscoe, OSDI, 2014</li>
+          <li><a href="readings/ix.pdf">IX: A Protected Dataplane Operating System for High Throughput and Low Latency</a>, Belay, Prekas, Klimovic, Grossman, Kozyrakis, and Bugnion, OSDI, 2014</li>
+        </ol>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W13</td>
+      <td class="success">Tue 11/21</td>
+      <td class="success">Project hack day</td>
+      <td class="success"></td>
+      <td class="success"></td>
+      <td class="success"><span class="text-danger">Checkpoint #2 report due</span></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td class="success">Thu 11/23</td>
+      <td class="success">Thanksgiving break</td>
+      <td class="success"></td>
+      <td class="success"></td>
+      <td class="success"></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W14</td>
+      <td>Tue 11/28</td>
+      <td>Kernel-bypass</td>
+      <td>
+        <ol>
+          <li><a href="https://www.usenix.org/system/files/nsdi19-ousterhout.pdf">Shenango: Achieving High CPU Efficiency for Latency-sensitive Datacenter Workloads</a>, Ousterhout, Fried, Behrens, Belay, and Balakrishnan, NSDI, 2019</li>
+          <li><a href="https://www.usenix.org/system/files/nsdi19-kaffes.pdf">Shinjuku: Preemptive Scheduling for μsecond-scale Tail Latency</a>, Kaffes, Chong, Humphries, Belay, Mazières, and Kozyrakis, NSDI, 2019</li>
+        </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
+          <ul>
+          <li><a href="https://research.google/pubs/pub48630.pdf">Snap: a Microkernel Approach to Host Networking</a>, Marty, Kruijf, Adriaens, Alfeld, Bauer, Contavalli, Dalton, Dukkipati, Evans, Gribble, Kidd, Kononov, Kumar, Mauer, Musick, Olson, Rubow, Ryan, Springborn, Turner, Valancius, Wang, and Vahdat, SOSP, 2019</li>
+          <li><a href="https://irenezhang.net/papers/demikernel-sosp21.pdf">The Demikernel Datapath OS Architecture for Microsecond-scale Datacenter Systems</a>, Zhang, Raybuck, Patel, Olynyk, Nelson, Leija, Martinez, Liu, Simpson, Jayakar, Penna, Demoulin, Choudhury, and Badam, SOSP, 2021</li>
+          </ul>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 11/30</td>
+      <td>Design Principles</td>
+      <td>
+        <ol>
+          <li><a href="readings/end2end.pdf">End-to-End Arguments in System Design</a>, Saltzer, Reed, and Clark, ACM TOCS, 1984</li>
+          <li><a href="readings/design-hints.pdf">Hints for Computer System Design</a>, Lampson, SOSP, 1983</li>
+          <li><a href="readings/emperor.pdf">The Emperor's Old Clothes</a>, Hoare, CACM, 1981</li>
+        </ol>
+        <details>
+          <summary>Questions</summary>
+          <p>
+          <strong>End-to-end argument</strong>
+          <ul>
+            <li>Q1: Does the end-to-end argument suggest that we should not spend efforts making
+  functions in the low levels of a system like communication more reliable?</li>
+            <li>Q2: Give an example that you can think of or have encountered where the 
+  end-to-end argument applies.</li>
+          </ul>
+          </p>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W15</td>
+      <td>Tue 12/05</td>
+      <td>Project Presentations</td>
+      <td>
+        <ol>
+        </ol>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Fri 12/08</td>
+      <td></td>
+      <td>
+        <ol>
+        </ol>
+      </td>
+      <td></td>
+      <td><span class="text-danger">Final project report due</span></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+          <footer class="site-footer"><hr>
+  <div class="wrapper">
+    Ryan Huang | Last updated 2023-08-26 15:17:35 -0400.
+  </div>
+</footer>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="/assets/js/jquery-1.12.3.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

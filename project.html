@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="description" content="">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>EECS 582: Advanced Operating Systems, Fall 2023</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap-icons.css">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="EECS 582: Advanced Operating Systems, Fall 2023" href="/feed.xml">
+</head>
+
+  <body> 
+    <nav class="navbar navbar-expand-lg navbar-dark banner-bg fixed-top">
+  <div class="container">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-column" id="navbarMain">
+        <div class="navbar-nav me-auto">
+          <h3 class="navbar-text navbar-title-main pb-0">EECS 582: Advanced Operating Systems</h3>
+          <h4 class="navbar-text navbar-title-sub ps-4 pb-0">Fall 2023</h4>
+        </div>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="/index.html">Home</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="/schedule.html">Schedule</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="/reviews.html">Reviews</a>
+          </li><li class="nav-item">
+            <a class="nav-link active" href="/project.html">Project</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="https://piazza.com/umich/fall2023/eecs582">Piazza</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 body-content">
+          <h2 id="project">Project</h2>
+
+<h3 id="requirement">Requirement</h3>
+
+<p>A main component of the course is a <strong>research-oriented</strong> course project. You
+will work as a team of <strong>2-3 students</strong> on a topic related to operating systems
+or systems in general. The project should identify a clear problem, motivate
+why that problem is important and why existing solutions are insufficient,
+propose an idea to address the problem, implement a prototype, and demonstrate
+the idea’s efficacy through experiments and comparisons with existing
+solutions. In the end, you will write up a project report about your work,
+just like the research papers you read in the class.</p>
+
+<p>Please use the <a href="https://www.usenix.org/conferences/author-resources/paper-templates">USENIX conference paper
+template</a>
+to format your project proposal and report.</p>
+
+<h3 id="expectations">Expectations</h3>
+
+<p>The best outcome for a project is inventing the next Unix (seminal, high-impact work)! 
+A more realistic great outcome is that the project will be suitable for
+publication at a major systems conference (<em>OSDI, SOSP, EuroSys, NSDI, ASPLOS,
+USENIX ATC</em>). Indeed, some papers in top systems conference are a result of 
+a course project (e.g., <a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/gu">Infiniswap</a> 
+and <a href="https://sosp2023.mpi-sws.org/accepted.html">Siloz</a> were projects
+started in EECS 582 in the past). In those cases, additional work after
+the course is often needed to push the project to be more complete for
+publication, but the course project should lay the groundwork.</p>
+
+<p>The minimum expectations for the project are: (1) it should be interesting! (2)
+it should produce a software artifact. In other words, even if the project does
+not yield a real publication, it should have intellectual depth and something
+that the readers can learn from. For (2), the resulting software artifact
+should be usable.</p>
+
+<p>A survey of existing literature will <em>not</em> be suitable for the course project.
+Measurement studies of systems or system techniques are allowed 
+<em>with instructor’s approval</em>. In that case, you must still
+build a measurement tool as part of the project.</p>
+
+<h3 id="topics-and-tips">Topics and Tips</h3>
+
+<p>I will provide a list of suggested topics, but you are encouraged to come up
+with your own!</p>
+
+<div class="card border-success">
+  <div class="card-header bg-success text-white">
+    <span class="bi bi-bell-fill"></span>&nbsp;&nbsp;<strong>Tips</strong>
+  </div>
+  <div class="card-body">
+  <ul>
+    <li>When reading the papers in this course, try to identify the (sub-)problems are
+    related but unsolved, limitations of the proposed solution, a possible better 
+    way to address the problem, whether the paper's insights or techniques 
+    are applicable in a different problem domain. Thinking along those lines can give you inspirations about potential project topics.</li>
+    <li>Besides reading papers, your own experiences can also be a source to
+    brainstorm about the project topics. For example, you encountered annoying
+    performance issues in system software and were frustrated that the existing
+    profilers could not pinpoint the root causes; so a potential project is to
+    identify the limitations in existing profilers and propose a solution to
+    address them.</li>
+    <li>Form the project team as soon as possible and start the project early. Systems 
+    projects take time, even for a course project. If you start late, it is likely
+    that you will not be able to finish the project in time.</li>
+    <li>While you are encouraged to be ambitious, make sure the project 
+    is manageable, such that you have something to present at the end.
+    </li>
+  </ul>
+</div>
+</div>
+
+<p>I will meet with each team to help refine the project scope. I will always be
+available for project discussions.</p>
+
+<h3 id="deliverable-1-proposal">Deliverable #1: Proposal</h3>
+<p>In the proposal, briefly describe the following elements:</p>
+
+<ul>
+  <li>the problem you plan to tackle, and why the problem is important</li>
+  <li>the state of the art for solving this problem, and why the current solution is insufficient</li>
+  <li>the approach/idea you propose</li>
+  <li>the objectives/expected outcomes</li>
+  <li>the potential challenges</li>
+  <li>the timeline and milestones</li>
+  <li>division of work among the team members</li>
+  <li>a list of related work that you plan to read</li>
+</ul>
+
+<p>The proposal should be around 2 pages and include your group member’s name and email. 
+The proposal only needs to be submitted by one of the group members.</p>
+
+<h3 id="deliverable-2-checkpoint-1-report">Deliverable #2: Checkpoint 1 Report</h3>
+
+<p>Submit a checkpoint report (around 3 pages) to describe the status of your
+project, the solution you have build so far, some initial results, new
+challenges that arise, any adjustments to your approach.</p>
+
+<h3 id="deliverable-3-checkpoint-2-report">Deliverable #3: Checkpoint 2 Report</h3>
+
+<p>The second checkpoint report is closer to the final report. It should include all 
+the progress you have made so far (including content from the first checkpoint
+report), and highlight the new results since the previous checkpoint, and the 
+remaining tasks and timeline for completing the project.</p>
+
+<h3 id="deliverable-4-final-report">Deliverable #4: Final Report</h3>
+
+<p>The final report should look like a research paper. It motivates the importance
+of the problem with concrete evidence or data points.  It explains why existing
+solutions do not solve the problem well. Then it describes the insights and
+ideas of your work, the challenges you need to address, how did you address
+them, why your idea is better, what are your system design and implementation.
+Then shows the experiment results, interpret the results, describe the
+observations and implications, conclude whether or how the results demonstrate
+your solutions’ superiority over state-of-the-art solution. Lastly, include a
+related work section to compare and contrast with your solution.</p>
+
+<p>There are no hard restrictions on the page limit on the final report, <em>because papers 
+do not need to be long to be good!</em> But your final report must comprehensively 
+cover all the points mentioned above. The rule of thumbs is that when it does so, 
+the report is around 6 to 10 pages.</p>
+
+<h3 id="deliverable-5-presentationposter">Deliverable #5: Presentation/Poster</h3>
+
+<p>Each project team will be given a slot to do a presentation in class to
+showcase your ideas and results to others. A live demo of the system you
+developed would be a nice element of the presentation. We might host a poster
+session in Tishman Hall if conditions allow.</p>
+
+<h3 id="deliverable-6-source-code">Deliverable #6: Source Code</h3>
+<p>You will be required to turn in your source code along with a detailed README and
+scripts for grading. The software artifact should be runnable by the TA and instructor.</p>
+
+          <footer class="site-footer"><hr>
+  <div class="wrapper">
+    Ryan Huang | Last updated 2023-08-24 15:30:12 -0400.
+  </div>
+</footer>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="/assets/js/jquery-1.12.3.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
