@@ -14,7 +14,7 @@ complete.
 This course exposes students to the operating systems as a research field and
 study operating systems, and more broadly computer systems in general, from a design 
 point of view. We will examine different systems in both important historical 
-context and recent research developments. In addition to teaching various system 
+contexts and recent research developments. In addition to teaching various system 
 techniques, the objectives of the course also include helping students learn:
 
 * How to read a research paper in an objective manner.
@@ -29,7 +29,7 @@ communication, file systems, reliability, formal verification,
 data centers, and history and experience of systems.
 
 <span class="badge bg-info md-badge">Prerequisite</span>: EECS 482 (Introduction 
-to Operating Systems)* or equivalent.
+to Operating Systems) or equivalent.
 
 <hr>
 
