@@ -106,7 +106,7 @@ help better comprehend the papers.
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center">
         <b>Paper Presentation</b>
-        <span class="badge bg-primary rounded-pill">15%</span>
+        <span class="badge bg-primary rounded-pill">10%</span>
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center">
         <b>Class Participation</b>
@@ -114,7 +114,7 @@ help better comprehend the papers.
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center">
         <b>Project</b>
-        <span class="badge bg-primary rounded-pill">50%</span>
+        <span class="badge bg-primary rounded-pill">55%</span>
       </li>
     </ul>
   </div>
