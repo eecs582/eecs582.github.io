@@ -8,7 +8,7 @@ An important component of this class is the reading and discussions
 of systems research papers. To help you with this and to ensure
 we have a productive discussion in class, you are required to 
 write a concise summary for the required papers <b>before</b> 
-each class and submit the review.
+each class and submit the review through [Gradescope](https://www.gradescope.com).
 
 We provided a [template](eecs582_review_summary.md) to help you write the
 review. However, you do not have to follow the template. Regardless, your
