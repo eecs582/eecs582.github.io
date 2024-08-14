@@ -36,11 +36,10 @@ layout: schedule
         <details open class="details-reading">
           <summary>Additional Reading</summary>
           <ul>
-          <li><a href="https://www.tuhs.org/pipermail/tuhs/2017-May/011552.html">Example of Worse-Is-Better in Linux vs Unix</a>, Ts'o, TUHS mailing list, 2017</li>
-          <li><a href="https://dreamsongs.com/Files/worse-is-worse.pdf">Worse is Better is Worse</a>, Bourbaki[Gabriel], 2000</li>
+          <li><a href="readings/end2end.pdf">End-to-End Arguments in System Design</a>, Saltzer, Reed, and Clark, ACM TOCS, 1984</li>
+          <li><a href="readings/design-hints.pdf">Hints for Computer System Design</a>, Lampson, SOSP, 1983</li>
+          <li><a href="readings/emperor.pdf">The Emperor's Old Clothes</a>, Hoare, CACM, 1981</li>
           <li><a href="https://www.usenix.org/legacy/publications/library/proceedings/dsl97/good_paper.html">How (and How Not) to Write a Good Systems Paper</a>, Levin and Redell, ACM SIGOPS OSR, 1983</li>
-          <li><a href="http://cseweb.ucsd.edu/~wgg/CSE210/howtoread.html">How to Read an Engineering Research Paper</a>, Griswold</li>
-          <li><a href="readings/paper-reading.pdf">How to Read a Paper</a>, Keshav</li>
           </ul>
         </details>
       </td>
@@ -199,6 +198,7 @@ layout: schedule
     </tr>
     <tr>
       <td style="display:none"></td>
+      <td>Fri 09/13</td>
       <td></td>
       <td>
         <ol>
@@ -244,6 +244,7 @@ layout: schedule
     </tr>
     <tr>
       <td style="display:none"></td>
+      <td>Fri 09/20</td>
       <td></td>
       <td>
         <ol>
@@ -386,7 +387,6 @@ layout: schedule
       <td>
         <ol>
           <li><a href="readings/lfs.pdf">The Design and Implementation of a Log-Structured File System</a>, Rosenblum and Ousterhout, SOSP, 1991</li>
-          <li><a href="https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf">The Google File System</a>, Ghemawat, Gobioff, and Leung, SOSP, 2003</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
@@ -453,13 +453,15 @@ layout: schedule
       <td>Distribution</td>
       <td>
         <ol>
-          <li><a href="readings/v.pdf">The Distributed V Kernel and its Performance for Diskless Workstations</a>, Cheriton and Zwaenepoel, SOSP, 1983</li>
           <li><a href="readings/sprite.pdf">The Sprite Network Operating System</a>, Ousterhout, Cerenson, Douglis, Nelson, and Welch, IEEE Computer, 1988</li>
+          <li><a href="https://www.usenix.org/system/files/osdi18-shan.pdf">LegoOS: A Disseminated, Distributed OS for Hardware Resource Disaggregation</a>, Shan, Huang, Chen, and Zhang, OSDI, 2018</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
           <ul>
-          <li><a href="https://web.stanford.edu/~ouster/cgi-bin/spriteRetrospective.php">A Brief Retrospective on the Sprite Network Operating System</a>, Ousterhout</li>
+            <li><a href="https://web.stanford.edu/~ouster/cgi-bin/spriteRetrospective.php">A Brief Retrospective on the Sprite Network Operating System</a>, Ousterhout, 1992</li>
+            <li><a href="readings/v.pdf">The Distributed V Kernel and its Performance for Diskless Workstations</a>, Cheriton and Zwaenepoel, SOSP, 1983</li>
+            <li><a href="https://dl.acm.org/doi/10.1145/224057.224072">Implementing global memory management in a workstation cluster</a>, Feeley, Morgan, Pighin, Karlin, Levy, and Thekkath, SOSP, 1995</li>
           </ul>
         </details>
         <details>
@@ -483,28 +485,68 @@ layout: schedule
     </tr>
     <tr>
       <td rowspan="2" class="syllabus-week">W9</td>
-      <td>Tue 10/22</td>
-      <td>Distribution</td>
+      <td class="success">Tue 10/22</td>
+      <td class="success">Project hack day</td>
+      <td class="success"></td>
+      <td class="success"></td>
+      <td class="success"></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 10/24</td>
+      <td>Mid-semester Presentations</td>
       <td>
         <ol>
-          <li><a href="https://dl.acm.org/doi/10.1145/224057.224072">Implementing global memory management in a workstation cluster</a>, Feeley, Morgan, Pighin, Karlin, Levy, and Thekkath, SOSP, 1995</li>
-          <li><a href="https://www.usenix.org/system/files/osdi18-shan.pdf">LegoOS: A Disseminated, Distributed OS for Hardware Resource Disaggregation</a>, Shan, Huang, Chen, and Zhang, OSDI, 2018</li>
+        </ol>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W10</td>
+      <td>Tue 10/29</td>
+      <td>Data Center</td>
+      <td>
+        <ol>
+          <li><a href="https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf">The Google File System</a>, Ghemawat, Gobioff, and Leung, SOSP, 2003</li>
+        </ol>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 10/31</td>
+      <td>Kernel Bypass</td>
+      <td>
+        <ol>
+          <li><a href="readings/arrakis.pdf">Arrakis: The Operating System is the Control Plane</a>, Peter, Li, Zhang, Ports, Woos, Krishnamurthy, Anderson, and Roscoe, OSDI, 2014</li>
+          <li><a href="readings/ix.pdf">IX: A Protected Dataplane Operating System for High Throughput and Low Latency</a>, Belay, Prekas, Klimovic, Grossman, Kozyrakis, and Bugnion, OSDI, 2014</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
           <ul>
-          <li><a href="https://www.usenix.org/system/files/conference/nsdi17/nsdi17-gu.pdf">Efficient Memory Disaggregation with Infiniswap</a>, Gu, Lee, Zhang, Chowdhury, and Shin, NSDI, 2017</li>
-          <li><a href="https://dl.acm.org/doi/10.5555/3488766.3488784">AIFM: high-performance, application-integrated far memory</a>, Ruan, Schwarzkopf, Aguilera, and Belay, OSDI, 2020</li>
+            <li><a href="https://research.google/pubs/pub48630.pdf">Snap: a Microkernel Approach to Host Networking</a>, Marty, Kruijf, Adriaens, Alfeld, Bauer, Contavalli, Dalton, Dukkipati, Evans, Gribble, Kidd, Kononov, Kumar, Mauer, Musick, Olson, Rubow, Ryan, Springborn, Turner, Valancius, Wang, and Vahdat, SOSP, 2019</li>
           </ul>
         </details>
-        <details>
-          <summary>Questions</summary>
-          <p>
-          <strong>GMS</strong>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="syllabus-week">W11</td>
+      <td>Tue 11/05</td>
+      <td>Kernel Bypass</td>
+      <td>
+        <ol>
+          <li><a href="https://www.usenix.org/system/files/nsdi19-ousterhout.pdf">Shenango: Achieving High CPU Efficiency for Latency-sensitive Datacenter Workloads</a>, Ousterhout, Fried, Behrens, Belay, and Balakrishnan, NSDI, 2019</li>
+        </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
           <ul>
-            <li>Q: How does the implementation of the GMS page replacement algorithm approximate the ideal algorithm?</li>
+            <li><a href="https://www.usenix.org/system/files/nsdi19-kaffes.pdf">Shinjuku: Preemptive Scheduling for μsecond-scale Tail Latency</a>, Kaffes, Chong, Humphries, Belay, Mazières, and Kozyrakis, NSDI, 2019</li>
+            <li><a href="https://irenezhang.net/papers/demikernel-sosp21.pdf">The Demikernel Datapath OS Architecture for Microsecond-scale Datacenter Systems</a>, Zhang, Raybuck, Patel, Olynyk, Nelson, Leija, Martinez, Liu, Simpson, Jayakar, Penna, Demoulin, Choudhury, and Badam, SOSP, 2021</li>
           </ul>
-          </p>
         </details>
       </td>
       <td></td>
@@ -512,16 +554,8 @@ layout: schedule
     </tr>
     <tr>
       <td style="display:none"></td>
-      <td class="success">Thu 10/24</td>
-      <td class="success">Project hack day</td>
-      <td class="success"></td>
-      <td class="success"></td>
-      <td class="success"></td>
-    </tr>
-    <tr>
-      <td rowspan="2" class="syllabus-week">W10</td>
-      <td>Tue 10/29</td>
-      <td>Multi-core &nbsp; Scalability</td>
+      <td>Thu 11/07</td>
+      <td>Multi-core</td>
       <td>
         <ol>
           <li><a href="readings/multikernel.pdf">The Multikernel: A New OS Architecture for Scalable Multicore Systems</a>, Baumann, Barham, Dagand, Harris, Isaacs, Peter, Roscoe, Schüpbach, and Singhania, SOSP, 2009</li>
@@ -548,9 +582,37 @@ layout: schedule
       <td></td>
     </tr>
     <tr>
+      <td rowspan="2" class="syllabus-week">W12</td>
+      <td>Tue 11/12</td>
+      <td>Emerging Memory</td>
+      <td>
+        <ol>
+          <li><a href="https://dl.acm.org/doi/10.1145/3575693.3578835">Pond: CXL-Based Memory Pooling Systems for Cloud Platforms</a>, Li, Berger, Hsu, Ernst, Zardoshti, Novakovic, Shah, Rajadnya, Lee, Agarwal, Hill, Fontoura, and Bianchini, ASPLOS, 2023</li>
+        </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
+          <ul>
+          <li><a href="https://www.usenix.org/system/files/conference/nsdi17/nsdi17-gu.pdf">Efficient Memory Disaggregation with Infiniswap</a>, Gu, Lee, Zhang, Chowdhury, and Shin, NSDI, 2017</li>
+          <li><a href="https://dl.acm.org/doi/10.5555/3488766.3488784">AIFM: high-performance, application-integrated far memory</a>, Ruan, Schwarzkopf, Aguilera, and Belay, OSDI, 2020</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Questions</summary>
+          <p>
+          <strong>GMS</strong>
+          <ul>
+            <li>Q: How does the implementation of the GMS page replacement algorithm approximate the ideal algorithm?</li>
+          </ul>
+          </p>
+        </details>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
       <td style="display:none"></td>
-      <td>Thu 10/31</td>
-      <td>Language Support</td>
+      <td>Thu 11/14</td>
+      <td>Language</td>
       <td>
         <ol>
           <li><a href="readings/singularity-language.pdf">Language Support for Fast and Reliable Message-based Communication in Singularity OS</a>, Fähndrich, Aiken, Hawblitzel, Hodson, Hunt, Larus, and Levi, EuroSys, 2006</li>
@@ -577,8 +639,16 @@ layout: schedule
       <td></td>
     </tr>
     <tr>
-      <td rowspan="2" class="syllabus-week">W11</td>
-      <td>Tue 11/05</td>
+      <td rowspan="2" class="syllabus-week">W13</td>
+      <td class="success">Tue 11/19</td>
+      <td class="success">Project hack day</td>
+      <td class="success"></td>
+      <td class="success"></td>
+      <td class="success"><span class="text-danger">Checkpoint #2 report due</span></td>
+    </tr>
+    <tr>
+      <td style="display:none"></td>
+      <td>Thu 11/21</td>
       <td>Reliability</td>
       <td>
         <ol>
@@ -598,9 +668,9 @@ layout: schedule
       <td></td>
     </tr>
     <tr>
-      <td style="display:none"></td>
-      <td>Thu 11/07</td>
-      <td>Formal Verification</td>
+      <td rowspan="2" class="syllabus-week">W14</td>
+      <td>Tue 11/26</td>
+      <td>Reliability</td>
       <td>
         <ol>
           <li><a href="readings/seL4.pdf">seL4: Formal Verification of an OS Kernel</a>, Klein, Elphinstone, Heiser, Andronick, Cock, Derrin, Elkaduwe, Engelhardt, Kolanski, Norrish, Sewell, Tuch, and Winwood, SOSP, 2009</li>
@@ -617,8 +687,16 @@ layout: schedule
       <td></td>
     </tr>
     <tr>
-      <td rowspan="2" class="syllabus-week">W12</td>
-      <td>Tue 11/12</td>
+      <td style="display:none"></td>
+      <td class="success">Thu 11/28</td>
+      <td class="success">Thanksgiving break</td>
+      <td class="success"></td>
+      <td class="success"></td>
+      <td class="success"></td>
+    </tr>
+    <tr>
+      <td rowspan="3" class="syllabus-week">W15</td>
+      <td>Tue 12/03</td>
       <td>Security</td>
       <td>
         <ol>
@@ -637,96 +715,8 @@ layout: schedule
     </tr>
     <tr>
       <td style="display:none"></td>
-      <td>Thu 11/14</td>
-      <td>Data Center</td>
-      <td>
-        <ol>
-          <li><a href="readings/arrakis.pdf">Arrakis: The Operating System is the Control Plane</a>, Peter, Li, Zhang, Ports, Woos, Krishnamurthy, Anderson, and Roscoe, OSDI, 2014</li>
-          <li><a href="readings/ix.pdf">IX: A Protected Dataplane Operating System for High Throughput and Low Latency</a>, Belay, Prekas, Klimovic, Grossman, Kozyrakis, and Bugnion, OSDI, 2014</li>
-        </ol>
-      </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td rowspan="2" class="syllabus-week">W13</td>
-      <td class="success">Tue 11/19</td>
-      <td class="success">Project hack day</td>
-      <td class="success"></td>
-      <td class="success"></td>
-      <td class="success"><span class="text-danger">Checkpoint #2 report due</span></td>
-    </tr>
-    <tr>
-      <td style="display:none"></td>
-      <td>Thu 11/21</td>
-      <td>Kernel-bypass</td>
-      <td>
-        <ol>
-          <li><a href="https://www.usenix.org/system/files/nsdi19-ousterhout.pdf">Shenango: Achieving High CPU Efficiency for Latency-sensitive Datacenter Workloads</a>, Ousterhout, Fried, Behrens, Belay, and Balakrishnan, NSDI, 2019</li>
-          <li><a href="https://www.usenix.org/system/files/nsdi19-kaffes.pdf">Shinjuku: Preemptive Scheduling for μsecond-scale Tail Latency</a>, Kaffes, Chong, Humphries, Belay, Mazières, and Kozyrakis, NSDI, 2019</li>
-        </ol>
-        <details open class="details-reading">
-          <summary>Additional Reading</summary>
-          <ul>
-          <li><a href="https://research.google/pubs/pub48630.pdf">Snap: a Microkernel Approach to Host Networking</a>, Marty, Kruijf, Adriaens, Alfeld, Bauer, Contavalli, Dalton, Dukkipati, Evans, Gribble, Kidd, Kononov, Kumar, Mauer, Musick, Olson, Rubow, Ryan, Springborn, Turner, Valancius, Wang, and Vahdat, SOSP, 2019</li>
-          <li><a href="https://irenezhang.net/papers/demikernel-sosp21.pdf">The Demikernel Datapath OS Architecture for Microsecond-scale Datacenter Systems</a>, Zhang, Raybuck, Patel, Olynyk, Nelson, Leija, Martinez, Liu, Simpson, Jayakar, Penna, Demoulin, Choudhury, and Badam, SOSP, 2021</li>
-          </ul>
-        </details>
-      </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td rowspan="2" class="syllabus-week">W14</td>
-      <td>Tue 11/26</td>
-      <td>Buffer</td>
-      <td>
-        <ol>
-        </ol>
-      </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td style="display:none"></td>
-      <td class="success">Thu 11/28</td>
-      <td class="success">Thanksgiving break</td>
-      <td class="success"></td>
-      <td class="success"></td>
-      <td class="success"></td>
-    </tr>
-    <tr>
-      <td rowspan="3" class="syllabus-week">W15</td>
-      <td>Tue 12/03</td>
-      <td>Design Principles</td>
-      <td>
-        <ol>
-          <li><a href="readings/end2end.pdf">End-to-End Arguments in System Design</a>, Saltzer, Reed, and Clark, ACM TOCS, 1984</li>
-        </ol>
-        <details open class="details-reading">
-          <summary>Additional Reading</summary>
-          <ul>
-            <li><a href="readings/design-hints.pdf">Hints for Computer System Design</a>, Lampson, SOSP, 1983</li>
-            <li><a href="readings/emperor.pdf">The Emperor's Old Clothes</a>, Hoare, CACM, 1981</li>
-          </ul>
-        </details>
-        <details>
-          <summary>Questions</summary>
-          <p>
-          <strong>End-to-end argument</strong>
-          <ul>
-            <li>Q: Give an example from the papers we've read so far where the end-to-end argument applies.</li>
-          </ul>
-          </p>
-        </details>
-      </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td style="display:none"></td>
       <td>Thu 12/05</td>
-      <td>Project Presentations</td>
+      <td>Final Presentations</td>
       <td>
         <ol>
         </ol>
