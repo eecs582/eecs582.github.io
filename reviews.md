@@ -4,16 +4,19 @@ layout: default
 
 ## Paper Summary
 
-An important component of this class is the reading and discussions 
-of systems research papers. To help you with this and to ensure
-we have a productive discussion in class, you are required to 
-write a concise summary for the required papers <b>before</b> 
-each class and submit the review through [Gradescope](https://www.gradescope.com).
+An important component of this class is the reading of systems research papers.
+To help you with this and to ensure we have a productive discussion in class,
+you are required to write a concise summary for the required papers
+<b>before</b> each class and submit the review through
+[Gradescope](https://www.gradescope.com).
 
 We provided a [template](eecs582_review_summary.md) to help you write the
 review. However, you do not have to follow the template. Regardless, your
 review must summarize the key points and your thoughts. Be concise with the
-review. Try to keep it in 1--2 pages.
+review. Try to keep it in one page.
+
+<span class="text-info">For Thursdays' classes, your reviews only need to answer 
+the listed paper questions.</span>
 
 We may include questions for some papers in the schedule page. In that case,
 answer the questions in your review summary. 

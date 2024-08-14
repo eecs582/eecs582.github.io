@@ -40,12 +40,11 @@ to Operating Systems) or equivalent.
 	<dd><strong><a href="https://web.eecs.umich.edu/~ryanph">Ryan Huang</a></strong></dd>
 	<dd><b>Email: </b><a href="mailto:ryanph@umich.edu">ryanph@umich.edu</a></dd>
 	<dd><b>Address: </b>BBB 4611</dd>
-	<dd><b>Office Hours: </b>Tuesdays 9:00am-10:00am; By appointment</dd>
+	<dd><b>Office Hours: </b>By appointment</dd>
 	<dt><h5>GSI</h5></dt>
-	<dd>Jonah Rosenblum</dd>
-	<dd><b>Email: </b><a href="mailto:jonaher@umich.edu">jonaher@umich.edu</a></dd>
-	<dd><b>Address: </b>BBB 4844</dd>
-	<dd><b>Office Hours: </b>Wednesdays 11am-12pm; Thursdays 2pm-3pm</dd>
+	<dd>Yi Chen</dd>
+	<dd><b>Address: </b></dd>
+	<dd><b>Office Hours: </b></dd>
 </dl>
 
 ## Meetings
@@ -125,8 +124,10 @@ help better comprehend the papers.
 
 ## Structure and Policies
 
-<span class="badge bg-info fs-6"><b>Paper Reviews</b></span>: You are required to submit a brief review for the required reading in each class. 
-The review must be turned in by <span class="text-danger">at least 12 hours</span> before 
+<span class="badge bg-info fs-6"><b>Paper Reviews</b></span>: You are required to 
+submit a brief review for the required reading in each class. For Thursdays' 
+classes, the reviews only need to answer the listed paper questions. Reviews 
+must be turned in by <span class="text-danger">at least 12 hours</span> before 
 the class. Please read further [instructions](reviews.html) on the paper reviews.
 
 <span class="badge bg-info fs-6"><b>Participation</b></span>: The structure of this course is unusual in that there are NO lectures. 
