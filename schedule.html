@@ -316,14 +316,13 @@ layout: schedule
       <td>
         <ol>
           <li><a href="https://www.usenix.org/legacy/events/osdi02/tech/full_papers/navarro/navarro.pdf">Practical, transparent operating system support for superpages</a>,  Navarro, Iyer,  Druschel, and Cox, OSDI, 2002</li>
-          <li><a href="">Mondrian memory protection</a>, Witchel, Cates, and Asanović, OSDI, 2002</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
           <ul>
+            <li><a href="https://www.usenix.org/system/files/conference/osdi16/osdi16-kwon.pdf">Coordinated and Efficient Huge Page Management with Ingens</a>, Kwon, Yu, Peter, Rossbach, and Witchel, OSDI, 2016</li>
             <li><a href="readings/mach-vm.pdf">Machine-Independent Virtual Memory Management for Paged Uniprocessor and Multiprocessor Architectures</a>, Rashid, Tevanian, Young, Golub, Baronn, Black, Bolosky, and Chew, ASPLOS, 1987</li>
             <li><a href="https://www.usenix.org/legacy/event/osdi02/tech/waldspurger/waldspurger.pdf">Memory Resource Management in VMware ESX Server</a>, Waldspurger, OSDI, 2002</li>
-            <li><a href="https://www.usenix.org/system/files/conference/osdi16/osdi16-kwon.pdf">Coordinated and Efficient Huge Page Management with Ingens</a>, Kwon, Yu, Peter, Rossbach, and Witchel, OSDI, 2016</li>
           </ul>
         </details>
         <details>
@@ -403,7 +402,7 @@ layout: schedule
           <p>
           <strong>LFS</strong>
           <ul>
-            <li>Q: When we want to read a block in LFS on disk, how do we figure out where it is?</li>
+            <li>Q: How does read work with LFS?</li>
           </ul>
           </p>
         </details>
@@ -454,7 +453,6 @@ layout: schedule
       <td>
         <ol>
           <li><a href="readings/sprite.pdf">The Sprite Network Operating System</a>, Ousterhout, Cerenson, Douglis, Nelson, and Welch, IEEE Computer, 1988</li>
-          <li><a href="https://www.usenix.org/system/files/osdi18-shan.pdf">LegoOS: A Disseminated, Distributed OS for Hardware Resource Disaggregation</a>, Shan, Huang, Chen, and Zhang, OSDI, 2018</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
@@ -466,16 +464,9 @@ layout: schedule
         </details>
         <details>
           <summary>Questions</summary>
-          <p>
-          <strong>V kernel</strong>
-          <ul>
-            <li>Q: What is the argument for diskless workstations, and do you agree/disagree with the argument?</li>
-          </ul>
-          </p>
-          <p>
           <strong>Sprite</strong>
           <ul>
-            <li>Q: How do the caching policies in Sprite differ from those in the V Kernel?</li>
+            <li>Q: How does Sprite achieve transparency for its process migration?</li>
           </ul>
           </p>
         </details>
@@ -509,7 +500,14 @@ layout: schedule
       <td>
         <ol>
           <li><a href="https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf">The Google File System</a>, Ghemawat, Gobioff, and Leung, SOSP, 2003</li>
+          <li><a href="https://www.usenix.org/system/files/osdi18-shan.pdf">LegoOS: A Disseminated, Distributed OS for Hardware Resource Disaggregation</a>, Shan, Huang, Chen, and Zhang, OSDI, 2018</li>
         </ol>
+        <details open class="details-reading">
+          <summary>Additional Reading</summary>
+          <ul>
+            <li><a href="https://queue.acm.org/detail.cfm?id=1594206">GFS: Evolution on Fast-forward</a>, Kirk McKusick and Quinlan, SOSP, 2019</li>
+          </ul>
+        </details>
       </td>
       <td></td>
       <td></td>
