@@ -9,7 +9,7 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>EECS 582: Advanced Operating Systems, Fall 2023</title>
+  <title>EECS 582: Advanced Operating Systems, Fall 2024</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
@@ -18,7 +18,7 @@
   <link rel="shortcut icon" href="/assets/favicon.ico">
 
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="EECS 582: Advanced Operating Systems, Fall 2023" href="/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="EECS 582: Advanced Operating Systems, Fall 2024" href="/feed.xml">
 </head>
 
   <body>
@@ -30,8 +30,8 @@
       </button>
       <div class="collapse navbar-collapse flex-column" id="navbarMain">
         <div class="navbar-nav me-auto">
-          <h3 class="navbar-text navbar-title-main pb-0">EECS 582: Advanced Operating Systems</h3>
-          <h4 class="navbar-text navbar-title-sub ps-4 pb-0">Fall 2023</h4>
+          <h3 class="navbar-text navbar-title-main pb-0">CSE 582: Advanced Operating Systems</h3>
+          <h4 class="navbar-text navbar-title-sub ps-4 pb-0">Fall 2024</h4>
         </div>
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
@@ -39,11 +39,13 @@
           </li><li class="nav-item">
             <a class="nav-link " href="/schedule.html">Schedule</a>
           </li><li class="nav-item">
-            <a class="nav-link " href="/reviews.html">Reviews</a>
+            <a class="nav-link " href="/review.html">Review</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="/presentation.html">Presentation</a>
           </li><li class="nav-item">
             <a class="nav-link " href="/project.html">Project</a>
           </li><li class="nav-item">
-            <a class="nav-link " href="https://piazza.com/umich/fall2023/eecs582">Piazza</a>
+            <a class="nav-link " href="https://piazza.com/umich/fall2024/cse582">Piazza</a>
           </li>
         </ul>
       </div>
@@ -94,12 +96,11 @@ to Operating Systems) or equivalent.</p>
 	<dd><strong><a href="https://web.eecs.umich.edu/~ryanph">Ryan Huang</a></strong></dd>
 	<dd><b>Email: </b><a href="mailto:ryanph@umich.edu">ryanph@umich.edu</a></dd>
 	<dd><b>Address: </b>BBB 4611</dd>
-	<dd><b>Office Hours: </b>Tuesdays 9:00am-10:00am; By appointment</dd>
+	<dd><b>Office Hours: </b>By appointment</dd>
 	<dt><h5>GSI</h5></dt>
-	<dd>Jonah Rosenblum</dd>
-	<dd><b>Email: </b><a href="mailto:jonaher@umich.edu">jonaher@umich.edu</a></dd>
-	<dd><b>Address: </b>BBB 4844</dd>
-	<dd><b>Office Hours: </b>Wednesdays 11am-12pm; Thursdays 2pm-3pm</dd>
+	<dd>Yi Chen</dd>
+	<dd><b>Address: </b></dd>
+	<dd><b>Office Hours: </b></dd>
 </dl>
 
 <h2 id="meetings">Meetings</h2>
@@ -110,11 +111,7 @@ to Operating Systems) or equivalent.</p>
   <tbody>
     <tr scope="row">
       <td><strong>Lecture</strong></td>
-      <td>Tuesday/Thursday 3:00pm-4:30pm IOE 1610</td>
-    </tr>
-    <tr scope="row">
-      <td><strong>Discussion</strong></td>
-      <td>Friday 2:30pm-3:30pm Beyster 1670</td>
+      <td>Tuesday/Thursday 3:00pm-4:30pm 1200 EECS</td>
     </tr>
   </tbody>
 </table>
@@ -158,19 +155,19 @@ help better comprehend the papers.</p>
     <ul class="list-group border-table grading-table">
       <li class="list-group-item d-flex justify-content-between align-items-center">
         <b>Reviews</b>
-        <span class="badge bg-primary rounded-pill">20%</span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-center">
-        <b>Paper Presentation</b>
-        <span class="badge bg-primary rounded-pill">10%</span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-center">
-        <b>Class Participation</b>
         <span class="badge bg-primary rounded-pill">15%</span>
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center">
+        <b>Presentation</b>
+        <span class="badge bg-primary rounded-pill">15%</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <b>Class Participation</b>
+        <span class="badge bg-primary rounded-pill">20%</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
         <b>Project</b>
-        <span class="badge bg-primary rounded-pill">55%</span>
+        <span class="badge bg-primary rounded-pill">50%</span>
       </li>
     </ul>
   </div>
@@ -181,36 +178,38 @@ help better comprehend the papers.</p>
 
 <h2 id="structure-and-policies">Structure and Policies</h2>
 
-<p><span class="badge bg-info fs-6"><b>Paper Reviews</b></span>: You are required to submit a brief review for the required reading in each class. 
-The review must be turned in by <span class="text-danger">at least 12 hours</span> before 
-the class. Please read further <a href="reviews.html">instructions</a> on the paper reviews.</p>
+<p><span class="badge bg-info fs-6"><b>Paper Review</b></span>: You are required to 
+submit a brief review for the required reading in each class. For Thursdays’ 
+classes, the reviews only need to answer the listed paper questions. Reviews 
+must be turned in by <span class="text-danger">at least 12 hours</span> before 
+the class. Please refer to the detailed requirements on <a href="review.html">this page</a>.</p>
 
-<p><span class="badge bg-info fs-6"><b>Participation</b></span>: The structure of this course is unusual in that there are NO lectures. 
-Instead, we will discuss research papers that we will have
-<em>all read before</em> each class period. Because of this format, class participation
-is vital to the success of the course. If you only remain silent in
-the class, you will get little out of this course.</p>
+<p><span class="badge bg-info fs-6"><b>Participation</b></span>: The structure of
+this course is unusual in that there are NO traditional lectures. Instead, 
+we will discuss research papers that everyone is expected to <strong>read before</strong> 
+class. Because of this format, class participation is vital to the success of
+the course. If you remain silent in the class, you will gain little out of this
+course.</p>
 
 <p>In each class, I will ask direct questions about the paper and expect you to
 be able to answer. Note that your answers to these questions will be part of
 your overall grade.</p>
 
-<p><span class="badge bg-info fs-6"><b>Presentation</b></span>: 
-A subset of the papers will be presented by students. The presentation should
-be followed by discussions among the entire class led by the presenter. Each
-student will present <em>at least once</em> in the semester. We may assign two
-students to present one paper when the number of students exceeds the number of
-papers to be presented. The presentation will be graded based on the clarity,
-completeness, depth, and discussion.</p>
+<p><span class="badge bg-info fs-6"><b>Presentation</b></span>: A subset of the
+papers will be presented by students in groups of 2–3 members. Each group
+will present <em>at least once</em> in the semester. The presentation should not
+simply summarize the paper. Detailed requirements for the presentation are
+described on <a href="presentation.thml">this page</a>.</p>
 
 <p><span class="badge bg-info fs-6"><b>Attendance</b></span>: <em>Three</em> absences of
 classes are allowed for good reasons (e.g., conference presentation,
 interview). However, reviews of the papers must still be turned in.</p>
 
-<p><span class="badge bg-info fs-6"><b>Discussion</b></span>: You are strongly encouraged to discuss the papers with other students in the class – 
-  you may have insights that others do not, and vice versa. Often students form reading groups, 
-  which I heartily encourage. Note that group discussion, however, is not an effective 
-  substitute for actually reading the paper.</p>
+<p><span class="badge bg-info fs-6"><b>Discussion</b></span>: You are strongly
+encouraged to discuss the papers with other students in the class – you may
+have insights that others do not, and vice versa. Often students form reading
+groups, which I heartily encourage. Note that group discussion, however, is not
+an effective substitute for actually reading the paper.</p>
 
 <p><span class="badge bg-info fs-6"><b>Project</b></span>: A major component of
 this course is a semester-long, research-oriented course project. You will 
@@ -218,13 +217,13 @@ work in a team of 2-3 students on the project. This <a href="project.html">page<
 further details on the requirements for the course project.</p>
 
 <p><span class="badge bg-info fs-6"><b>Missing and Late Submission</b></span>: 
-You can miss <em>three paper reviews</em> without penalty. A 30% deduction will be applied 
-for each missing review beyond the three limit. In other words, missing a total of 
-seven paper reviews leads to a 0 for the review grade.</p>
+You may miss up to <em>three paper reviews</em> without penalty. For each additional missed 
+review beyond three, a 30% deduction will be applied. Therefore, missing a total
+of seven paper reviews results in a zero for the review grade.</p>
 
-<p>Missing submission of other assignments (proposal, etc.) will receive 0 grade for that assignment.
-Late submission of any assignment (paper review, proposal, etc.) receives a late penalty 
-as follows:</p>
+<p>Missing the submission of any other assignment (e.g., proposal) will result in
+a zero for that assignment. Late submissions of any assignment (including paper
+reviews, proposals, etc.) will incur the following penalties:</p>
 <ul>
 <li>within 12 hour, 10%</li>
 <li>1 day, 20%</li>
@@ -245,10 +244,9 @@ as follows:</p>
 UCSD (CSE 221). We are particularly indebted to Geoff Voelker for sharing his
 lecture notes.</p>
 
-
         <footer class="site-footer"><hr>
   <div class="wrapper">
-    Ryan Huang | Last updated 2023-08-29 09:41:30 -0400.
+    Ryan Huang | Last updated 2024-08-15 14:53:16 -0400.
   </div>
 </footer>
 
@@ -258,8 +256,7 @@ lecture notes.</p>
   <h3 class="card-header">Latest Announcements</h3>
   <div class="card-body">
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">07/16: Course syllabus updated</li>
-      <li class="list-group-item">07/15: Course website is up</li>
+      <li class="list-group-item">08/15: Course syllabus updated</li>
     </ul>
   </div>
 </div>
