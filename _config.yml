@@ -1,9 +1,9 @@
-title: "EECS 582: Advanced Operating Systems, Fall 2023"
+title: "EECS 582: Advanced Operating Systems, Fall 2024"
 email: ryanph@umich.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Advanced Operating System course, Fall 2023 at University of Michigan.
+  Advanced Operating System course, Fall 2024 at University of Michigan.
   Instructor Prof. Ryan Huang.
-meta_desc: umich eecs 582, fall 2023 
+meta_desc: umich eecs 582, fall 2024 
 # baseurl: "/teaching/sp18/cs718" # the subpath of your site, e.g. /blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
