@@ -294,15 +294,13 @@ layout: schedule
       <td>Lightweight Virtualization</td>
       <td>
         <ol>
+          <li><a href="readings/lightvm.pdf">My VM is Lighter (and Safer) than your Container</a>, Manco, Lupu, Schmidt, Mendes, Kuenzer, Sati, Yasukata, Raiciu, and Huici, SOSP, 2017</li>
           <li><a href="readings/dune.pdf">Dune: Safe User-level Access to Privileged CPU Features</a>, Belay, Bittau, Mashtizadeh, Terei, Mazieres, and Kozyrakis, OSDI, 2012</li>
-          <li><a href="readings/firecracker.pdf">Firecracker: Lightweight Virtualization for Serverless Applications</a>, Brooker, Florescu, Popa, Neugebauer, Agache, Iordache, Liguori, and Piwonka, NSDI, 2020</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
           <ul>
           <li><a href="readings/container.pdf">Container-based Operating System Virtualization: A Scalable, High-performance Alternative to Hypervisors</a>, Soltesz, Pötzl, Fiuczynski, Bavier, and Peterson, EuroSys, 2007</li>
-          <li><a href="http://cnp.neclab.eu/projects/lightvm/lightvm.pdf">My VM is Lighter (and Safer) than your Container</a>, Manco, Lupu, Schmidt, Mendes, Kuenzer, Sati, Yasukata, Raiciu, and Huici, SOSP, 2017</li>
-          <li><a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2019/EECS-2019-3.pdf">Cloud Programming Simplified: A Berkeley View on Serverless Computing</a>, Jonas, Schleier-Smith, Sreekanti, Tsai, Khandelwal, Pu, Shankar, Carreira, Krauth, Yadwadkar, Gonzalez, Popa, Stoica, and Patterson, Technical Report No. UCB/EECS-2019-3, 2019</li>
           </ul>
         </details>
       </td>
@@ -312,17 +310,17 @@ layout: schedule
     <tr>
       <td rowspan="2" class="syllabus-week">W6</td>
       <td>Tue 10/01</td>
-      <td>Virtual Memory</td>
+      <td>Memory Management</td>
       <td>
         <ol>
           <li><a href="https://www.usenix.org/legacy/events/osdi02/tech/full_papers/navarro/navarro.pdf">Practical, transparent operating system support for superpages</a>,  Navarro, Iyer,  Druschel, and Cox, OSDI, 2002</li>
+          <li><a href="https://www.usenix.org/legacy/event/osdi02/tech/waldspurger/waldspurger.pdf">Memory Resource Management in VMware ESX Server</a>, Waldspurger, OSDI, 2002</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
           <ul>
             <li><a href="https://www.usenix.org/system/files/conference/osdi16/osdi16-kwon.pdf">Coordinated and Efficient Huge Page Management with Ingens</a>, Kwon, Yu, Peter, Rossbach, and Witchel, OSDI, 2016</li>
             <li><a href="readings/mach-vm.pdf">Machine-Independent Virtual Memory Management for Paged Uniprocessor and Multiprocessor Architectures</a>, Rashid, Tevanian, Young, Golub, Baronn, Black, Bolosky, and Chew, ASPLOS, 1987</li>
-            <li><a href="https://www.usenix.org/legacy/event/osdi02/tech/waldspurger/waldspurger.pdf">Memory Resource Management in VMware ESX Server</a>, Waldspurger, OSDI, 2002</li>
           </ul>
         </details>
         <details>
@@ -386,6 +384,7 @@ layout: schedule
       <td>
         <ol>
           <li><a href="readings/lfs.pdf">The Design and Implementation of a Log-Structured File System</a>, Rosenblum and Ousterhout, SOSP, 1991</li>
+          <li><a href="https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf">The Google File System</a>, Ghemawat, Gobioff, and Leung, SOSP, 2003</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
@@ -460,6 +459,7 @@ layout: schedule
             <li><a href="https://web.stanford.edu/~ouster/cgi-bin/spriteRetrospective.php">A Brief Retrospective on the Sprite Network Operating System</a>, Ousterhout, 1992</li>
             <li><a href="readings/v.pdf">The Distributed V Kernel and its Performance for Diskless Workstations</a>, Cheriton and Zwaenepoel, SOSP, 1983</li>
             <li><a href="https://dl.acm.org/doi/10.1145/224057.224072">Implementing global memory management in a workstation cluster</a>, Feeley, Morgan, Pighin, Karlin, Levy, and Thekkath, SOSP, 1995</li>
+            <li><a href="https://www.usenix.org/system/files/osdi18-shan.pdf">LegoOS: A Disseminated, Distributed OS for Hardware Resource Disaggregation</a>, Shan, Huang, Chen, and Zhang, OSDI, 2018</li>
           </ul>
         </details>
         <details>
@@ -496,18 +496,17 @@ layout: schedule
     <tr>
       <td rowspan="2" class="syllabus-week">W10</td>
       <td>Tue 10/29</td>
-      <td>Data Center</td>
+      <td>Serverless</td>
       <td>
         <ol>
-          <li><a href="https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf">The Google File System</a>, Ghemawat, Gobioff, and Leung, SOSP, 2003</li>
-          <li><a href="https://www.usenix.org/system/files/osdi18-shan.pdf">LegoOS: A Disseminated, Distributed OS for Hardware Resource Disaggregation</a>, Shan, Huang, Chen, and Zhang, OSDI, 2018</li>
+          <li><a href="readings/firecracker.pdf">Firecracker: Lightweight Virtualization for Serverless Applications</a>, Brooker, Florescu, Popa, Neugebauer, Agache, Iordache, Liguori, and Piwonka, NSDI, 2020</li>
+          <li><a href="https://www.usenix.org/system/files/osdi23-wei-rdma.pdf">No Provisioned Concurrency: Fast RDMA-codesigned Remote Fork for Serverless Computing</a>, Wei, Lu, Wang, Gu, Yang, Chen, and Chen, OSDI, 2023</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
           <ul>
-            <li><a href="https://queue.acm.org/detail.cfm?id=1594206">GFS: Evolution on Fast-forward</a>, Kirk McKusick and Quinlan, SOSP, 2019</li>
+            <li><a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2019/EECS-2019-3.pdf">Cloud Programming Simplified: A Berkeley View on Serverless Computing</a>, Jonas, Schleier-Smith, Sreekanti, Tsai, Khandelwal, Pu, Shankar, Carreira, Krauth, Yadwadkar, Gonzalez, Popa, Stoica, and Patterson, Technical Report No. UCB/EECS-2019-3, 2019</li>
           </ul>
-        </details>
       </td>
       <td></td>
       <td></td>
@@ -519,11 +518,11 @@ layout: schedule
       <td>
         <ol>
           <li><a href="readings/arrakis.pdf">Arrakis: The Operating System is the Control Plane</a>, Peter, Li, Zhang, Ports, Woos, Krishnamurthy, Anderson, and Roscoe, OSDI, 2014</li>
-          <li><a href="readings/ix.pdf">IX: A Protected Dataplane Operating System for High Throughput and Low Latency</a>, Belay, Prekas, Klimovic, Grossman, Kozyrakis, and Bugnion, OSDI, 2014</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
           <ul>
+            <li><a href="readings/ix.pdf">IX: A Protected Dataplane Operating System for High Throughput and Low Latency</a>, Belay, Prekas, Klimovic, Grossman, Kozyrakis, and Bugnion, OSDI, 2014</li>
             <li><a href="https://research.google/pubs/pub48630.pdf">Snap: a Microkernel Approach to Host Networking</a>, Marty, Kruijf, Adriaens, Alfeld, Bauer, Contavalli, Dalton, Dukkipati, Evans, Gribble, Kidd, Kononov, Kumar, Mauer, Musick, Olson, Rubow, Ryan, Springborn, Turner, Valancius, Wang, and Vahdat, SOSP, 2019</li>
           </ul>
         </details>
@@ -538,11 +537,12 @@ layout: schedule
       <td>
         <ol>
           <li><a href="https://www.usenix.org/system/files/nsdi19-ousterhout.pdf">Shenango: Achieving High CPU Efficiency for Latency-sensitive Datacenter Workloads</a>, Ousterhout, Fried, Behrens, Belay, and Balakrishnan, NSDI, 2019</li>
+          <li><a href="https://www.usenix.org/system/files/nsdi19-kaffes.pdf">Shinjuku: Preemptive Scheduling for μsecond-scale Tail Latency</a>, Kaffes, Chong, Humphries, Belay, Mazières, and Kozyrakis, NSDI, 2019</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
           <ul>
-            <li><a href="https://www.usenix.org/system/files/nsdi19-kaffes.pdf">Shinjuku: Preemptive Scheduling for μsecond-scale Tail Latency</a>, Kaffes, Chong, Humphries, Belay, Mazières, and Kozyrakis, NSDI, 2019</li>
+            <li><a href="https://dl.acm.org/doi/10.1145/3132747.3132780">ZygOS: Achieving Low Tail Latency for Microsecond-scale Networked Tasks</a>, Prekas, Kogias, and Bugnion</li>, SOSP, 2017
             <li><a href="https://irenezhang.net/papers/demikernel-sosp21.pdf">The Demikernel Datapath OS Architecture for Microsecond-scale Datacenter Systems</a>, Zhang, Raybuck, Patel, Olynyk, Nelson, Leija, Martinez, Liu, Simpson, Jayakar, Penna, Demoulin, Choudhury, and Badam, SOSP, 2021</li>
           </ul>
         </details>
@@ -557,13 +557,13 @@ layout: schedule
       <td>
         <ol>
           <li><a href="readings/multikernel.pdf">The Multikernel: A New OS Architecture for Scalable Multicore Systems</a>, Baumann, Barham, Dagand, Harris, Isaacs, Peter, Roscoe, Schüpbach, and Singhania, SOSP, 2009</li>
-          <li><a href="readings/commutativity.pdf">The Scalable Commutativity Rule: Designing Scalable Software for Multicore Processors</a>, Clements, Kaashoek, Zeldovich, Morris, and Kohler, SOSP, 2013</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
           <ul>
           <li><a href="readings/linux-scalability.pdf">An Analysis of Linux Scalability to Many Cores</a>, Boyd-Wickizer, Clements, Mao, Pesterev, Kaashoek, Morris, and Zeldovich, OSDI, 2010</li>
           <li><a href="readings/corey.pdf">Corey: An Operating System for Many Cores</a>, Boyd-Wickizer, Chen, Chen, Mao, Kaashoek, Morris, Pesterev, Stein, Wu, Dai, Zhang, and Zhang, OSDI, 2008</li>
+          <li><a href="readings/commutativity.pdf">The Scalable Commutativity Rule: Designing Scalable Software for Multicore Processors</a>, Clements, Kaashoek, Zeldovich, Morris, and Kohler, SOSP, 2013</li>
           </ul>
         </details>
         <details>
@@ -585,13 +585,14 @@ layout: schedule
       <td>Emerging Memory</td>
       <td>
         <ol>
-          <li><a href="https://dl.acm.org/doi/10.1145/3575693.3578835">Pond: CXL-Based Memory Pooling Systems for Cloud Platforms</a>, Li, Berger, Hsu, Ernst, Zardoshti, Novakovic, Shah, Rajadnya, Lee, Agarwal, Hill, Fontoura, and Bianchini, ASPLOS, 2023</li>
+          <li><a href="https://symbioticlab.org/publications/files/tpp:asplos23/tpp-asplos23.pdf">TPP: Transparent Page Placement for CXL-Enabled Tiered-Memory</a>, Maruf, Wang, Dhanotia, Weiner, Agarwal, Bhattacharya, Petersen, Chowdhury, Kanaujia, and Chauhan, ASPLOS, 2023</li>
+          <li><a href="https://dl.acm.org/doi/10.1145/3600006.3613135">Partial Failure Resilient Memory Management System for (CXL-based) Distributed Shared Memory</a>, Zhang, Ma, Hua, Liu, Chen, Ding, Du, Jiang, Ma, and Wu, SOSP, 2023</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
           <ul>
-          <li><a href="https://www.usenix.org/system/files/conference/nsdi17/nsdi17-gu.pdf">Efficient Memory Disaggregation with Infiniswap</a>, Gu, Lee, Zhang, Chowdhury, and Shin, NSDI, 2017</li>
-          <li><a href="https://dl.acm.org/doi/10.5555/3488766.3488784">AIFM: high-performance, application-integrated far memory</a>, Ruan, Schwarzkopf, Aguilera, and Belay, OSDI, 2020</li>
+            <li><a href="https://dl.acm.org/doi/10.1145/3575693.3578835">Pond: CXL-Based Memory Pooling Systems for Cloud Platforms</a>, Li, Berger, Hsu, Ernst, Zardoshti, Novakovic, Shah, Rajadnya, Lee, Agarwal, Hill, Fontoura, and Bianchini, ASPLOS, 2023</li>
+            <li><a href="https://dl.acm.org/doi/10.5555/3488766.3488784">AIFM: high-performance, application-integrated far memory</a>, Ruan, Schwarzkopf, Aguilera, and Belay, OSDI, 2020</li>
           </ul>
         </details>
         <details>
@@ -613,14 +614,14 @@ layout: schedule
       <td>Language</td>
       <td>
         <ol>
-          <li><a href="readings/singularity-language.pdf">Language Support for Fast and Reliable Message-based Communication in Singularity OS</a>, Fähndrich, Aiken, Hawblitzel, Hodson, Hunt, Larus, and Levi, EuroSys, 2006</li>
           <li><a href="https://www.usenix.org/system/files/osdi20-narayanan_vikram.pdf">RedLeaf: Isolation and Communication in a Safe Operating System</a>, Narayanan, Huang, Detweiler, Appel, Li, Zellweger, and Burtsev, OSDI, 2020</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
           <ul>
-          <li><a href="https://www.usenix.org/system/files/osdi20-boos.pdf">Theseus: an Experiment in Operating System Structure and State Management</a>, Boos, Liyanage, Ijaz, and Zhong, OSDI, 2020</li>
-          <li><a href="readings/singularity.pdf">Singularity: Rethinking the Software Stack</a>, Hunt and Larus, ACM SIGOPS OSR, 2007</li>
+            <li><a href="readings/singularity-language.pdf">Language Support for Fast and Reliable Message-based Communication in Singularity OS</a>, Fähndrich, Aiken, Hawblitzel, Hodson, Hunt, Larus, and Levi, EuroSys, 2006</li>
+            <li><a href="readings/singularity.pdf">Singularity: Rethinking the Software Stack</a>, Hunt and Larus, ACM SIGOPS OSR, 2007</li>
+            <li><a href="https://www.usenix.org/system/files/osdi20-boos.pdf">Theseus: an Experiment in Operating System Structure and State Management</a>, Boos, Liyanage, Ijaz, and Zhong, OSDI, 2020</li>
           </ul>
         </details>
         <details>
