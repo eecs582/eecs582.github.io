@@ -100,7 +100,7 @@ help better comprehend the papers.
         <span class="badge bg-primary rounded-pill">15%</span>
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center">
-        <b>Paper Presentation</b>
+        <b>Presentation</b>
         <span class="badge bg-primary rounded-pill">15%</span>
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -159,9 +159,9 @@ work in a team of 2-3 students on the project. This [page](project.html) contain
 further details on the requirements for the course project.
 
 <span class="badge bg-info fs-6"><b>Missing and Late Submission</b></span>: 
-You may miss up to *four paper reviews* without penalty. For each additional missed 
-review beyond four, a 30% deduction will be applied. Therefore, missing a total
-of eight paper reviews results in a zero for the review grade. 
+You may miss up to *three paper reviews* without penalty. For each additional missed 
+review beyond three, a 30% deduction will be applied. Therefore, missing a total
+of seven paper reviews results in a zero for the review grade. 
 
 Missing the submission of any other assignment (e.g., proposal) will result in
 a zero for that assignment. Late submissions of any assignment (including paper
