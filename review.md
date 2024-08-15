@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Paper Summary
+## Paper Review
 
 An important component of this class is the reading of systems research papers.
 To help you with this and to ensure we have a productive discussion in class,
