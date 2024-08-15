@@ -26,7 +26,7 @@ A more realistic great outcome is that the project will be suitable for
 publication at a major systems conference (*OSDI, SOSP, EuroSys, NSDI, ASPLOS,
 USENIX ATC*). Indeed, some papers in top systems conference are a result of 
 a course project (e.g., [Infiniswap](https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/gu) 
-and [Siloz](https://sosp2023.mpi-sws.org/accepted.html) were projects
+and [Siloz](https://dl.acm.org/doi/10.1145/3600006.3613143) were projects
 started in EECS 582 in the past). In those cases, additional work after
 the course is often needed to push the project to be more complete for
 publication, but the course project should lay the groundwork.

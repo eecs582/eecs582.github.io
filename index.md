@@ -64,8 +64,17 @@ to Operating Systems) or equivalent.
 
 ## Readings
 This course does not have a required textbook. However, we recommend you to
-use an undergraduate operating systems textbook as a reference, e.g., 
+use an undergraduate operating systems textbook as a reference, e.g.,
 [Operating Systems: Three Easy Pieces](http://www.ostep.org). 
+
+We also recommend you to read materials about the internals of mainstream OS.
+These resources will both help you understand technical details in many papers 
+and serve as handy references in your project development and systems research
+in general. We particularly recommend the following books:
+
+* *Understanding the Linux Kernel*, 3rd Edition, Daniel P. Bovet, and Marco Cesati, 2005.
+* *Linux Kernel Development*, 3rd Edition, Robert Love, 2010.
+* *The Design and Implementation of the FreeBSD Operating System*, 2nd Edition, Marshall Kirk McKusick, George Neville-Neil, and Robert N.M. Watson, 2014.
 
 The major material of the course comes from seminal, noteworthy, or representative 
 papers from the literature. Each class will have one or two **required** papers 
@@ -155,8 +164,8 @@ an effective substitute for actually reading the paper.
 
 <span class="badge bg-info fs-6"><b>Project</b></span>: A major component of
 this course is a semester-long, research-oriented course project. You will 
-work in a team of 2-3 students on the project. This [page](project.html) contains
-further details on the requirements for the course project.
+work in a team of 2-3 students on the project. Detailed requirements for the project 
+are described on [this page](project.thml).
 
 <span class="badge bg-info fs-6"><b>Missing and Late Submission</b></span>: 
 You may miss up to *three paper reviews* without penalty. For each additional missed 
