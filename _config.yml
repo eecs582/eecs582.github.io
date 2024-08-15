@@ -23,8 +23,8 @@ navigation:
     url: /index.html
   - title: Schedule
     url: /schedule.html
-  - title: Reviews
-    url: /reviews.html
+  - title: Review
+    url: /review.html
   - title: Presentation
     url: /presentation.html
   - title: Project

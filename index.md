@@ -120,7 +120,7 @@ help better comprehend the papers.
 
 ## Structure and Policies
 
-<span class="badge bg-info fs-6"><b>Paper Reviews</b></span>: You are required to 
+<span class="badge bg-info fs-6"><b>Paper Review</b></span>: You are required to 
 submit a brief review for the required reading in each class. For Thursdays' 
 classes, the reviews only need to answer the listed paper questions. Reviews 
 must be turned in by <span class="text-danger">at least 12 hours</span> before 
