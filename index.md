@@ -55,11 +55,7 @@ to Operating Systems) or equivalent.
   <tbody>
     <tr scope="row">
       <td><strong>Lecture</strong></td>
-      <td>Tuesday/Thursday 3:00pm-4:30pm IOE 1610</td>
-    </tr>
-    <tr scope="row">
-      <td><strong>Discussion</strong></td>
-      <td>Friday 2:30pm-3:30pm Beyster 1670</td>
+      <td>Tuesday/Thursday 3:00pm-4:30pm 1200 EECS</td>
     </tr>
   </tbody>
 </table>
@@ -101,19 +97,19 @@ help better comprehend the papers.
     <ul class="list-group border-table grading-table">
       <li class="list-group-item d-flex justify-content-between align-items-center">
         <b>Reviews</b>
-        <span class="badge bg-primary rounded-pill">20%</span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-center">
-        <b>Paper Presentation</b>
-        <span class="badge bg-primary rounded-pill">10%</span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-center">
-        <b>Class Participation</b>
         <span class="badge bg-primary rounded-pill">15%</span>
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center">
+        <b>Paper Presentation</b>
+        <span class="badge bg-primary rounded-pill">15%</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <b>Class Participation</b>
+        <span class="badge bg-primary rounded-pill">20%</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
         <b>Project</b>
-        <span class="badge bg-primary rounded-pill">55%</span>
+        <span class="badge bg-primary rounded-pill">50%</span>
       </li>
     </ul>
   </div>
@@ -128,34 +124,34 @@ help better comprehend the papers.
 submit a brief review for the required reading in each class. For Thursdays' 
 classes, the reviews only need to answer the listed paper questions. Reviews 
 must be turned in by <span class="text-danger">at least 12 hours</span> before 
-the class. Please read further [instructions](reviews.html) on the paper reviews.
+the class. Please refer to the detailed requirements on [this page](review.html).
 
-<span class="badge bg-info fs-6"><b>Participation</b></span>: The structure of this course is unusual in that there are NO lectures. 
-Instead, we will discuss research papers that we will have
-*all read before* each class period. Because of this format, class participation
-is vital to the success of the course. If you only remain silent in
-the class, you will get little out of this course.
+<span class="badge bg-info fs-6"><b>Participation</b></span>: The structure of
+this course is unusual in that there are NO traditional lectures. Instead, 
+we will discuss research papers that everyone is expected to **read before** 
+class. Because of this format, class participation is vital to the success of
+the course. If you remain silent in the class, you will gain little out of this
+course.
 
 In each class, I will ask direct questions about the paper and expect you to
 be able to answer. Note that your answers to these questions will be part of
 your overall grade.
 
-<span class="badge bg-info fs-6"><b>Presentation</b></span>: 
-A subset of the papers will be presented by students. The presentation should
-be followed by discussions among the entire class led by the presenter. Each
-student will present *at least once* in the semester. We may assign two
-students to present one paper when the number of students exceeds the number of
-papers to be presented. The presentation will be graded based on the clarity,
-completeness, depth, and discussion.
+<span class="badge bg-info fs-6"><b>Presentation</b></span>: A subset of the
+papers will be presented by students in groups of 2--3 members. Each group
+will present *at least once* in the semester. The presentation should not
+simply summarize the paper. Detailed requirements for the presentation are
+described on [this page](presentation.thml).
 
 <span class="badge bg-info fs-6"><b>Attendance</b></span>: *Three* absences of
 classes are allowed for good reasons (e.g., conference presentation,
 interview). However, reviews of the papers must still be turned in.
 
-<span class="badge bg-info fs-6"><b>Discussion</b></span>: You are strongly encouraged to discuss the papers with other students in the class -- 
-  you may have insights that others do not, and vice versa. Often students form reading groups, 
-  which I heartily encourage. Note that group discussion, however, is not an effective 
-  substitute for actually reading the paper.
+<span class="badge bg-info fs-6"><b>Discussion</b></span>: You are strongly
+encouraged to discuss the papers with other students in the class -- you may
+have insights that others do not, and vice versa. Often students form reading
+groups, which I heartily encourage. Note that group discussion, however, is not
+an effective substitute for actually reading the paper.
 
 <span class="badge bg-info fs-6"><b>Project</b></span>: A major component of
 this course is a semester-long, research-oriented course project. You will 
@@ -163,13 +159,13 @@ work in a team of 2-3 students on the project. This [page](project.html) contain
 further details on the requirements for the course project.
 
 <span class="badge bg-info fs-6"><b>Missing and Late Submission</b></span>: 
-You can miss *three paper reviews* without penalty. A 30% deduction will be applied 
-for each missing review beyond the three limit. In other words, missing a total of 
-seven paper reviews leads to a 0 for the review grade. 
+You may miss up to *four paper reviews* without penalty. For each additional missed 
+review beyond four, a 30% deduction will be applied. Therefore, missing a total
+of eight paper reviews results in a zero for the review grade. 
 
-Missing submission of other assignments (proposal, etc.) will receive 0 grade for that assignment.
-Late submission of any assignment (paper review, proposal, etc.) receives a late penalty 
-as follows:
+Missing the submission of any other assignment (e.g., proposal) will result in
+a zero for that assignment. Late submissions of any assignment (including paper
+reviews, proposals, etc.) will incur the following penalties:
 <ul>
 <li>within 12 hour, 10%</li>
 <li>1 day, 20%</li>
@@ -190,4 +186,3 @@ as follows:
 The course syllabus and materials are influenced by the advanced OS course at
 UCSD (CSE 221). We are particularly indebted to Geoff Voelker for sharing his
 lecture notes.
-
