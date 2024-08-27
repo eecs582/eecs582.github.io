@@ -4,6 +4,14 @@ layout: default
 
 # Lab 1: Extending `ptrace`
 
+<p>
+This assignment should be completed <i>individually</i>.
+</p>
+
+<p>
+<strong>Due: </strong><span class="text-danger">09/17 11:59 pm EDT</span>
+</p>
+
 The objectives of this lab are two-fold: (1) get familiar with the basic workflow of kernel programming to prepare you for your course project; (2) understand the internals of a small part of Linux code.
 
 Specifically, you will be extending `ptrace`, which is a neat and powerful system call. The `ptrace` system call allows a process (termed *tracer*) to observe and control the execution of another process (termed *tracee*). The tracer can inspect and modify the tracee's registers, memory, etc. It is commonly used to develop debugging tools like `gdb`. If you haven't used `ptrace` before, read [this page](https://man7.org/linux/man-pages/man2/ptrace.2.html) to know more about it.

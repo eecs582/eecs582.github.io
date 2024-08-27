@@ -136,7 +136,7 @@ help better comprehend the papers.
 <span class="badge bg-info fs-6"><b>Paper Review</b></span>: You are required to 
 submit a brief review for the required reading in each class. For Thursdays' 
 classes, the reviews only need to answer the listed paper questions. Reviews 
-must be turned in by <span class="text-danger">at least 12 hours</span> before 
+must be turned in by <span class="text-danger">by 12 pm</span> on the day of
 the class. Please refer to the detailed requirements on [this page](review.html).
 
 <span class="badge bg-info fs-6"><b>Participation</b></span>: The structure of
@@ -167,8 +167,8 @@ groups, which I heartily encourage. Note that group discussion, however, is not
 an effective substitute for actually reading the paper.
 
 <span class="badge bg-info fs-6"><b>Labs</b></span>: There will be one or more
-assignments to give your hands-on kernel programming experience. They are to be
-done individually.
+assignments to give your hands-on kernel programming experience and prepare you 
+for the course project. They are to be done individually.
 
 <span class="badge bg-info fs-6"><b>Project</b></span>: A major component of
 this course is a semester-long, research-oriented course project. You will 
@@ -197,9 +197,9 @@ reviews, proposals, etc.) will incur the following penalties:
   paper reviews, proposals, course project code and documentation. <span
   class="text-danger">Violations of the policies will result
   in serious consequences</span>. You may use tools such as ChatGPT to help you 
-  understand the concepts and paper contents. However, you may not use them to
-  generate reviews, answer assigned questions, or complete the programming
-  assignments. 
+  understand the concepts and paper contents. However, you may NOT use them to
+  do the required work for you, such as generating reviews, answering assigned 
+  questions, or completing the programming assignments. 
 
 ## Acknowledgment
 

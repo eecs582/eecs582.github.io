@@ -36,7 +36,7 @@ The presentation should be interactive and include questions for the audience.
 You should also expect that the audience may interrupt your presentation and
 ask questions.
 
-The presentation should last around **25--30 minutes**, followed by 10 minutes
+The presentation should last around **25 minutes**, followed by 15 minutes
 for discussion. For classes with only one paper to discuss, the presentation
 may be extended.
 
