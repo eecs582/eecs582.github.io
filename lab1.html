@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="description" content="">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>EECS 582: Advanced Operating Systems, Fall 2024</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap-icons.css">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="EECS 582: Advanced Operating Systems, Fall 2024" href="/feed.xml">
+</head>
+
+  <body> 
+    <nav class="navbar navbar-expand-lg navbar-dark banner-bg fixed-top">
+  <div class="container">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-column" id="navbarMain">
+        <div class="navbar-nav me-auto">
+          <h3 class="navbar-text navbar-title-main pb-0">CSE 582: Advanced Operating Systems</h3>
+          <h4 class="navbar-text navbar-title-sub ps-4 pb-0">Fall 2024</h4>
+        </div>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="/index.html">Home</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="/schedule.html">Schedule</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="/review.html">Review</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="/presentation.html">Presentation</a>
+          </li><li class="nav-item">
+            <a class="nav-link active" href="/lab1.html">Lab 1</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="/project.html">Project</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="https://piazza.com/umich/fall2024/cse582">Piazza</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 body-content">
+          <h1 id="lab-1-extending-ptrace">Lab 1: Extending <code class="language-plaintext highlighter-rouge">ptrace</code></h1>
+
+<p>The objectives of this lab are two-fold: (1) get familiar with the basic workflow of kernel programming to prepare you for your course project; (2) understand the internals of a small part of Linux code.</p>
+
+<p>Specifically, you will be extending <code class="language-plaintext highlighter-rouge">ptrace</code>, which is a neat and powerful system call. The <code class="language-plaintext highlighter-rouge">ptrace</code> system call allows a process (termed <em>tracer</em>) to observe and control the execution of another process (termed <em>tracee</em>). The tracer can inspect and modify the tracee’s registers, memory, etc. It is commonly used to develop debugging tools like <code class="language-plaintext highlighter-rouge">gdb</code>. If you haven’t used <code class="language-plaintext highlighter-rouge">ptrace</code> before, read <a href="https://man7.org/linux/man-pages/man2/ptrace.2.html">this page</a> to know more about it.</p>
+
+<h2 id="requirements">Requirements:</h2>
+
+<h3 id="10-kernel-setup">1.0 Kernel Setup</h3>
+
+<p>You’ll need to first setup an environment for compiling Linux kernel from source and running it. The compilation can be done in a standard Linux machine, but to run the compiled (custom) kernel, instead of using the native environment, you’ll setup a VM with <a href="https://www.debian.org/releases/bookworm/">Debian 12</a> on <a href="https://www.qemu.org/">QEMU</a>/KVM. If you are unsure how to create a Debian QEMU image and/or how to compile Linux kernel source, there are plenty of online tutorials that you can refer to, e.g., <a href="https://github.com/OrderLab/linux-dev-bootcamp">https://github.com/OrderLab/linux-dev-bootcamp</a>.</p>
+
+<p>You should specifically compile Linux kernel <strong>5.10.224</strong>.</p>
+
+<p>In your write-up for this exercise, report the following:</p>
+
+<ul>
+  <li>The hardware and OS of your experiment machine</li>
+  <li>The command lines you used to setup and run the VM</li>
+  <li>A screenshot of the running VM showing that Linux kernel version</li>
+  <li>The rough time you took to complete the setup</li>
+</ul>
+
+<p>The write-up should be concise.</p>
+
+<h3 id="11-understand-ptrace">1.1 Understand <code class="language-plaintext highlighter-rouge">ptrace</code></h3>
+
+<p>The next task is to read the <code class="language-plaintext highlighter-rouge">ptrace</code> source code. In particular, you need to find and read the part of the code that handles the <code class="language-plaintext highlighter-rouge">PTRACE_PEEKDATA</code> and <code class="language-plaintext highlighter-rouge">PTRACE_POKEDATA</code> operations. In your writeup, summarize how the kernel reads and writes the data from the tracee’s memory.</p>
+
+<h3 id="12-implement-selective-memory-snapshotting">1.2 Implement Selective Memory Snapshotting</h3>
+
+<p>You will add a relatively small extension to <code class="language-plaintext highlighter-rouge">ptrace</code> to support a feature called <strong>selective memory snapshotting</strong>. The feature will allow the tracer to capture a snapshot of a specified <em>writable</em> memory region in the tracee’s address space, and later restore the tracee’s memory region from a previously taken snapshot. We call the snapshotting selective because it only applies to a specific region instead of the full address space.</p>
+
+<p>The existing <code class="language-plaintext highlighter-rouge">ptrace</code> system call interface is as follows:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">long</span> <span class="nf">ptrace</span><span class="p">(</span><span class="k">enum</span> <span class="n">__ptrace_request</span> <span class="n">op</span><span class="p">,</span> <span class="n">pid_t</span> <span class="n">pid</span><span class="p">,</span> <span class="kt">void</span> <span class="o">*</span><span class="n">addr</span><span class="p">,</span> <span class="kt">void</span> <span class="o">*</span><span class="n">data</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Your extension should <em>preserve</em> this interface, i.e., not adding or removing arguments from the function signature. The first argument of this interface, <code class="language-plaintext highlighter-rouge">op</code>, determines the operation to be performed. Thus, you’ll need to add three more operation types:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">PTRACE_SNAPSHOT</code> for snapshotting a memory region</li>
+  <li><code class="language-plaintext highlighter-rouge">PTRACE_RESTORE</code> for restoring the snapshot for a memory region</li>
+  <li><code class="language-plaintext highlighter-rouge">PTRACE_GETSNAPSHOT</code> for reading the snapshot for a memory region</li>
+</ul>
+
+<p>You need to figure out the specific kernel source files to make the changes.</p>
+
+<p>The memory region to snapshot is specified by the tracer, with a start virtual address and a length. You need to ensure that the snapshotting only captures a valid, writable memory region in the tracee. If a memory region specified for snapshotting is invalid or not writable, the <code class="language-plaintext highlighter-rouge">ptrace</code> call should return an error according to the <em>existing convention</em> ,which you can find in the man page. At the time of a restore operation, you also need to perform the same checks for the specified memory region.</p>
+
+<p>The snapshot should be stored somewhere in the <strong>kernel space</strong>. Accordingly, the restore operation uses the corresponding kernel space snapshot to write to the tracee’s memory region. The get snapshot operation retrieves the snapshot from kernel space to a user-space buffer specified by the caller (the tracer).</p>
+
+<p>Multiple memory regions in a tracee may be snapshotted. There can also exist multiple tracees. You need to store the snapshots properly (e.g., so they belong to the correct tracee), and ensure that they can be efficiently retrieved later. For simplicity, you can restrict that <em>at most</em> one snapshot is saved for each memory region, and old snapshots will be overwritten. Once a snapshot is successfully restored with <code class="language-plaintext highlighter-rouge">PTRACE_RESTORE</code>, the snapshot should be deleted. When the tracee is terminated, all of its snapshots, if any, should also be deleted.</p>
+
+<p>Because the snapshots are stored in kernel space, you need to enforce reasonable limits, e.g., a <code class="language-plaintext highlighter-rouge">MAX_SNAPSHOT_LEN</code> for each snapshot and a <code class="language-plaintext highlighter-rouge">MAX_TOTAL_SNAPSHOT_SIZE</code> for each tracee. If these limits are reached, you need to have proper error handling.</p>
+
+<p>In your writeup, document the major changes you made for implementing the feature. Your code implementation should be submitted in the format of <em>patches</em> to the vanilla Linux kernel 5.10.224.</p>
+
+<h3 id="13-test-selective-memory-snapshotting">1.3 Test Selective Memory Snapshotting</h3>
+
+<p>Write a user-space program that tests the selective memory snapshotting feature. The memory region(s) to be tested should be heap allocated memory (e.g., a struct allocated with <code class="language-plaintext highlighter-rouge">malloc</code>). You cannot hard code an absolute starting address to pass to the <code class="language-plaintext highlighter-rouge">ptrace</code> calls.</p>
+
+<p>Your program should test at least the following two scenarios:</p>
+
+<ul>
+  <li><img src="assets/image/lab1/test_scenario1.jpg" alt="test_scenario1" style="zoom:25%;" /></li>
+  <li><img src="assets/image/lab1/test_scenario2.jpg" alt="test_scenario2" style="zoom:25%;" /></li>
+</ul>
+
+<p>Use signals to coordinate the operations between tracer and tracee.</p>
+
+<p>Take a screenshot of running your test program and its output. If the output is long, save the output as a file. Indicate whether your program’s output is expected or not.</p>
+
+<h2 id="submission">Submission</h2>
+
+<p>Your hand-in should include the write-ups for each exercise as well as the related code you wrote. <strong>Cite any sources that you consulted while completing the exercises</strong>.</p>
+
+          <footer class="site-footer"><hr>
+  <div class="wrapper">
+    Ryan Huang | Last updated 2024-08-26 23:06:16 -0400.
+  </div>
+</footer>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="/assets/js/jquery-1.12.3.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
