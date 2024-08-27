@@ -155,7 +155,7 @@ your overall grade.
 papers will be presented by students in groups of 2--3 members. Each group
 will present *at least once* in the semester. The presentation should not
 simply summarize the paper. Detailed requirements for the presentation are
-described on [this page](presentation.thml).
+described on [this page](presentation.html).
 
 <span class="badge bg-info fs-6"><b>Attendance</b></span>: *Three* absences of
 classes are allowed for good reasons (e.g., conference presentation,
@@ -174,7 +174,7 @@ for the course project. They are to be done individually.
 <span class="badge bg-info fs-6"><b>Project</b></span>: A major component of
 this course is a semester-long, research-oriented course project. You will 
 work in a team of 2-3 students on the project. Detailed requirements for the project 
-are described on [this page](project.thml).
+are described on [this page](project.html).
 
 <span class="badge bg-info fs-6"><b>Missing and Late Submission</b></span>: 
 You may miss up to *three paper reviews* without penalty. For each additional missed 
