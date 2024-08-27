@@ -27,6 +27,8 @@ navigation:
     url: /review.html
   - title: Presentation
     url: /presentation.html
+  - title: Lab 1
+    url: /lab1.html
   - title: Project
     url: /project.html
   - title: Piazza
