@@ -5,11 +5,11 @@ layout: default
 ## Paper Presentation
 
 The student paper presentation is done collaboratively in a group of 2--3
-members. The group members should discuss the paper together to prepare 
-for the presentation. 
-The slides for the presentation <span class="text-danger">must be turned in 24
-hours before the class</span>. When you are presenting a paper, you are not 
-required to submit a review for that paper.
+members. Each group will present *at least once* (likely twice) in a
+semester. The group members should discuss the paper together to prepare for
+the presentation. The slides for the presentation <span class="text-danger">must be 
+turned in 24 hours before the class</span>. When you are presenting a paper,
+you are not required to submit a review for that paper.
 
 A primary goal of your presentation is to lead the class in a deeper analysis of
 the paper. Keep in mind that your audience **has** read the paper.
