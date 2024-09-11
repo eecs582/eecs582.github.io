@@ -91,6 +91,9 @@ In the proposal, briefly describe the following elements:
 The proposal should be around 2 pages and include your group member's name and email. 
 The proposal only needs to be submitted by one of the group members.
 
+The draft proposal can contain a subset of the above elements, while the finalized
+proposal should contain all the above elements.
+
 ### Deliverable #2: Checkpoint 1 Report
 
 Submit a checkpoint report (around 3 pages) to describe the status of your
