@@ -9,7 +9,7 @@ This assignment should be completed <i>individually</i>.
 </p>
 
 <p>
-<strong>Due: </strong><span class="text-danger">09/17 11:59 pm EDT</span>
+<strong>Due: </strong><span class="text-danger"><s>09/17 11:59 pm EDT</s>, 09/19 noon (12 pm) EDT</span>
 </p>
 
 The objectives of this lab are two-fold: (1) get familiar with the basic workflow of kernel programming to prepare you for your course project; (2) understand the internals of a small part of Linux code.
