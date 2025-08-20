@@ -40,12 +40,12 @@ to Operating Systems) or equivalent.
 	<dd><strong><a href="https://web.eecs.umich.edu/~ryanph">Ryan Huang</a></strong></dd>
 	<dd><b>Email: </b><a href="mailto:ryanph@umich.edu">ryanph@umich.edu</a></dd>
 	<dd><b>Address: </b>BBB 4611</dd>
-	<dd><b>Office Hours: </b>By appointment</dd>
+	<dd><b>Office Hours: </b>Tuesdays 4:30pm-5:30pm or by appointment</dd>
 	<dt><h5>GSI</h5></dt>
-	<dd><strong><a href="https://chenyi.world/">Yi Chen</a></strong></dd>
-	<dd><b>Email: </b><a href="mailto:yichencs@umich.edu">yichencs@umich.edu</a></dd>
+	<dd><strong><a href="https://essoz.github.io/">Yuxuan Jiang</a></strong></dd>
+	<dd><b>Email: </b><a href="mailto:jyuxuan@umich.edu">jyuxuan@umich.edu</a></dd>
 	<dd><b>Address: </b>BBB 4945</dd>
-	<dd><b>Office Hours: </b>Tuesdays/Thursdays 2pm-3pm</dd>
+	<dd><b>Office Hours: </b>TBA</dd>
 </dl>
 
 ## Meetings
