@@ -3,7 +3,7 @@ name: Build and deploy site
 on:
   push:
     branches:
-      - main
+      - fall25
   workflow_dispatch:
 
 jobs:
