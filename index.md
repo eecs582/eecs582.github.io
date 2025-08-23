@@ -135,8 +135,7 @@ help better comprehend the papers.
 ## Structure and Policies
 
 <span class="badge bg-info fs-6"><b>Paper Review</b></span>: You are required to 
-submit a brief review for the required reading in each class. For Thursdays' 
-classes, the reviews only need to answer the listed paper questions. Reviews 
+submit a brief review for the required reading in each class. Reviews 
 must be turned in by <span class="text-danger">by 12 pm</span> on the day of
 the class. Please refer to the detailed requirements on [this page](review.html).
 
@@ -197,8 +196,9 @@ reviews, proposals, etc.) will incur the following penalties:
   university policies. They apply to all course requirements, including the
   paper reviews, proposals, course project code and documentation. <span
   class="text-danger">Violations of the policies will result
-  in serious consequences</span>. You may use tools such as ChatGPT to help you 
-  understand the concepts and paper contents. However, you may NOT use them to
+  in serious consequences</span>. You may use GenAI tools such as ChatGPT to help you 
+  understand background and concepts in a paper. However, you may <span
+  class="text-danger">not</span> use them to
   do the required work for you, such as generating reviews, answering assigned 
   questions, or completing the programming assignments. 
 
