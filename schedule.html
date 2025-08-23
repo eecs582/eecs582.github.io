@@ -261,6 +261,7 @@
       <td>
         <ol>
           <li><a href="readings/disco.pdf">Disco: Running Commodity Operating Systems on Scalable Multiprocessors</a>, Bugnion, Devine, and Rosenblum, SOSP, 1997</li>
+          <li><a href="readings/xen.pdf">Xen and the Art of Virtualization</a>, Barham, Dragovic, Fraser, Hand, Harris, Ho, Neugebauer, Pratt, and Warfield, SOSP, 2003</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
@@ -274,6 +275,12 @@
           <strong>Disco</strong>
           <ul>
             <li>Q: Compare and contrast Disco with Exokernel</li>
+          </ul>
+          </p>
+          <p>
+          <strong>Xen</strong>
+          <ul>
+            <li>Q: Microkernels and virtual machine monitors are two different ways to support the execution of multiple operating systems on modern hardware. How does the microkernel approach in L4 compare and contrast with the VMM approach in Xen?</li>
           </ul>
           </p>
         </details>
@@ -306,29 +313,23 @@
       <td>Virtual Machine</td>
       <td>
         <ol>
-          <li><a href="readings/xen.pdf">Xen and the Art of Virtualization</a>, Barham, Dragovic, Fraser, Hand, Harris, Ho, Neugebauer, Pratt, and Warfield, SOSP, 2003</li>
-          <li><a href="readings/vmm-hotos05.pdf">Are Virtual Machine Monitors Microkernels Done Right?</a>, Hand, Warfield, Fraser, Kotsovinos, and Magenheimer, HotOS, 2005</li>
-          <li><a href="readings/vmm-osr06.pdf">Are Virtual Machine Monitors Microkernels Done Right?</a>, Heiser, Uhlig, and LeVasseur, ACM SIGOPS OSR, 2006</li>
+          <li><a href="readings/x86-virt-asplos06.pdf">A Comparison of Software and Hardware Techniques for x86 Virtualization</a>, Adams and Agesen, ASPLOS, 2006</li>
+          <li><a href="readings/turtles-osdi10.pdf">The Turtles Project: Design and Implementation of Nested Virtualization</a>, Ben-Yehuda, Day, Dubitzky, Factor, Har'El, Gordon, Liguori, Wasserman, Yassour, OSDI, 2010</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
           <ul>
-          <li><a href="readings/virtualization-comparison.pdf">A Comparison of Software and Hardware Techniques for x86 Virtualization</a>, Adams and Agesen, ASPLOS, 2006</li>
+              <li><a href="readings/vmm-hotos05.pdf">Are Virtual Machine Monitors Microkernels Done Right?</a>, Hand, Warfield, Fraser, Kotsovinos, and Magenheimer, HotOS, 2005</li>
+              <li><a href="readings/vmm-osr06.pdf">Are Virtual Machine Monitors Microkernels Done Right?</a>, Heiser, Uhlig, and LeVasseur, ACM SIGOPS OSR, 2006</li>
           </ul>
         </details>
         <details>
           <summary>Questions</summary>
           <p>
-          <strong>Xen</strong>
-          <ul>
-            <li>Q: Microkernels and virtual machine monitors are two different ways to support the execution of multiple operating systems on modern hardware. How does the microkernel approach in L4 compare and contrast with the VMM approach in Xen?</li>
-          </ul>
-          </p>
-          <p>
-          <strong>VMM v. Microkernels</strong>
-          <ul>
-            <li>Are you convinced that VMMs are microkernels done right? Why?</li>
-          </ul>
+            <strong>x86 virt comparison</strong>
+            <ul>
+              <li>Why a hardware VMM can be slower than a software VMM</li>
+            </ul>
           </p>
         </details>
       </td>
@@ -509,6 +510,7 @@
       <td>
         <ol>
           <li><a href="readings/sprite.pdf">The Sprite Network Operating System</a>, Ousterhout, Cerenson, Douglis, Nelson, and Welch, IEEE Computer, 1988</li>
+          <li><a href="https://www.usenix.org/system/files/osdi18-shan.pdf">LegoOS: A Disseminated, Distributed OS for Hardware Resource Disaggregation</a>, Shan, Huang, Chen, and Zhang, OSDI, 2018</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
@@ -516,7 +518,6 @@
             <li><a href="https://web.stanford.edu/~ouster/cgi-bin/spriteRetrospective.php">A Brief Retrospective on the Sprite Network Operating System</a>, Ousterhout, 1992</li>
             <li><a href="readings/v.pdf">The Distributed V Kernel and its Performance for Diskless Workstations</a>, Cheriton and Zwaenepoel, SOSP, 1983</li>
             <li><a href="https://dl.acm.org/doi/10.1145/224057.224072">Implementing global memory management in a workstation cluster</a>, Feeley, Morgan, Pighin, Karlin, Levy, and Thekkath, SOSP, 1995</li>
-            <li><a href="https://www.usenix.org/system/files/osdi18-shan.pdf">LegoOS: A Disseminated, Distributed OS for Hardware Resource Disaggregation</a>, Shan, Huang, Chen, and Zhang, OSDI, 2018</li>
           </ul>
         </details>
         <details>
@@ -565,11 +566,11 @@
       <td>
         <ol>
           <li><a href="readings/arrakis.pdf">Arrakis: The Operating System is the Control Plane</a>, Peter, Li, Zhang, Ports, Woos, Krishnamurthy, Anderson, and Roscoe, OSDI, 2014</li>
+          <li><a href="readings/ix.pdf">IX: A Protected Dataplane Operating System for High Throughput and Low Latency</a>, Belay, Prekas, Klimovic, Grossman, Kozyrakis, and Bugnion, OSDI, 2014</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
           <ul>
-            <li><a href="readings/ix.pdf">IX: A Protected Dataplane Operating System for High Throughput and Low Latency</a>, Belay, Prekas, Klimovic, Grossman, Kozyrakis, and Bugnion, OSDI, 2014</li>
             <li><a href="https://research.google/pubs/pub48630.pdf">Snap: a Microkernel Approach to Host Networking</a>, Marty, Kruijf, Adriaens, Alfeld, Bauer, Contavalli, Dalton, Dukkipati, Evans, Gribble, Kidd, Kononov, Kumar, Mauer, Musick, Olson, Rubow, Ryan, Springborn, Turner, Valancius, Wang, and Vahdat, SOSP, 2019</li>
           </ul>
         </details>
@@ -679,12 +680,12 @@
       <td>Emerging Memory</td>
       <td>
         <ol>
-          <li><a href="https://symbioticlab.org/publications/files/tpp:asplos23/tpp-asplos23.pdf">TPP: Transparent Page Placement for CXL-Enabled Tiered-Memory</a>, Maruf, Wang, Dhanotia, Weiner, Agarwal, Bhattacharya, Petersen, Chowdhury, Kanaujia, and Chauhan, ASPLOS, 2023</li>
+          <li><a href="https://dl.acm.org/doi/10.1145/3575693.3578835">Pond: CXL-Based Memory Pooling Systems for Cloud Platforms</a>, Li, Berger, Hsu, Ernst, Zardoshti, Novakovic, Shah, Rajadnya, Lee, Agarwal, Hill, Fontoura, and Bianchini, ASPLOS, 2023</li>
         </ol>
         <details open class="details-reading">
           <summary>Additional Reading</summary>
           <ul>
-            <li><a href="https://dl.acm.org/doi/10.1145/3575693.3578835">Pond: CXL-Based Memory Pooling Systems for Cloud Platforms</a>, Li, Berger, Hsu, Ernst, Zardoshti, Novakovic, Shah, Rajadnya, Lee, Agarwal, Hill, Fontoura, and Bianchini, ASPLOS, 2023</li>
+            <li><a href="https://symbioticlab.org/publications/files/tpp:asplos23/tpp-asplos23.pdf">TPP: Transparent Page Placement for CXL-Enabled Tiered-Memory</a>, Maruf, Wang, Dhanotia, Weiner, Agarwal, Bhattacharya, Petersen, Chowdhury, Kanaujia, and Chauhan, ASPLOS, 2023</li>
             <li><a href="https://dl.acm.org/doi/10.5555/3488766.3488784">AIFM: high-performance, application-integrated far memory</a>, Ruan, Schwarzkopf, Aguilera, and Belay, OSDI, 2020</li>
             <li><a href="https://dl.acm.org/doi/10.1145/3600006.3613135">Partial Failure Resilient Memory Management System for (CXL-based) Distributed Shared Memory</a>, Zhang, Ma, Hua, Liu, Chen, Ding, Du, Jiang, Ma, and Wu, SOSP, 2023</li>
           </ul>
@@ -799,7 +800,7 @@
 
           <footer class="site-footer"><hr>
   <div class="wrapper">
-    Ryan Huang | Last updated 2025-08-20 19:31:42 +0000.
+    Ryan Huang | Last updated 2025-08-23 03:02:10 +0000.
   </div>
 </footer>
 
