@@ -107,7 +107,7 @@ help better comprehend the papers.
     <ul class="list-group border-table grading-table">
       <li class="list-group-item d-flex justify-content-between align-items-center">
         <b>Reviews</b>
-        <span class="badge bg-primary rounded-pill">10%</span>
+        <span class="badge bg-primary rounded-pill">7%</span>
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center">
         <b>Labs</b>
@@ -115,11 +115,11 @@ help better comprehend the papers.
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center">
         <b>Presentation</b>
-        <span class="badge bg-primary rounded-pill">15%</span>
+        <span class="badge bg-primary rounded-pill">13%</span>
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center">
         <b>Class Participation</b>
-        <span class="badge bg-primary rounded-pill">15%</span>
+        <span class="badge bg-primary rounded-pill">20%</span>
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center">
         <b>Project</b>
