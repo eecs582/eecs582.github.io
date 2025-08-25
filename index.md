@@ -40,12 +40,12 @@ to Operating Systems) or equivalent.
 	<dd><strong><a href="https://web.eecs.umich.edu/~ryanph">Ryan Huang</a></strong></dd>
 	<dd><b>Email: </b><a href="mailto:ryanph@umich.edu">ryanph@umich.edu</a></dd>
 	<dd><b>Address: </b>BBB 4611</dd>
-	<dd><b>Office Hours: </b>Tuesdays 4:30pm-5:30pm or by appointment</dd>
+	<dd><b>Office Hours: </b>Tuesday 4:30pm-5:30pm or by appointment</dd>
 	<dt><h5>GSI</h5></dt>
 	<dd><strong><a href="https://essoz.github.io/">Yuxuan Jiang</a></strong></dd>
 	<dd><b>Email: </b><a href="mailto:jyuxuan@umich.edu">jyuxuan@umich.edu</a></dd>
 	<dd><b>Address: </b>BBB 4945</dd>
-	<dd><b>Office Hours: </b>Fridays 4pm-7pm</dd>
+	<dd><b>Office Hours: </b>Wednesday 3pm-4:30pm, Friday 4pm-5:30pm</dd>
 </dl>
 
 ## Meetings
@@ -56,7 +56,7 @@ to Operating Systems) or equivalent.
   <tbody>
     <tr scope="row">
       <td><strong>Lecture</strong></td>
-      <td>Tuesday/Thursday 3:00pm-4:30pm 1200 EECS</td>
+      <td>Tuesday/Thursday 3pm-4:30pm 1200 EECS</td>
     </tr>
   </tbody>
 </table>
