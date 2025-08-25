@@ -45,7 +45,7 @@ to Operating Systems) or equivalent.
 	<dd><strong><a href="https://essoz.github.io/">Yuxuan Jiang</a></strong></dd>
 	<dd><b>Email: </b><a href="mailto:jyuxuan@umich.edu">jyuxuan@umich.edu</a></dd>
 	<dd><b>Address: </b>BBB 4945</dd>
-	<dd><b>Office Hours: </b>TBA</dd>
+	<dd><b>Office Hours: </b>Fridays 4pm-7pm</dd>
 </dl>
 
 ## Meetings
