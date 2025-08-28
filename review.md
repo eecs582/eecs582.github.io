@@ -11,7 +11,7 @@ We provided a [template](eecs582_review_summary.md) to guide the review writing.
 
 **If a paper has listed questions (on the [Schedule](schedule.html) page), your review is only required to answer the listed questions (i.e., a summary can be omitted).**
 
-If there are two or more required papers in one lecture, you are required to write a review for at least *one paper*. However, if both papers have listed questions, your review need to answer all the questions. Note this choice only applies to the review---you must still **read all** the required papers.
+If there are two or more required papers in one lecture, you are required to write a review for at least *one paper*. However, if both papers have listed questions, your review needs to answer all the questions. Note this choice only applies to the review---you must still **read all** the required papers.
 
 You are also encouraged to include in your review any questions you would like to see discussed 
 in class.
@@ -22,9 +22,9 @@ in class.
   </div>
   <div class="card-body">
     <p>
-    Your reviews should <i>not</i> copy-paste large chunk of the paper's descriptions.
+    Your reviews should <i>not</i> copy-paste large chunk of the paper's text.
     They must come from your own interpretation and thinking. We encourage you to 
-    form a discussion/reading group to more effectively read the papers. But
+    form a reading group to more effectively read the papers. But
     you should write the reviews independently.
     </p>
 
