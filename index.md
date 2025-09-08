@@ -39,7 +39,7 @@ to Operating Systems) or equivalent.
 	<dt><h4>Instructor</h4></dt>
 	<dd><strong><a href="https://web.eecs.umich.edu/~ryanph">Ryan Huang</a></strong></dd>
 	<dd><b>Email: </b><a href="mailto:ryanph@umich.edu">ryanph@umich.edu</a></dd>
-	<dd><b>Address: </b>BBB 4611</dd>
+	<dd><b>Address: </b>Leinweber 4146</dd>
 	<dd><b>Office Hours: </b>Tuesday 4:30pm-5:30pm or by appointment</dd>
 	<dt><h5>GSI</h5></dt>
 	<dd><strong><a href="https://essoz.github.io/">Yuxuan Jiang</a></strong></dd>
